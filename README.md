@@ -17,70 +17,70 @@
 
 # 下载地址与资料网站
 
-**百度贴吧：**[https://tieba.baidu.com/f?kw=cataclysmdda&fr=index\#](https://tieba.baidu.com/f?kw=cataclysmdda&fr=index#)
+**百度贴吧**：[https://tieba.baidu.com/f?kw=cataclysmdda&fr=index\#](https://tieba.baidu.com/f?kw=cataclysmdda&fr=index#)
 
-**大灾变漫游指南：**<https://nornagon.github.io/cdda-guide/>
+**大灾变漫游指南**：<https://nornagon.github.io/cdda-guide/>
 
-**→国内镜像：**<https://heyaodada.github.io/cdda-guide-china/?lang=zh_CN>
+**→国内镜像**：<https://heyaodada.github.io/cdda-guide-china/?lang=zh_CN>
 
-**→国内镜像2：**<https://test.hydd.fun:444/?lang=zh_CN>
+**→国内镜像2**：<https://test.hydd.fun:444/?lang=zh_CN>
 
-**github页面：**<https://github.com/CleverRaven/Cataclysm-DDA>
+**github页面**：<https://github.com/CleverRaven/Cataclysm-DDA>
 
-**→分支CBN：**<https://github.com/cataclysmbnteam/Cataclysm-BN>
+**→分支CBN**：<https://github.com/cataclysmbnteam/Cataclysm-BN>
 
-**→分支JP（长期未更新）：**<https://github.com/roloa/Cataclysm-DDA_variant>
+**→分支JP（长期未更新）**：<https://github.com/roloa/Cataclysm-DDA_variant>
 
-**→分支Delta：**<https://github.com/ChainsawGarden/Cataclysm-DDA-DF>
+**→分支Delta**：<https://github.com/ChainsawGarden/Cataclysm-DDA-DF>
 
-**→原版Cataclysm（已弃坑）：**<https://github.com/Whales/Cataclysm>
+**→原版Cataclysm（已弃坑）**：<https://github.com/Whales/Cataclysm>
 
-**→分支CataclysmZ：**<https://github.com/zaimoni/Cataclysm>
+**→分支CataclysmZ**：<https://github.com/zaimoni/Cataclysm>
 
-**→分支MyriadMod：**<https://github.com/TheDarklingWolf/Myriad-Mod>
+**→分支MyriadMod**：<https://github.com/TheDarklingWolf/Myriad-Mod>
 
-**官网：**<https://cataclysmdda.org/>
+**官网**：<https://cataclysmdda.org/>
 
-**实验版发布页：**<https://cataclysmdda.org/experimental/>
+**实验版发布页**：<https://cataclysmdda.org/experimental/>
 
-**→国内自动拉取仓库（密码cdda）：**<https://www.lanzouw.com/s/cdda>
+**→国内自动拉取仓库（密码cdda）**：<https://www.lanzouw.com/s/cdda>
 
-**稳定版发布页：**<https://cataclysmdda.org/releases/>
+**稳定版发布页**：<https://cataclysmdda.org/releases/>
 
-**本地化：**<https://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/>
+**本地化**：<https://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/>
 
-**官方论坛：**<https://discourse.cataclysmdda.org/>
+**官方论坛**：<https://discourse.cataclysmdda.org/>
 
-**cddawiki：**<http://cddawiki.chezzo.com/cdda_wiki/index.php/Main_Page>
+**cddawiki**：<http://cddawiki.chezzo.com/cdda_wiki/index.php/Main_Page>
 
-**→中文，不完善：**<https://cdda-wiki.aloxaf.com/wiki/%E9%A6%96%E9%A1%B5>
+**→中文，不完善**：<https://cdda-wiki.aloxaf.com/wiki/%E9%A6%96%E9%A1%B5>
 
-**物品浏览器（英文长期未更新）：**<https://cdda-trunk.chezzo.com/>
+**物品浏览器（英文长期未更新）**：<https://cdda-trunk.chezzo.com/>
 
-**→中文：**<https://cdda-trunk.aloxaf.com/>
+**→中文**：<https://cdda-trunk.aloxaf.com/>
 
-**reddit：**<https://www.reddit.com/r/cataclysmdda/>
+**reddit**：<https://www.reddit.com/r/cataclysmdda/>
 
-**discord：**<https://discord.gg/jFEc7Yp>
+**discord**：<https://discord.gg/jFEc7Yp>
 
-**Kevin的patreon：**<https://www.patreon.com/user?u=15922455>
+**Kevin的patreon**：<https://www.patreon.com/user?u=15922455>
 
-**幸存者基地（蹦跶街）：**<https://cdda.fun/>
+**幸存者基地（蹦跶街）**：<https://cdda.fun/>
 
-**→旧版（长期未更新）：**<https://cddabase.site/mainpage-cn/index.html>
+**→旧版（长期未更新）**：<https://cddabase.site/mainpage-cn/index.html>
 
-**Kenan包：**<https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack>
+**Kenan包**：<https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack>
 
 **→汉化项目:**<https://paratranz.cn/projects/2240>
 
-**→发布：**<https://github.com/linonetwo/CDDA-Kenan-Modpack-Chinese/releases>
+**→发布**：<https://github.com/linonetwo/CDDA-Kenan-Modpack-Chinese/releases>
 
 **不死人贴图包**<https://github.com/Theawesomeboophis/UndeadPeopleTileset>
 
-**在线ssh服务器：**<https://r7st.guru/watchcdda/>
+**在线ssh服务器**：<https://r7st.guru/watchcdda/>
 
 **→**注册账号需连接ssh newacc@play.watchcdda.net -p 3333，密码newacc
 
-**鼠标辅助工具（密码cdda）：**<https://wwb.lanzouw.com/ikWph039qizc>
+**鼠标辅助工具（密码cdda）**：<https://wwb.lanzouw.com/ikWph039qizc>
 
-**3D地图可视化工具：**<https://github.com/CIB/cataclysm-horizon>
+**3D地图可视化工具**：<https://github.com/CIB/cataclysm-horizon>
