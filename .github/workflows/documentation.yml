@@ -27,9 +27,12 @@ jobs:
         npm install
         npm run-script build 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
-        BUILD_SCRIPT: npm install && npm run build
+      run: |
+        cd ${{ github.workspace }}/build
+        git init
+        git add -A
+        git commit -m "Update"
+        git remote add origin https://github.com/SurFlurer/CDDA-CN-Guide
+        git branch --set-upstream-to=origin/gh-pages master
+        git push -f origin HEAD:gh-pages
+        
