@@ -15,14 +15,12 @@ jobs:
         persist-credentials: false
         
     - name: Checkout-docs
-      uses: actions/checkout@master
-      working-directory: CDDA-CN-Guide
-      with:
-        persist-credentials: false
+      run: |
+        git clone --depth=1 -b master https://github.com/SurFlurer/CDDA-CN-Guide '${{ github.workspace }}/master'
     - name: pretreatment
       run: |
         rm -rf ${{ github.workspace }}/docs
-        cp -r '${{ github.workspace }}/CDDA-CN-Guide/CataclysmDDA综合攻略手册/docs' ${{ github.workspace }}
+        cp -r '${{ github.workspace }}/master/CataclysmDDA综合攻略手册/docs' ${{ github.workspace }}
         find ${{ github.workspace }}/docs  -type f -name '*.md' | xargs sed -i "1s/^/---\n/g;1s/#/title: /g;2s/^/---/g"
     - name: Install and Build
       run: |
