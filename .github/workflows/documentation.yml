@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout-docusaurus
-      uses: actions/checkout@docusaurus
+      uses: actions/checkout@v3
       with:
         persist-credentials: false
         
