@@ -21,7 +21,7 @@ jobs:
       run: |
         rm -rf ${{ github.workspace }}/docs
         cp -r '${{ github.workspace }}/master/CataclysmDDA综合攻略手册/docs' ${{ github.workspace }}
-        find ${{ github.workspace }}/docs  -type f -name '*.md' | xargs sed -i "1s/^/---\n/g;1s/#/title: /g;2s/^/---/g"
+        find -print0 ${{ github.workspace }}/docs -type f -name '*.md' | xargs -0 sed -i "1s/^/---\n/g;1s/#/title: /g;2s/^/---/g"
     - name: Install and Build
       run: |
         npm install
