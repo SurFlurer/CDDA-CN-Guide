@@ -40,32 +40,34 @@ const sidebars = {
           id: '常见问题 Q&A',
         },
         {
-          type: 'doc',
-          id: '属性的影响',
-        },
-        {
-          type: 'doc',
-          id: '怪物机制',
-        },
-        {
-          type: 'doc',
-          id: '健身·心肺运动',
-        },
-        {
-          type: 'doc',
-          id: '疼痛与止痛药',
-        },
-        {
-          type: 'doc',
-          id: '速度与移动耗时',
-        },
-        {
-          type: 'doc',
-          id: '攻击与防御',
-        },
-        {
-          type: 'doc',
-          id: '武术流派详解',
+          type: 'category',
+          label: '小@的状态',
+          items: [
+            {
+              type: 'doc',
+              id: '属性的影响',
+            },
+            {
+              type: 'doc',
+              id: '健身·心肺运动',
+            },
+            {
+              type: 'doc',
+              id: '疼痛与止痛药',
+            },
+            {
+              type: 'doc',
+              id: '速度与移动耗时',
+            },
+            {
+              type: 'doc',
+              id: '正负面状态详解',
+            },
+            {
+              type: 'doc',
+              id: '常见疾病诊治方法',
+            },
+          ],
         },
         {
           type: 'doc',
@@ -77,15 +79,37 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'CBM体系与功能详解',
+          id: '怪物机制',
         },
         {
-          type: 'doc',
-          id: '变异体系与路线详解',
+          type: 'category',
+          label: '攻击与防御',
+          link: {type: 'doc', id: '攻击与防御'},
+          items: [
+            {
+              type: 'doc',
+              id: '武术流派详解',
+            },
+            {
+              type: 'doc',
+              id: '基础战术准则',
+            },
+
+          ],
         },
         {
-          type: 'doc',
-          id: '基础战术准则',
+          type: 'category',
+          label: 'CBM/变异',
+          items: [
+            {
+              type: 'doc',
+              id: 'CBM体系与功能详解',
+            },
+            {
+              type: 'doc',
+              id: '变异体系与路线详解',
+            },
+          ],
         },
         {
           type: 'doc',
@@ -94,10 +118,6 @@ const sidebars = {
         {
           type: 'doc',
           id: '食物获取与储存',
-        },
-        {
-          type: 'doc',
-          id: 'NPC与任务流程',
         },
         {
           type: 'doc',
@@ -111,18 +131,7 @@ const sidebars = {
           type: 'doc',
           id: '空间风暴事件',
         },
-        {
-          type: 'doc',
-          id: '实验版家电系统',
-        },
-        {
-          type: 'doc',
-          id: '正负面状态详解',
-        },
-        {
-          type: 'doc',
-          id: '常见疾病诊治方法',
-        },
+
         {
           type: 'doc',
           id: '地点概述与探索建议',
