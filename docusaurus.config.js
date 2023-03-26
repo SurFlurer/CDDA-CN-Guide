@@ -89,7 +89,7 @@ const config = {
             title: '文档',
             items: [
               {
-                label: '攻略',
+                label: '目录',
                 to: '/docs/总目录',
               },
             ],

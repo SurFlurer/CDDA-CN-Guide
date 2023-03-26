@@ -16,6 +16,7 @@ export function Giscus() {
     s.setAttribute('data-input-position', 'top')
     s.setAttribute('data-theme', 'preferred_color_scheme')
     s.setAttribute('data-lang', 'zh-CN')
+    s.setAttribute('lazy-loading', 'true')
     s.setAttribute('crossorigin', 'anonymous')
     s.async = true
     commentElement.current.appendChild(s)
