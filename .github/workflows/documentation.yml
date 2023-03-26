@@ -1,0 +1,35 @@
+name: Deploy Github pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+#      - master
+      - docusaurus
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout-docusaurus
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+        
+    - name: Checkout-docs
+      run: |
+        git clone --depth=1 -b master https://github.com/SurFlurer/CDDA-CN-Guide '${{ github.workspace }}/master'
+    - name: pretreatment
+      run: |
+        rm -rf ${{ github.workspace }}/docs
+        cp -r '${{ github.workspace }}/master/CataclysmDDA综合攻略手册/docs' ${{ github.workspace }}
+        find '${{ github.workspace }}/docs' -type f -name '*.md' -print0 | xargs -0 sed -i "1s/^/---\n/g;1s/#/title: /g;2s/^/---/g"
+    - name: Install and Build
+      run: |
+        npm install
+        npm run-script build 
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+        
