@@ -1,6 +1,6 @@
 # CataclysmDDA综合攻略手册
 
-# [在线阅读网址](ttps://surflurer.github.io/CDDA-CN-Guide/)
+# [在线阅读网址](https://tu10ng.github.io/CDDA-CN-Guide/)
 
 # 相关网站
 
