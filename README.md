@@ -19,13 +19,9 @@
 
 # 下载地址与资料网站
 
-**百度贴吧**：[https://tieba.baidu.com/f?kw=cataclysmdda&fr=index\#](https://tieba.baidu.com/f?kw=cataclysmdda&fr=index#)
+**百度贴吧**：<https://tieba.baidu.com/f?kw=cataclysmdda&fr=index\#>
 
-**大灾变漫游指南**：<https://nornagon.github.io/cdda-guide/>
-
-**→国内镜像**：<https://heyaodada.github.io/cdda-guide-china/?lang=zh_CN>
-
-**→国内镜像2**：<https://test.hydd.fun:444/?lang=zh_CN>
+**大灾变漫游指南**：<https://cdda-guide.nornagon.net/?lang=zh_CN>
 
 **github页面**：<https://github.com/CleverRaven/Cataclysm-DDA>
 
