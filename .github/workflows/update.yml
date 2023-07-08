@@ -1,0 +1,9 @@
+name: Trigger Depoly
+on:
+  push:
+    branches:
+      - master
+      - docusaurus
+jobs:
+  call_orkflow:
+    uses: SurFlurer/CDDA-CN-Guide/.github/workflows/documentation.yml@docusaurus
