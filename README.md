@@ -2,7 +2,9 @@
 
 # 在线阅读网址：https://surflurer.github.io/CDDA-CN-Guide/
 
-# 本文基于腾讯文档的截止至2023年2月23日的开放前文本生成，下面是原简介：
+# 本网站内容以2023年2月23日腾讯文档版本为基础生成，由社区加以补充和更新
+
+# 原始简介：
 
 本文是基于纯净原版的「攻略手册」，本意是为玩家提供一些游戏资料、建议与各类机制的粗略解释，如您对繁多数据不感兴趣，只是想要寻求一些对于新手的建议，请从左侧目录处跳转至「基础教程手册」，从第一条对新手的基础教程开始阅览。
 
@@ -16,6 +18,7 @@
 
 查阅批注可以点击批注上方的三角符号，需点击批注；
 
+# 
 
 # 下载地址与资料网站
 
@@ -26,6 +29,8 @@
 **github页面**：<https://github.com/CleverRaven/Cataclysm-DDA>
 
 **→分支CBN**：<https://github.com/cataclysmbnteam/Cataclysm-BN>
+
+**→微风分支**：<https://github.com/WhiteCloud0123/CDDA-Breeze>
 
 **→分支JP（长期未更新）**：<https://github.com/roloa/Cataclysm-DDA_variant>
 
@@ -48,14 +53,6 @@
 **本地化**：<https://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/>
 
 **官方论坛**：<https://discourse.cataclysmdda.org/>
-
-**cddawiki**：<http://cddawiki.chezzo.com/cdda_wiki/index.php/Main_Page>
-
-**→中文，不完善**：<https://cdda-wiki.aloxaf.com/wiki/%E9%A6%96%E9%A1%B5>
-
-**物品浏览器（英文长期未更新）**：<https://cdda-trunk.chezzo.com/>
-
-**→中文**：<https://cdda-trunk.aloxaf.com/>
 
 **reddit**：<https://www.reddit.com/r/cataclysmdda/>
 
