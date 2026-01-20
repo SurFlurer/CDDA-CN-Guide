@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/核心架构设计/核心组件交互与数据流" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">核心组件交互与数据流 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/核心架构设计/核心组件交互与数据流"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="核心组件交互与数据流 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文档引用的文件"><meta data-rh="true" property="og:description" content="本文档引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/核心架构设计/核心组件交互与数据流"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/核心架构设计/核心组件交互与数据流" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/核心架构设计/核心组件交互与数据流" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"核心架构设计","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/核心架构设计/"},{"@type":"ListItem","position":2,"name":"核心组件交互与数据流","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/核心架构设计/核心组件交互与数据流"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="折叠侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/事件驱动架构与通信机制"><span title="事件驱动架构与通信机制" class="linkLabel_WmDU">事件驱动架构与通信机制</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/核心组件交互与数据流"><span title="核心组件交互与数据流" class="linkLabel_WmDU">核心组件交互与数据流</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/模块化设计与设计模式"><span title="模块化设计与设计模式" class="linkLabel_WmDU">模块化设计与设计模式</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/游戏主循环与生命周期"><span title="游戏主循环与生命周期" class="linkLabel_WmDU">游戏主循环与生命周期</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="展开侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span>核心架构设计</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">核心组件交互与数据流</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>核心组件交互与数据流</h1></header><cite>
+**本文档引用的文件**
+- src/game.h
+- src/map.h
+- src/creature.h
+- src/weather.h
+- src/savegame.cpp
+- src/worldfactory.h
+- src/overmap.h
+- src/main.cpp
+- src/do_turn.cpp
+- src/input.h
+- src/event_bus.h
+- src/ui_manager.h
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E5%BC%95%E8%A8%80" class="">引言</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%8C%87%E5%8D%97" class="">故障排除指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="引言">引言<a href="#引言" class="hash-link" aria-label="引言的直接链接" title="引言的直接链接" translate="no">​</a></h2>
+<p>本技术文档聚焦于Cataclysm-DDA（简称CDDA）核心组件的交互关系与数据流，涵盖地图管理、角色系统、天气系统、保存系统等模块的协作方式。文档旨在帮助开发者理解从用户输入到屏幕显示的完整数据处理链路，解释组件间的接口设计与依赖注入策略，并通过系统架构图与数据流图辅助定位性能瓶颈。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>CDDA采用分层与模块化结合的组织方式：顶层由主程序入口负责事件泵与渲染调度；核心逻辑集中在游戏主循环中，协调地图、角色、天气、UI等子系统；数据持久化通过统一的保存/加载流程完成；世界工厂负责世界与模组的初始化与管理。</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">src/main.cpp</li>
+<li class="">src/do_turn.cpp</li>
+<li class="">src/game.h</li>
+<li class="">src/map.h</li>
+<li class="">src/creature.h</li>
+<li class="">src/weather.h</li>
+<li class="">src/event_bus.h</li>
+<li class="">src/savegame.cpp</li>
+<li class="">src/worldfactory.h</li>
+<li class="">src/overmap.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/main.cpp</li>
+<li class="">src/do_turn.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">游戏控制中心（game.h）：全局单例，负责加载静态/动态数据、保存/加载、绘制、输入回调注册、角色/怪物管理、地图切换等。</li>
+<li class="">地图管理（map.h）：管理子地图网格、可见性缓存、路径规划、光照计算、场效应传播、载具管理等。</li>
+<li class="">生物/角色基类（creature.h）：定义所有可行动实体的通用接口，包括位置、移动、效果、伤害、命中判定等。</li>
+<li class="">天气系统（weather.h）：温度、风速、降水、紫外线等环境参数的更新与查询，以及对角色的影响。</li>
+<li class="">保存系统（savegame.cpp）：统一的JSON序列化/反序列化流程，包含时间、坐标、角色、怪物、统计、成就等。</li>
+<li class="">世界工厂（worldfactory.h）：世界与模组的生成、选择、删除、选项加载/保存。</li>
+<li class="">输入系统（input.h）：键鼠/手柄输入事件的定义与管理。</li>
+<li class="">事件总线（event_bus.h）：跨模块松耦合通信机制。</li>
+<li class="">UI管理（ui_manager.h）：窗口失效标记、重绘队列、ImGui集成等。</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/game.h</li>
+<li class="">src/map.h</li>
+<li class="">src/creature.h</li>
+<li class="">src/weather.h</li>
+<li class="">src/savegame.cpp</li>
+<li class="">src/worldfactory.h</li>
+<li class="">src/input.h</li>
+<li class="">src/event_bus.h</li>
+<li class="">src/ui_manager.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>CDDA采用“主循环驱动 + 模块化子系统”的架构。主循环在每回合内处理输入、推进时间、更新角色与怪物状态、执行AI与行为、刷新天气与环境、触发事件、最后进行UI重绘。各子系统通过game.h提供的全局访问点协同工作，同时通过事件总线实现解耦通信。</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">src/do_turn.cpp</li>
+<li class="">src/game.h</li>
+<li class="">src/map.h</li>
+<li class="">src/weather.h</li>
+<li class="">src/ui_manager.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="地图管理maph">地图管理（map.h）<a href="#地图管理maph" class="hash-link" aria-label="地图管理（map.h）的直接链接" title="地图管理（map.h）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">责任边界：子地图网格管理、可见性与光照缓存、路径规划、场效应传播、载具缓存与移动。</li>
+<li class="">关键接口：
+<ul>
+<li class="">加载/移位/垂直切换：load/shift/vertical_shift</li>
+<li class="">可见性与光照：draw/drawsq、apparent_light_at、get_visibility</li>
+<li class="">移动成本与可达性：move_cost/passable/combined_movecost</li>
+<li class="">路径规划：route/find_clear_path/reachable_flood_steps</li>
+<li class="">载具：get_vehicles/add_vehicle_to_cache/vehmove</li>
+</ul>
+</li>
+<li class="">数据流：地图状态变更（如地形/陷阱/场）会触发缓存失效（透明度/可见性/路径），随后在渲染阶段重新计算。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">src/map.h</li>
+<li class="">src/map.h</li>
+<li class="">src/map.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/map.h</li>
+<li class="">src/map.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="角色系统creatureh--gameh">角色系统（creature.h + game.h）<a href="#角色系统creatureh--gameh" class="hash-link" aria-label="角色系统（creature.h + game.h）的直接链接" title="角色系统（creature.h + game.h）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">责任边界：角色/玩家/怪物的共同行为与状态管理，包括移动、效果、伤害、命中、属性重算等。</li>
+<li class="">关键接口：
+<ul>
+<li class="">基类接口：process_turn/reset_bonuses/deal_damage/apply_damage</li>
+<li class="">位置与移动：setpos/move_to/gravity_check</li>
+<li class="">效果系统：add_effect/remove_effect/clear_effects</li>
+<li class="">可视范围与命中：sight_range/hit_roll/dodge_roll</li>
+</ul>
+</li>
+<li class="">协作关系：game.h持有角色集合与怪物追踪器，负责在主循环中推进每个实体的回合。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">src/creature.h</li>
+<li class="">src/game.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/creature.h</li>
+<li class="">src/creature.h</li>
+<li class="">src/game.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="天气系统weatherh--gameh">天气系统（weather.h + game.h）<a href="#天气系统weatherh--gameh" class="hash-link" aria-label="天气系统（weather.h + game.h）的直接链接" title="天气系统（weather.h + game.h）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">责任边界：当前天气模式、温度、风向/速度、降水强度、紫外线等环境参数的更新与查询。</li>
+<li class="">关键接口：
+<ul>
+<li class="">天气管理器：update_weather/set_nextweather/get_temperature</li>
+<li class="">环境影响函数：incident_sunlight/incident_sun_irradiance/wet_character</li>
+</ul>
+</li>
+<li class="">协作关系：天气变化影响角色体温、湿度、能见度与移动成本，game.h在主循环中调用天气更新与环境影响处理。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">src/weather.h</li>
+<li class="">src/do_turn.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/weather.h</li>
+<li class="">src/do_turn.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="保存系统savegamecpp--gameh--worldfactoryh">保存系统（savegame.cpp + game.h + worldfactory.h）<a href="#保存系统savegamecpp--gameh--worldfactoryh" class="hash-link" aria-label="保存系统（savegame.cpp + game.h + worldfactory.h）的直接链接" title="保存系统（savegame.cpp + game.h + worldfactory.h）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">责任边界：统一的JSON保存/加载流程，包含时间、坐标、角色、怪物、统计、成就、全局变量等。</li>
+<li class="">关键流程：
+<ul>
+<li class="">保存：serialize_json写入turn、坐标、角色、怪物列表、统计、成就、全局变量等。</li>
+<li class="">加载：unserialize/unserialize_master解析版本与数据，重建场景与对象。</li>
+<li class="">世界管理：worldfactory负责世界创建/选择/删除与模组加载顺序。</li>
+</ul>
+</li>
+<li class="">版本兼容：通过savegame_version与loading_version实现向前/向后兼容。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">src/savegame.cpp</li>
+<li class="">src/worldfactory.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/savegame.cpp</li>
+<li class="">src/worldfactory.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="输入到屏幕显示的数据流maincpp--do_turncpp--ui_managerh">输入到屏幕显示的数据流（main.cpp + do_turn.cpp + ui_manager.h）<a href="#输入到屏幕显示的数据流maincpp--do_turncpp--ui_managerh" class="hash-link" aria-label="输入到屏幕显示的数据流（main.cpp + do_turn.cpp + ui_manager.h）的直接链接" title="输入到屏幕显示的数据流（main.cpp + do_turn.cpp + ui_manager.h）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">用户输入通过input.h进入主循环do_turn.cpp，主循环推进时间、处理活动、更新角色与怪物、刷新天气与环境。</li>
+<li class="">game.h负责绘制（draw/draw_ter/draw_panels）与UI回调注册，ui_manager.h维护失效区域与重绘队列，最终将帧输出到屏幕。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">src/input.h</li>
+<li class="">src/do_turn.cpp</li>
+<li class="">src/game.h</li>
+<li class="">src/ui_manager.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/main.cpp</li>
+<li class="">src/do_turn.cpp</li>
+<li class="">src/ui_manager.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">组件耦合与内聚：
+<ul>
+<li class="">game.h作为控制中心，聚合了地图、角色、天气、UI等子系统的访问点，但通过友元/全局函数降低直接耦合。</li>
+<li class="">地图与角色之间存在强关联（位置、移动成本、可见性），但通过坐标转换与缓存机制降低频繁计算开销。</li>
+<li class="">天气系统与角色系统通过环境影响函数解耦，避免直接依赖。</li>
+</ul>
+</li>
+<li class="">外部依赖与集成点：
+<ul>
+<li class="">事件总线用于跨模块通信（如死亡、战斗、任务），避免循环依赖。</li>
+<li class="">保存系统依赖JSON序列化框架与文件系统，版本号确保兼容性。</li>
+</ul>
+</li>
+<li class="">潜在环形依赖：
+<ul>
+<li class="">地图与载具缓存相互影响，通过缓存失效与延迟重建避免环形更新。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">src/game.h</li>
+<li class="">src/map.h</li>
+<li class="">src/creature.h</li>
+<li class="">src/weather.h</li>
+<li class="">src/savegame.cpp</li>
+<li class="">src/worldfactory.h</li>
+<li class="">src/event_bus.h</li>
+<li class="">src/ui_manager.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/game.h</li>
+<li class="">src/map.h</li>
+<li class="">src/creature.h</li>
+<li class="">src/weather.h</li>
+<li class="">src/savegame.cpp</li>
+<li class="">src/worldfactory.h</li>
+<li class="">src/event_bus.h</li>
+<li class="">src/ui_manager.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">缓存与惰性计算：地图的透明度、可见性、路径等缓存需在相关状态变更时失效，避免重复计算。</li>
+<li class="">批量更新：主循环中按实体类型批量处理（怪物、NPC），限制单次迭代次数以防止无限循环。</li>
+<li class="">UI重绘优化：通过失效区域与遮挡检测减少不必要的重绘，结合帧率基准测试定位瓶颈。</li>
+<li class="">环境影响：天气更新与角色状态变更在固定频率触发，避免每回合高频计算。</li>
+</ul>
+<p>[本节为通用指导，无需特定文件引用]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排除指南">故障排除指南<a href="#故障排除指南" class="hash-link" aria-label="故障排除指南的直接链接" title="故障排除指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">主循环卡死或无限循环：
+<ul>
+<li class="">检查NPC/怪物移动循环中的moves消耗与destination判断，必要时启用认知暂停。</li>
+</ul>
+</li>
+<li class="">地图渲染异常：
+<ul>
+<li class="">确认缓存失效调用（透明度/可见性/路径），检查渲染参数（高亮/物品显示/光照）。</li>
+</ul>
+</li>
+<li class="">保存/加载失败：
+<ul>
+<li class="">核对版本号与字段兼容性，确认JSON序列化/反序列化流程完整性。</li>
+</ul>
+</li>
+<li class="">输入无响应：
+<ul>
+<li class="">检查输入泵与事件处理，确认UI重绘是否被遮挡或失效未刷新。</li>
+</ul>
+</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">src/do_turn.cpp</li>
+<li class="">src/map.h</li>
+<li class="">src/savegame.cpp</li>
+<li class="">src/ui_manager.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>CDDA通过“主循环驱动 + 模块化子系统 + 事件总线”的架构实现了清晰的职责划分与低耦合的组件交互。地图、角色、天气、保存与UI等核心模块围绕game.h协同工作，配合缓存与批处理策略在保证功能复杂度的同时维持了较好的运行效率。理解从输入到屏幕显示的完整数据流，有助于快速定位问题与优化性能。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/核心架构设计/核心组件交互与数据流.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/核心架构设计/事件驱动架构与通信机制"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">事件驱动架构与通信机制</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/核心架构设计/模块化设计与设计模式"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">模块化设计与设计模式</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#引言" class="table-of-contents__link toc-highlight">引言</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#地图管理maph" class="table-of-contents__link toc-highlight">地图管理（map.h）</a></li><li><a href="#角色系统creatureh--gameh" class="table-of-contents__link toc-highlight">角色系统（creature.h + game.h）</a></li><li><a href="#天气系统weatherh--gameh" class="table-of-contents__link toc-highlight">天气系统（weather.h + game.h）</a></li><li><a href="#保存系统savegamecpp--gameh--worldfactoryh" class="table-of-contents__link toc-highlight">保存系统（savegame.cpp + game.h + worldfactory.h）</a></li><li><a href="#输入到屏幕显示的数据流maincpp--do_turncpp--ui_managerh" class="table-of-contents__link toc-highlight">输入到屏幕显示的数据流（main.cpp + do_turn.cpp + ui_manager.h）</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排除指南" class="table-of-contents__link toc-highlight">故障排除指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

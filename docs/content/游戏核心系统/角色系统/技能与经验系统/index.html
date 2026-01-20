@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/游戏核心系统/角色系统/技能与经验系统" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">技能与经验系统 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/技能与经验系统"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="技能与经验系统 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文档引用的文件"><meta data-rh="true" property="og:description" content="本文档引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/技能与经验系统"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/技能与经验系统" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/技能与经验系统" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"游戏核心系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/"},{"@type":"ListItem","position":2,"name":"角色系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"},{"@type":"ListItem","position":3,"name":"技能与经验系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/技能与经验系统"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="折叠侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><span title="地图系统" class="categoryLinkLabel_W154">地图系统</span></a><button aria-label="展开侧边栏分类 &#x27;地图系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span title="怪物系统" class="categoryLinkLabel_W154">怪物系统</span></a><button aria-label="展开侧边栏分类 &#x27;怪物系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/游戏主循环"><span title="游戏主循环" class="linkLabel_WmDU">游戏主循环</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"><span title="物品系统" class="categoryLinkLabel_W154">物品系统</span></a><button aria-label="展开侧边栏分类 &#x27;物品系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span title="角色系统" class="categoryLinkLabel_W154">角色系统</span></a><button aria-label="折叠侧边栏分类 &#x27;角色系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/NPC系统设计"><span title="NPC系统设计" class="linkLabel_WmDU">NPC系统设计</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/技能与经验系统"><span title="技能与经验系统" class="linkLabel_WmDU">技能与经验系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/玩家角色管理"><span title="玩家角色管理" class="linkLabel_WmDU">玩家角色管理</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/角色属性系统"><span title="角色属性系统" class="linkLabel_WmDU">角色属性系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/角色状态与效果"><span title="角色状态与效果" class="linkLabel_WmDU">角色状态与效果</span></a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span>游戏核心系统</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span>角色系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">技能与经验系统</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>技能与经验系统</h1></header><cite>
+**本文档引用的文件**
+- skill.h
+- skill.cpp
+- profession.h
+- profession.cpp
+- martialarts.h
+- martialarts.cpp
+- proficiency.h
+- proficiency.cpp
+- crafting.h
+- crafting.cpp
+- recipe.h
+- recipe.cpp
+- character.h
+- character.cpp
+- game_constants.h
+- options.h
+- options.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E8%99%91" class="">性能考虑</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%8C%87%E5%8D%97" class="">故障排除指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件系统性梳理Cataclysm-DDA中的技能与经验系统，覆盖技能树设计理念、学习机制、经验值获取与等级提升算法、角色专业技能（Proficiency）、职业特性（Profession）与特殊技能（Martial Arts）实现、制作配方系统（Recipe）与材料需求处理、技能加点与自动学习/强制训练功能，以及技能与物品使用、战斗技巧、生存技能的关联机制。文档以代码为依据，结合图示帮助不同技术背景的读者理解系统。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>技能与经验系统主要由以下模块构成：</p>
+<ul>
+<li class="">技能定义与等级管理：Skill、SkillLevel、SkillLevelMap、SkillDisplayType</li>
+<li class="">职业系统：profession 及其起始技能、物品、CBM、专长等</li>
+<li class="">专业技能（Proficiency）：学习时间、前置要求、属性加成</li>
+<li class="">格斗流派（Martial Arts）：技法、内功、武器限制、条件触发</li>
+<li class="">制作系统（Crafting/Recipe）：配方需求、材料消耗、工具使用、环境影响</li>
+<li class="">角色与全局常量：Character、游戏常量、选项系统</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">skill.h</li>
+<li class="">skill.cpp</li>
+<li class="">profession.h</li>
+<li class="">proficiency.h</li>
+<li class="">martialarts.h</li>
+<li class="">crafting.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">skill.h</li>
+<li class="">skill.cpp</li>
+<li class="">profession.h</li>
+<li class="">profession.cpp</li>
+<li class="">martialarts.h</li>
+<li class="">martialarts.cpp</li>
+<li class="">proficiency.h</li>
+<li class="">proficiency.cpp</li>
+<li class="">crafting.h</li>
+<li class="">crafting.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">技能（Skill）：描述技能名称、描述、标签、显示类型、排序权重、时间参数、同伴实践权重等；支持理论/实践等级描述、战斗技能判定、上下文技能判定。</li>
+<li class="">技能等级（SkillLevel）：包含等级、练习经验、知识经验、生锈累积器、最后练习时间；提供训练、知识训练、生锈、读书、进度计算等方法。</li>
+<li class="">技能映射（SkillLevelMap）：封装技能字典，提供查询、比较、配方需求检查、进度计算等。</li>
+<li class="">显示类型（SkillDisplayType）：用于UI分组显示。</li>
+<li class="">职业（profession）：包含起始技能、物品、CBM、专长、配方、流派、任务等；支持检查定义、是否可解锁、是否黑名单等。</li>
+<li class="">专业技能（proficiency）：学习时间、前置要求、类别加成、可否教学、忽略专注等；提供学习集合（proficiency_set）进行实践、学习、移除、统计。</li>
+<li class="">格斗系统（martialart/ma_technique/ma_buff）：技法、内功、武器类别、攻击向量、条件触发、效果等。</li>
+<li class="">制作系统（crafting/recipe）：配方需求、材料过滤、工具/工作台、环境影响、批量制作、容器选择等。</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">skill.h</li>
+<li class="">skill.cpp</li>
+<li class="">profession.h</li>
+<li class="">profession.cpp</li>
+<li class="">proficiency.h</li>
+<li class="">proficiency.cpp</li>
+<li class="">martialarts.h</li>
+<li class="">crafting.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>技能与经验系统围绕“技能等级”和“学习/训练”两条主线构建：</p>
+<ul>
+<li class="">经验值（Exercise/Knowledge Experience）通过训练、知识训练、读书等方式增长，达到升级阈值后提升等级。</li>
+<li class="">生锈（Rust）机制防止长期不练习导致能力退化，受等级、时间、抗性等因素影响。</li>
+<li class="">配方系统（Recipe）与技能/专业技能联动，决定能否制作及制作速度。</li>
+<li class="">职业与格斗系统提供额外的起始加成、学习路径与战斗增益。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">crafting.cpp</li>
+<li class="">skill.cpp</li>
+<li class="">skill.cpp</li>
+<li class="">skill.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">crafting.cpp</li>
+<li class="">skill.cpp</li>
+<li class="">skill.cpp</li>
+<li class="">skill.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="技能树与等级系统">技能树与等级系统<a href="#技能树与等级系统" class="hash-link" aria-label="技能树与等级系统的直接链接" title="技能树与等级系统的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">设计理念
+<ul>
+<li class="">将“实践经验（Exercise）”与“理论知识（Knowledge Experience）”分离，避免理论领先过多导致学习效率问题。</li>
+<li class="">引入“生锈（Rust）”机制，鼓励定期练习维持技能。</li>
+<li class="">支持上下文技能（如特定物品使用的技能），在映射中禁止直接赋值。</li>
+</ul>
+</li>
+<li class="">数据结构与复杂度
+<ul>
+<li class="">SkillLevelMap 使用 map&lt;skill_id, SkillLevel&gt; 存储，查询/修改为 O(log N)。</li>
+<li class="">训练与升级在 on_exercise_change 中统一处理，单次调用复杂度近似 O(1)（循环次数与等级差有关但通常很小）。</li>
+</ul>
+</li>
+<li class="">关键算法
+<ul>
+<li class="">训练：根据“追赶系数”和“知识系数”动态调整，考虑等级差距与理论领先度，上限受训练速度倍率与等级上限约束。</li>
+<li class="">知识训练：基于“理论领先度”降低速率，避免理论与实践脱节。</li>
+<li class="">生锈：按时间与等级累积，受抗性与倍率影响，等级越高门槛越高。</li>
+<li class="">进度计算：练习进度 = 练习经验 / (100 * (等级+1)^2)，理论进度 = 知识经验 / (100 * (知识等级+1)^2)。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">skill.cpp</li>
+<li class="">skill.cpp</li>
+<li class="">skill.cpp</li>
+<li class="">skill.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">skill.h</li>
+<li class="">skill.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="职业系统profession">职业系统（Profession）<a href="#职业系统profession" class="hash-link" aria-label="职业系统（Profession）的直接链接" title="职业系统（Profession）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">起始资源：职业提供起始金钱、物品组、CBM、专长、配方、流派、任务等；支持性别差异与NPC背景。</li>
+<li class="">技能加成：起始技能列表（StartingSkills）在角色创建时生效。</li>
+<li class="">检查与验证：加载时校验物品、CBM、专长、宠物、任务等定义有效性。</li>
+<li class="">解锁机制：可通过成就或选项控制是否启用元进度解锁。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">profession.h</li>
+<li class="">profession.cpp</li>
+<li class="">character.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">profession.h</li>
+<li class="">profession.cpp</li>
+<li class="">profession.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="专业技能系统proficiency">专业技能系统（Proficiency）<a href="#专业技能系统proficiency" class="hash-link" aria-label="专业技能系统（Proficiency）的直接链接" title="专业技能系统（Proficiency）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">学习机制：通过“实践时间”累计，达到 time_to_learn 后自动学习；支持递归学习前置专业技能。</li>
+<li class="">奖励与惩罚：默认时间倍率、技能惩罚、弱点加成/惩罚；可从书籍获得时间/失败减免。</li>
+<li class="">属性加成：按类别累加专业技能带来的属性加成。</li>
+<li class="">交互窗口：提供可视化界面展示已知/学习中的专业技能及其进度。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">proficiency.cpp</li>
+<li class="">proficiency.cpp</li>
+<li class="">proficiency.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">proficiency.h</li>
+<li class="">proficiency.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="格斗系统martial-arts">格斗系统（Martial Arts）<a href="#格斗系统martial-arts" class="hash-link" aria-label="格斗系统（Martial Arts）的直接链接" title="格斗系统（Martial Arts）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">流派（martialart）：定义优先级、主技能、学习难度、可否教学、阻断/闪避/内功等。</li>
+<li class="">技法（ma_technique）：描述攻击向量、条件、效果、AOE、重复次数等。</li>
+<li class="">内功（ma_buff）：提供命中、闪避、伤害、护甲等加成，支持持续叠加与栈数。</li>
+<li class="">条件与武器：技法/内功可绑定角色状态、武器类别、最小技能等条件。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">martialarts.h</li>
+<li class="">martialarts.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">martialarts.h</li>
+<li class="">martialarts.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="制作配方系统recipecrafting">制作配方系统（Recipe/Crafting）<a href="#制作配方系统recipecrafting" class="hash-link" aria-label="制作配方系统（Recipe/Crafting）的直接链接" title="制作配方系统（Recipe/Crafting）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">配方需求：技能难度、所需技能等级、必需/可选材料、工具/工作台、环境标志（如黑暗、无手等）。</li>
+<li class="">材料与工具：支持材料过滤、起始仅需少量材料（start_only）、工具耐久消耗。</li>
+<li class="">制作流程：检查合法性、容器可用性、批量制作、结果掉落/放置、失败处理。</li>
+<li class="">速度影响：光照、工作台、心情、疼痛、魔法附魔、肢体状况、专业技能时间倍率等综合影响。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">crafting.cpp</li>
+<li class="">crafting.cpp</li>
+<li class="">crafting.cpp</li>
+<li class="">crafting.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">crafting.h</li>
+<li class="">crafting.cpp</li>
+<li class="">crafting.cpp</li>
+<li class="">crafting.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="技能与物品使用战斗技巧生存技能的关联">技能与物品使用、战斗技巧、生存技能的关联<a href="#技能与物品使用战斗技巧生存技能的关联" class="hash-link" aria-label="技能与物品使用、战斗技巧、生存技能的关联的直接链接" title="技能与物品使用、战斗技巧、生存技能的关联的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">技能与攻击时间：每个技能可配置“最小攻击时间”、“基础时间”和“每级减少时间”，用于计算攻击耗时。</li>
+<li class="">格斗与技能：技法/内功可要求最小技能等级、武器类别、角色状态等；流派可提供块/闪/命中等加成。</li>
+<li class="">生存与制作：制作速度受光照、心情、肢体状况、疼痛、工作台、魔法附魔等影响；配方可设置“盲人友好/困难”标志。</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">skill.h</li>
+<li class="">martialarts.cpp</li>
+<li class="">crafting.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">SkillLevelMap 依赖 Skill、recipe、item 的上下文技能解析，用于配方需求检查与进度计算。</li>
+<li class="">crafting 依赖 recipe、proficiency、SkillLevelMap、Character 状态（光照、心情、工作台、疼痛等）。</li>
+<li class="">profession 与 martialart 通过字符串ID相互引用，最终在加载阶段完成解析与校验。</li>
+<li class="">选项系统（options）提供训练速度倍率（SKILL_TRAINING_SPEED、PROFICIENCY_TRAINING_SPEED）影响学习/训练效率。</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">skill.cpp</li>
+<li class="">crafting.cpp</li>
+<li class="">options.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">skill.cpp</li>
+<li class="">crafting.cpp</li>
+<li class="">options.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考虑">性能考虑<a href="#性能考虑" class="hash-link" aria-label="性能考虑的直接链接" title="性能考虑的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">技能等级更新：on_exercise_change 在单次训练中最多执行一次升级循环，复杂度近似 O(1)。</li>
+<li class="">配方需求检查：SkillLevelMap::has_recipe_requirements 对每个需求项进行一次查询，整体 O(K)（K为需求数量）。</li>
+<li class="">专业技能学习：实践累计采用浮点余数累积，避免频繁取整误差；learn/remove 支持递归处理前置。</li>
+<li class="">制作速度计算：多因子相乘，建议缓存常用因子（如工作台倍率）以减少重复计算。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排除指南">故障排除指南<a href="#故障排除指南" class="hash-link" aria-label="故障排除指南的直接链接" title="故障排除指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">训练无效或溢出：当传入负值或内部溢出时会记录调试信息，检查训练入口与倍率设置。</li>
+<li class="">上下文技能赋值：上下文技能不可直接赋值，需通过物品上下文解析后查询。</li>
+<li class="">配方无法制作：检查技能等级、理论等级、专业技能、材料与工具、环境标志（如BLIND标志）。</li>
+<li class="">生锈过快：确认角色抗性、时间间隔与等级倍率；适当练习可重置最后练习时间。</li>
+<li class="">职业定义错误：检查物品/CBM/专长/宠物/任务等定义是否存在，必要时修正JSON。</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">skill.cpp</li>
+<li class="">skill.cpp</li>
+<li class="">crafting.cpp</li>
+<li class="">profession.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>Cataclysm-DDA的技能与经验系统通过“实践经验+理论知识”的双轨设计、严格的生锈机制与多维度的制作/格斗影响因素，构建了深度而平衡的角色成长体验。职业与专业技能提供了多样化的起始路径，配方系统将技能、工具与环境紧密结合，形成可探索、可优化的策略空间。通过合理利用训练速度倍率、定期练习与选择合适的流派/专业技能，玩家可在末世世界中建立强大的生存与战斗体系。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/游戏核心系统/角色系统/技能与经验系统.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/NPC系统设计"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">NPC系统设计</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/玩家角色管理"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">玩家角色管理</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#技能树与等级系统" class="table-of-contents__link toc-highlight">技能树与等级系统</a></li><li><a href="#职业系统profession" class="table-of-contents__link toc-highlight">职业系统（Profession）</a></li><li><a href="#专业技能系统proficiency" class="table-of-contents__link toc-highlight">专业技能系统（Proficiency）</a></li><li><a href="#格斗系统martial-arts" class="table-of-contents__link toc-highlight">格斗系统（Martial Arts）</a></li><li><a href="#制作配方系统recipecrafting" class="table-of-contents__link toc-highlight">制作配方系统（Recipe/Crafting）</a></li><li><a href="#技能与物品使用战斗技巧生存技能的关联" class="table-of-contents__link toc-highlight">技能与物品使用、战斗技巧、生存技能的关联</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考虑" class="table-of-contents__link toc-highlight">性能考虑</a></li><li><a href="#故障排除指南" class="table-of-contents__link toc-highlight">故障排除指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

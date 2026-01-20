@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/游戏核心系统/地图系统/超地图系统" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">超地图系统 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/超地图系统"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="超地图系统 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文引用的文件"><meta data-rh="true" property="og:description" content="本文引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/超地图系统"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/超地图系统" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/超地图系统" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"游戏核心系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/"},{"@type":"ListItem","position":2,"name":"地图系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"},{"@type":"ListItem","position":3,"name":"超地图系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/超地图系统"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="折叠侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><span title="地图系统" class="categoryLinkLabel_W154">地图系统</span></a><button aria-label="折叠侧边栏分类 &#x27;地图系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/三维空间管理"><span title="三维空间管理" class="linkLabel_WmDU">三维空间管理</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/地图渲染优化"><span title="地图渲染优化" class="linkLabel_WmDU">地图渲染优化</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/子地图缓冲系统"><span title="子地图缓冲系统" class="linkLabel_WmDU">子地图缓冲系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/视野计算系统"><span title="视野计算系统" class="linkLabel_WmDU">视野计算系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/超地图系统"><span title="超地图系统" class="linkLabel_WmDU">超地图系统</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span title="怪物系统" class="categoryLinkLabel_W154">怪物系统</span></a><button aria-label="展开侧边栏分类 &#x27;怪物系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/游戏主循环"><span title="游戏主循环" class="linkLabel_WmDU">游戏主循环</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"><span title="物品系统" class="categoryLinkLabel_W154">物品系统</span></a><button aria-label="展开侧边栏分类 &#x27;物品系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span title="角色系统" class="categoryLinkLabel_W154">角色系统</span></a><button aria-label="展开侧边栏分类 &#x27;角色系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span>游戏核心系统</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><span>地图系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">超地图系统</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>超地图系统</h1></header><cite>
+**本文引用的文件**
+- overmap.h
+- overmap.cpp
+- overmapbuffer.h
+- overmapbuffer.cpp
+- overmap_types.h
+- overmap_ui.h
+- overmap_ui.cpp
+- overmap_connection.h
+- overmap_connection.cpp
+- overmap_noise.h
+- editmap.h
+- editmap.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E5%BC%95%E8%A8%80" class="">引言</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97" class="">故障排查指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95" class="">附录</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="引言">引言<a href="#引言" class="hash-link" aria-label="引言的直接链接" title="引言的直接链接" translate="no">​</a></h2>
+<p>本文件系统性梳理Cataclysm-DDA的超地图（Overmap）系统，覆盖设计理念、数据结构、生成算法、与普通地图的关系、坐标转换机制、无缝切换、城市与道路网络、特殊地点标记、缓存管理、编辑工具使用、自定义生成与调试技巧，并给出可扩展与性能优化建议。目标是帮助开发者与模组制作者在不深入底层实现的前提下，高效理解并扩展超地图能力。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>超地图系统主要由以下模块构成：</p>
+<ul>
+<li class="">overmap：单个超地图实例，负责地形、城市、河流、连接、怪物群等的生成与维护</li>
+<li class="">overmapbuffer：超地图缓存与全局访问入口，负责跨过载图的统一查询、路径规划、NPC/车辆/营地跟踪</li>
+<li class="">overmap_ui：超地图界面层，负责渲染、交互、编辑模式、天气/气味/远征路径显示</li>
+<li class="">overmap_connection：连接类型与规则，用于指导道路/地铁/下水道等线性结构的生成与连接</li>
+<li class="">overmap_noise：噪声层抽象，为地形生成提供连续且可复用的噪声源</li>
+<li class="">editmap：地图编辑器（含超地图编辑），支持地形/设施/字段/辐射/物品/怪物/过载图编辑等</li>
+<li class="">overmap_types：超地图通用类型（如气味轨迹）</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">overmap.h</li>
+<li class="">overmapbuffer.h</li>
+<li class="">overmap_ui.h</li>
+<li class="">overmap_connection.h</li>
+<li class="">overmap_noise.h</li>
+<li class="">overmap_types.h</li>
+<li class="">editmap.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmap.h</li>
+<li class="">overmapbuffer.h</li>
+<li class="">overmap_ui.h</li>
+<li class="">overmap_connection.h</li>
+<li class="">overmap_noise.h</li>
+<li class="">overmap_types.h</li>
+<li class="">editmap.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">overmap：承载单个超地图的地形、城市、河流、连接、怪物群、无线电、营地、笔记、额外标记等；提供生成、放置特殊建筑、计算城市度/森林度、河流/道路/铁路生成、预处理与后处理等接口</li>
+<li class="">overmapbuffer：LRU式缓存容器，按需加载/保存超地图；提供全局查询（地形、城市、营地、车辆、怪物群）、旅行路径规划、嗅觉追踪、安全判定、笔记/额外标记管理、唯一特殊计数等</li>
+<li class="">overmap_ui：超地图渲染与交互，支持编辑模式、远征路径高亮、天气/气味/远征标记、城市名标注、NPC路径可视化等</li>
+<li class="">overmap_connection：连接类型定义与选择逻辑，决定某地形可被何种连接类型覆盖（如道路/地铁/下水道）</li>
+<li class="">overmap_noise：噪声层抽象，保证跨超地图边界连续性</li>
+<li class="">editmap：地图编辑器，支持地形/设施/字段/辐射/物品/怪物/过载图编辑等</li>
+<li class="">overmap_types：超地图通用类型（如气味轨迹）</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmap.h</li>
+<li class="">overmapbuffer.h</li>
+<li class="">overmap_ui.h</li>
+<li class="">overmap_connection.h</li>
+<li class="">overmap_noise.h</li>
+<li class="">editmap.h</li>
+<li class="">overmap_types.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>超地图系统采用“单体超地图 + 全局缓冲”的分层设计：</p>
+<ul>
+<li class="">overmap：面向单个超地图的生成与维护</li>
+<li class="">overmapbuffer：面向全局的查询、缓存、路径与状态同步</li>
+<li class="">overmap_ui：面向玩家的可视化与交互</li>
+<li class="">editmap：面向调试/模组开发的编辑能力</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmap.cpp</li>
+<li class="">overmap_connection.cpp</li>
+<li class="">overmap_noise.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmap.cpp</li>
+<li class="">overmap_connection.cpp</li>
+<li class="">overmap_noise.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overmap超地图实例">overmap：超地图实例<a href="#overmap超地图实例" class="hash-link" aria-label="overmap：超地图实例的直接链接" title="overmap：超地图实例的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">数据结构
+<ul>
+<li class="">多层地形网格（mdarray封装）、可见度/探索标记、笔记/额外标记列表</li>
+<li class="">城市集合、河流节点、连接出口、无线电塔、营地、怪物群、车辆、NPC列表</li>
+<li class="">预处理/后处理参数索引（mapgen_args、predecessors、omt_stack_arguments_map）</li>
+</ul>
+</li>
+<li class="">关键流程
+<ul>
+<li class="">初始化与生成：populate/generate/generate_sub/generate_over</li>
+<li class="">地形与地貌：place_oceans/place_rivers/place_lakes/place_forests/place_ravines</li>
+<li class="">城市与道路：place_cities/place_roads/place_railroads/build_city_street</li>
+<li class="">特殊建筑：place_special/place_specials/place_special_attempt</li>
+<li class="">连接与路径：lay_out_connection/build_connection/connect_closest_points</li>
+<li class="">视野与可见度：set_seen/seen/is_explored/find_random_omt/find_terrain</li>
+<li class="">笔记与额外标记：add_note/delete_note/mark_note_dangerous/add_extra/delete_extra</li>
+<li class="">怪物群：spawn_mon_group/add_mon_group/place_mongroups/process_mongroups/move_hordes</li>
+</ul>
+</li>
+<li class="">协同组件
+<ul>
+<li class="">overmapbuffer：通过get_om_global/get_existing_om_global进行坐标投影与加载</li>
+<li class="">overmap_connection：连接类型选择与构建</li>
+<li class="">overmap_noise：噪声层以保证连续性</li>
+<li class="">overmap_types：scent_trace等类型</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">overmap.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmap.h</li>
+<li class="">overmap.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overmapbuffer超地图缓存与全局访问">overmapbuffer：超地图缓存与全局访问<a href="#overmapbuffer超地图缓存与全局访问" class="hash-link" aria-label="overmapbuffer：超地图缓存与全局访问的直接链接" title="overmapbuffer：超地图缓存与全局访问的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">缓存策略
+<ul>
+<li class=""><code>unordered_map&lt;point_abs_om, unique_ptr&lt;overmap&gt;&gt; overmaps</code></li>
+<li class="">last_requested_overmap缓存最近一次请求，减少重复查找</li>
+<li class="">known_non_existing避免重复文件系统检查</li>
+</ul>
+</li>
+<li class="">全局查询
+<ul>
+<li class="">get/get_existing/has：按全局超地图坐标获取/判断存在</li>
+<li class="">get_om_global/get_existing_om_global：返回overmap指针与本地OMT坐标</li>
+<li class="">find_all/find_closest/find_random：基于omt_find_params的搜索</li>
+<li class="">ter/ter_existing/ter_set：地形读写</li>
+<li class="">is_omt_generated：是否已生成</li>
+<li class="">reveal/reveal_route：视野揭示</li>
+<li class="">get_travel_path：基于overmap_path_params的旅行路径</li>
+<li class="">get_npcs_near/get_npcs_near_omt/find_npc/remove_npc/insert_npc：NPC管理</li>
+<li class="">get_cities_near/closest_city：城市检索</li>
+<li class="">get_camps_near：营地检索</li>
+<li class="">move_vehicle/add_vehicle/remove_vehicle：车辆跟踪</li>
+<li class="">add_camp/remove_camp：营地管理</li>
+<li class="">scent_at/set_scent/scents_near：嗅觉追踪</li>
+<li class="">place_special/place_special_forced：直接放置特殊建筑</li>
+<li class="">signal_hordes/move_hordes/process_mongroups/signal_nemesis/move_nemesis/remove_nemesis：怪物群与宿敌移动</li>
+<li class="">serialize_overmap_global_state/deserialize_overmap_global_state：唯一特殊计数持久化</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmapbuffer.h</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overmap_ui超地图界面与交互">overmap_ui：超地图界面与交互<a href="#overmap_ui超地图界面与交互" class="hash-link" aria-label="overmap_ui：超地图界面与交互的直接链接" title="overmap_ui：超地图界面与交互的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">显示模式
+<ul>
+<li class="">display/display_hordes/display_weather/display_visible_weather/display_scents/display_zones/display_editor</li>
+<li class="">choose_point：交互式点选择（支持距离限制、Z层、消息提示）</li>
+</ul>
+</li>
+<li class="">可视化增强
+<ul>
+<li class="">气候缓存（天气类型按位置与时间缓存）</li>
+<li class="">嗅觉符号绘制（强度随时间衰减）</li>
+<li class="">城市名/营地名标注（仅在可见度足够时）</li>
+<li class="">远征路径高亮（玩家/NPC路径）</li>
+</ul>
+</li>
+<li class="">编辑模式
+<ul>
+<li class="">overmap_editor：支持直接放置特殊建筑、旋转/方向调整、预览</li>
+<li class="">notes/extras管理与危险标记</li>
+</ul>
+</li>
+<li class="">内部优化
+<ul>
+<li class="">oter_display_lru缓存常用地形符号/颜色</li>
+<li class="">generated_omts缓存生成状态</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">overmap_ui.cpp</li>
+<li class="">overmap_ui.cpp</li>
+<li class="">overmap_ui.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmap_ui.h</li>
+<li class="">overmap_ui.cpp</li>
+<li class="">overmap_ui.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overmap_connection连接类型与规则">overmap_connection：连接类型与规则<a href="#overmap_connection连接类型与规则" class="hash-link" aria-label="overmap_connection：连接类型与规则的直接链接" title="overmap_connection：连接类型与规则的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">定义
+<ul>
+<li class="">subtype：包含地形类型、允许的overmap_location集合、基本代价、标志（正交/垂直交叉）</li>
+<li class="">pick_subtype_for：根据地面地形选择合适的连接子类型</li>
+</ul>
+</li>
+<li class="">使用
+<ul>
+<li class="">在overmap中用于选择道路/地铁/下水道等线性结构的连接类型</li>
+<li class="">提供allow_terrain/location匹配与缓存</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">overmap_connection.h</li>
+<li class="">overmap_connection.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmap_connection.h</li>
+<li class="">overmap_connection.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overmap_noise噪声层与连续性">overmap_noise：噪声层与连续性<a href="#overmap_noise噪声层与连续性" class="hash-link" aria-label="overmap_noise：噪声层与连续性的直接链接" title="overmap_noise：噪声层与连续性的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">抽象基类
+<ul>
+<li class="">noise_at：在局部OMT坐标上返回噪声值</li>
+<li class="">提供全局基点与种子，确保跨超地图边界连续</li>
+</ul>
+</li>
+<li class="">具体实现
+<ul>
+<li class="">om_noise_layer_forest/floodplain/lake/ocean：不同地貌的噪声层</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">overmap_noise.h</li>
+<li class="">overmap_noise.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmap_noise.h</li>
+<li class="">overmap_noise.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="editmap超地图编辑工具">editmap：超地图编辑工具<a href="#editmap超地图编辑工具" class="hash-link" aria-label="editmap：超地图编辑工具的直接链接" title="editmap：超地图编辑工具的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">功能概览
+<ul>
+<li class="">地形/家具/陷阱/字段/辐射/物品/怪物/过载图编辑</li>
+<li class="">形状选择（矩形/实心矩形/线/圆）、目标列表、高亮显示</li>
+<li class="">超地图编辑模式：mapgen_preview/mapgen_veh_query/mapgen_veh_destroy</li>
+</ul>
+</li>
+<li class="">交互
+<ul>
+<li class="">键位绑定、信息面板、UI自适应重绘、闪烁高亮</li>
+<li class="">与overmapbuffer交互进行地形/特殊建筑/车辆/营地的增删改</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">editmap.cpp</li>
+<li class="">editmap.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">editmap.h</li>
+<li class="">editmap.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">overmap依赖
+<ul>
+<li class="">overmap_connection：连接类型选择</li>
+<li class="">overmap_noise：地貌噪声</li>
+<li class="">overmap_types：scent_trace等</li>
+<li class="">overmapbuffer：坐标投影与加载</li>
+</ul>
+</li>
+<li class="">overmapbuffer依赖
+<ul>
+<li class="">overmap：实际生成与查询</li>
+<li class="">coordinates：投影/转换（project_remain/project_to）</li>
+<li class="">pathfinding：旅行路径</li>
+<li class="">界面与编辑：overmap_ui/editmap</li>
+</ul>
+</li>
+<li class="">overmap_ui依赖
+<ul>
+<li class="">overmapbuffer：数据源</li>
+<li class="">overmap_connection：连接类型（用于路径/连接显示）</li>
+<li class="">overmap_noise：噪声（用于生成/渲染一致性）</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">overmap.h</li>
+<li class="">overmapbuffer.h</li>
+<li class="">overmap_ui.h</li>
+<li class="">overmap_connection.h</li>
+<li class="">overmap_noise.h</li>
+<li class="">overmap_types.h</li>
+<li class="">editmap.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmap.h</li>
+<li class="">overmapbuffer.h</li>
+<li class="">overmap_ui.h</li>
+<li class="">overmap_connection.h</li>
+<li class="">overmap_noise.h</li>
+<li class="">overmap_types.h</li>
+<li class="">editmap.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">缓存与命中
+<ul>
+<li class="">overmapbuffer的last_requested_overmap与overmaps哈希表提升热点访问性能</li>
+<li class="">oter_display_lru减少地形符号/颜色查询开销</li>
+<li class="">generated_omts缓存生成状态，避免重复查询</li>
+</ul>
+</li>
+<li class="">I/O与序列化
+<ul>
+<li class="">get/save按需加载/保存，避免全量常驻内存</li>
+<li class="">serialize_view/serialize仅保存玩家视角数据</li>
+</ul>
+</li>
+<li class="">路径与搜索
+<ul>
+<li class="">overmap_path_params定制旅行成本，避免不必要的搜索</li>
+<li class="">find_all/find_closest/find_random支持范围/最小距离过滤</li>
+</ul>
+</li>
+<li class="">渲染
+<ul>
+<li class="">气候缓存（天气类型按位置与时间缓存）减少重复计算</li>
+<li class="">嗅觉符号按时间衰减，避免过度绘制</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmap_ui.cpp</li>
+<li class="">overmap_ui.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排查指南">故障排查指南<a href="#故障排查指南" class="hash-link" aria-label="故障排查指南的直接链接" title="故障排查指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">加载失败或空缺
+<ul>
+<li class="">known_non_existing避免重复文件系统检查；若get_existing返回空，确认文件是否存在</li>
+</ul>
+</li>
+<li class="">怪物群/宿敌越界
+<ul>
+<li class="">fix_mongroups/fix_npcs/fix_nemesis会自动迁移至正确超地图；若异常，检查abs坐标投影</li>
+</ul>
+</li>
+<li class="">车辆/营地跟踪丢失
+<ul>
+<li class="">move_vehicle/add_vehicle/remove_vehicle/add_camp/remove_camp确保与overmap::vehicles/camps同步</li>
+</ul>
+</li>
+<li class="">笔记/额外标记无效
+<ul>
+<li class="">has_note/has_extra/note/extra需要先get_existing_om_global定位到正确overmap</li>
+</ul>
+</li>
+<li class="">唯一特殊放置计数异常
+<ul>
+<li class="">serialize_overmap_global_state/deserialize_overmap_global_state持久化唯一特殊计数</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>超地图系统通过“单体超地图 + 全局缓冲 + 界面/编辑”的清晰分层，实现了大世界无缝生成与交互。其关键优势在于：</p>
+<ul>
+<li class="">可扩展的连接类型与噪声层，便于自定义地貌与道路网络</li>
+<li class="">完整的缓存与路径系统，兼顾性能与交互体验</li>
+<li class="">丰富的编辑与调试工具，降低模组开发门槛
+建议在扩展时遵循现有坐标投影与缓存模式，优先利用overmapbuffer提供的统一接口，确保跨超地图的一致性与性能。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录">附录<a href="#附录" class="hash-link" aria-label="附录的直接链接" title="附录的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="坐标转换与投影">坐标转换与投影<a href="#坐标转换与投影" class="hash-link" aria-label="坐标转换与投影的直接链接" title="坐标转换与投影的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">常用投影
+<ul>
+<li class="">project_remain<a href="coords::om" target="_blank" rel="noopener noreferrer" class="">coords::om</a>：全局OMT坐标分解为(overmap坐标, 局部OMT坐标)</li>
+<li class="">project_to<a href="coords::omt" target="_blank" rel="noopener noreferrer" class="">coords::omt</a>/project_to<a href="coords::sm" target="_blank" rel="noopener noreferrer" class="">coords::sm</a>/project_to<a href="coords::ms" target="_blank" rel="noopener noreferrer" class="">coords::ms</a>：跨层级投影</li>
+</ul>
+</li>
+<li class="">用途
+<ul>
+<li class="">overmapbuffer::get_om_global/get_existing_om_global用于定位overmap与本地坐标</li>
+<li class="">overmap::ter/ter_set/ter_unsafe用于地形读写</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="自定义地图生成与调试技巧">自定义地图生成与调试技巧<a href="#自定义地图生成与调试技巧" class="hash-link" aria-label="自定义地图生成与调试技巧的直接链接" title="自定义地图生成与调试技巧的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">使用overmapbuffer::create_custom_overmap传入自定义overmap_special_batch，直接生成特定内容</li>
+<li class="">通过overmap_ui::display_editor启用编辑模式，结合editmap::edit_mapgen进行过载图编辑</li>
+<li class="">使用overmapbuffer::place_special_forced直接放置特殊建筑，绕过常规放置算法</li>
+<li class="">利用overmapbuffer::serialize_overmap_global_state/deserialize_overmap_global_state持久化唯一特殊计数，便于调试与回放</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">overmapbuffer.h</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmap_ui.h</li>
+<li class="">editmap.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/游戏核心系统/地图系统/超地图系统.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/视野计算系统"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">视野计算系统</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">怪物系统</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#引言" class="table-of-contents__link toc-highlight">引言</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#overmap超地图实例" class="table-of-contents__link toc-highlight">overmap：超地图实例</a></li><li><a href="#overmapbuffer超地图缓存与全局访问" class="table-of-contents__link toc-highlight">overmapbuffer：超地图缓存与全局访问</a></li><li><a href="#overmap_ui超地图界面与交互" class="table-of-contents__link toc-highlight">overmap_ui：超地图界面与交互</a></li><li><a href="#overmap_connection连接类型与规则" class="table-of-contents__link toc-highlight">overmap_connection：连接类型与规则</a></li><li><a href="#overmap_noise噪声层与连续性" class="table-of-contents__link toc-highlight">overmap_noise：噪声层与连续性</a></li><li><a href="#editmap超地图编辑工具" class="table-of-contents__link toc-highlight">editmap：超地图编辑工具</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排查指南" class="table-of-contents__link toc-highlight">故障排查指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录" class="table-of-contents__link toc-highlight">附录</a><ul><li><a href="#坐标转换与投影" class="table-of-contents__link toc-highlight">坐标转换与投影</a></li><li><a href="#自定义地图生成与调试技巧" class="table-of-contents__link toc-highlight">自定义地图生成与调试技巧</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

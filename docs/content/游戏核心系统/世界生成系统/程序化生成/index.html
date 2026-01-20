@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/游戏核心系统/世界生成系统/程序化生成" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">程序化生成 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/程序化生成"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="程序化生成 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文引用的文件"><meta data-rh="true" property="og:description" content="本文引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/程序化生成"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/程序化生成" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/程序化生成" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"游戏核心系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/"},{"@type":"ListItem","position":2,"name":"世界生成系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"},{"@type":"ListItem","position":3,"name":"程序化生成","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/程序化生成"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="折叠侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="折叠侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/Overmap生成"><span title="Overmap生成" class="linkLabel_WmDU">Overmap生成</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/天气系统"><span title="天气系统" class="linkLabel_WmDU">天气系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/时间与日历"><span title="时间与日历" class="linkLabel_WmDU">时间与日历</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/程序化生成"><span title="程序化生成" class="linkLabel_WmDU">程序化生成</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><span title="地图系统" class="categoryLinkLabel_W154">地图系统</span></a><button aria-label="展开侧边栏分类 &#x27;地图系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span title="怪物系统" class="categoryLinkLabel_W154">怪物系统</span></a><button aria-label="展开侧边栏分类 &#x27;怪物系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/游戏主循环"><span title="游戏主循环" class="linkLabel_WmDU">游戏主循环</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"><span title="物品系统" class="categoryLinkLabel_W154">物品系统</span></a><button aria-label="展开侧边栏分类 &#x27;物品系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span title="角色系统" class="categoryLinkLabel_W154">角色系统</span></a><button aria-label="展开侧边栏分类 &#x27;角色系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span>游戏核心系统</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"><span>世界生成系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">程序化生成</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>程序化生成</h1></header><cite>
+**本文引用的文件**
+- src/worldfactory.cpp
+- src/worldfactory.h
+- src/rng.cpp
+- src/rng.h
+- src/mapgen.cpp
+- src/mapgen.h
+- src/mapgen_functions.cpp
+- src/mapgen_functions.h
+- src/mapgendata.cpp
+- src/mapgendata.h
+- src/overmap.cpp
+- src/overmap_noise.h
+- src/overmap_noise.cpp
+- src/simplexnoise.cpp
+- src/submap.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97" class="">故障排查指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95" class="">附录</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件系统性梳理 Cataclysm-DDA 的程序化生成体系，覆盖世界种子与随机数生成、确定性算法、overmap 地形与噪声层、子地图与地图生成、资源与物品生成、以及可扩展的生成器框架。文档以循序渐进的方式呈现，既适合初学者快速上手，也为高级开发者提供深入的技术细节与优化建议。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>围绕“世界—overmap—子地图—地图”的层级，程序化生成由以下模块协同完成：</p>
+<ul>
+<li class="">世界工厂：负责世界初始化、选项加载与保存、模组管理。</li>
+<li class="">随机数与确定性：统一的 PRNG 引擎、时间种子、哈希种子与确定性序列。</li>
+<li class="">Overmap 生成：基于噪声层与地形类型规则，生成大世界地形、河流、湖泊、海洋、道路等。</li>
+<li class="">地图生成：在 overmap 基础上，按地形类型选择 mapgen 函数，生成子地图与内部布局。</li>
+<li class="">子地图与空间索引：子地图合并、旋转镜像、场与光源维护、车辆与生物生成。</li>
+<li class="">资源与物品：基于物品组与生成率的确定性生成策略。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/worldfactory.cpp</li>
+<li class="">src/overmap.cpp</li>
+<li class="">src/mapgen_functions.cpp</li>
+<li class="">src/mapgen.cpp</li>
+<li class="">src/submap.cpp</li>
+<li class="">src/rng.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/worldfactory.cpp</li>
+<li class="">src/overmap.cpp</li>
+<li class="">src/mapgen_functions.cpp</li>
+<li class="">src/mapgen.cpp</li>
+<li class="">src/submap.cpp</li>
+<li class="">src/rng.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">世界工厂与世界选项
+<ul>
+<li class="">世界保存、加载、模组列表管理；世界选项通过 options 系统持久化。</li>
+</ul>
+</li>
+<li class="">随机数与确定性
+<ul>
+<li class="">默认使用线性同余引擎，首次调用以高精度时间作为种子；支持外部设置种子；提供均匀/正态/指数/卡方等分布与确定性序列。</li>
+</ul>
+</li>
+<li class="">Overmap 与噪声层
+<ul>
+<li class="">多种噪声层（森林、冲积平原、湖泊、海洋）组合生成地形；支持连续跨 overmap 的噪声。</li>
+</ul>
+</li>
+<li class="">地图生成器
+<ul>
+<li class="">JSON 与内置函数双轨并行；按地形类型选择 mapgen 函数；分阶段执行（移除、地形、家具、默认、嵌套、变换、势力归属、区域）。</li>
+</ul>
+</li>
+<li class="">子地图与空间索引
+<ul>
+<li class="">子地图合并、旋转镜像、场与光源维护、车辆与生物生成缓存。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/worldfactory.h</li>
+<li class="">src/rng.h</li>
+<li class="">src/overmap_noise.h</li>
+<li class="">src/mapgen.h</li>
+<li class="">src/submap.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>下图展示从世界到地图生成的关键交互路径与职责边界：</p>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/worldfactory.cpp</li>
+<li class="">src/overmap.cpp</li>
+<li class="">src/overmap_noise.cpp</li>
+<li class="">src/mapgen.cpp</li>
+<li class="">src/submap.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="世界种子系统与随机数生成">世界种子系统与随机数生成<a href="#世界种子系统与随机数生成" class="hash-link" aria-label="世界种子系统与随机数生成的直接链接" title="世界种子系统与随机数生成的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">种子来源
+<ul>
+<li class="">首次调用随机函数时，使用高精度时钟作为种子；可通过接口显式设置种子，确保可复现。</li>
+<li class="">djb2 哈希用于世界名等字符串到整型的映射，便于作为部分随机源的种子输入。</li>
+</ul>
+</li>
+<li class="">确定性序列
+<ul>
+<li class="">提供独立于全局状态的确定性整数序列生成，便于测试与调试。</li>
+</ul>
+</li>
+<li class="">分布与概率
+<ul>
+<li class="">均匀、正态、指数、卡方分布；概率判断与骰子模拟；带小数的“概率取整”策略保证期望正确。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/rng.cpp</li>
+<li class="">src/rng.cpp</li>
+<li class="">src/rng.cpp</li>
+<li class="">src/rng.cpp</li>
+<li class="">src/rng.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/rng.cpp</li>
+<li class="">src/rng.cpp</li>
+<li class="">src/rng.cpp</li>
+<li class="">src/rng.cpp</li>
+<li class="">src/rng.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="overmap-生成与地形类型分布">Overmap 生成与地形类型分布<a href="#overmap-生成与地形类型分布" class="hash-link" aria-label="Overmap 生成与地形类型分布的直接链接" title="Overmap 生成与地形类型分布的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">噪声层
+<ul>
+<li class="">森林噪声、冲积平原噪声、湖泊噪声、海洋噪声分别控制不同地表特征的分布与连续性。</li>
+<li class="">通过多频次叠加与缩放，形成自然过渡与局部细节。</li>
+</ul>
+</li>
+<li class="">地形类型与连接规则
+<ul>
+<li class="">基于 overmap 本地坐标与全局 base 点，保证跨 overmap 的噪声连续。</li>
+<li class="">道路/地铁/河流等线性地形根据方向数组与连接规则生成。</li>
+</ul>
+</li>
+<li class="">河流/湖泊/海洋
+<ul>
+<li class="">使用噪声层与阈值判定；结合路径生成算法构建蜿蜒水系。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/overmap_noise.h</li>
+<li class="">src/overmap_noise.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/overmap_noise.h</li>
+<li class="">src/overmap_noise.cpp</li>
+<li class="">src/overmap.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="地图生成算法与确定性流程">地图生成算法与确定性流程<a href="#地图生成算法与确定性流程" class="hash-link" aria-label="地图生成算法与确定性流程的直接链接" title="地图生成算法与确定性流程的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">生成入口与上下文
+<ul>
+<li class="">map::generate 接收 overmap 坐标、时间点、是否保存结果等参数；为每个子网格准备子地图，必要时填充统一地形。</li>
+</ul>
+</li>
+<li class="">地图生成阶段
+<ul>
+<li class="">阶段顺序：移除、地形、家具、默认、嵌套、变换、势力归属、区域。</li>
+<li class="">每个阶段对 mapgendata 中的 map、地形、家具、陷阱、辐射、字段、生物、物品等进行操作。</li>
+</ul>
+</li>
+<li class="">地形函数与内置生成器
+<ul>
+<li class="">通过注册表将 overmap  terrain 类型映射到具体生成函数（如森林、河流、地铁、海岸、峡谷边缘等）。</li>
+<li class="">支持 JSON 描述的地图片段（jmapgen），按阶段应用到地图。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/mapgen.cpp</li>
+<li class="">src/mapgen.h</li>
+<li class="">src/mapgen_functions.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/mapgen.cpp</li>
+<li class="">src/mapgen.h</li>
+<li class="">src/mapgen_functions.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="子地图创建与空间索引机制">子地图创建与空间索引机制<a href="#子地图创建与空间索引机制" class="hash-link" aria-label="子地图创建与空间索引机制的直接链接" title="子地图创建与空间索引机制的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">子地图生命周期
+<ul>
+<li class="">生成前先填充统一地形（若 overmap 指定），再绘制具体布局；支持覆盖层合并与叠加。</li>
+</ul>
+</li>
+<li class="">空间索引与数据结构
+<ul>
+<li class="">子地图内部采用 SoA 结构存储地形、家具、光源、物品、场、陷阱、辐射等；提供旋转镜像与合并逻辑。</li>
+</ul>
+</li>
+<li class="">字段与光源
+<ul>
+<li class="">维护场数量与光源计数，合并时累加或覆盖；支持物品发光项的光源更新。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/submap.cpp</li>
+<li class="">src/submap.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/submap.cpp</li>
+<li class="">src/submap.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="资源与物品生成规则">资源与物品生成规则<a href="#资源与物品生成规则" class="hash-link" aria-label="资源与物品生成规则的直接链接" title="资源与物品生成规则的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">物品组与生成率
+<ul>
+<li class="">基于物品组（item_group）与生成率（spawn_rate）进行概率判定；类别生成率小于1时按概率取样，大于等于1时至少一次，并额外按次数取样。</li>
+</ul>
+</li>
+<li class="">生成位置与有效性
+<ul>
+<li class="">在指定矩形范围内随机采样有效位置；对不可放置区域（如无地板、破坏项、密封容器）进行过滤。</li>
+</ul>
+</li>
+<li class="">生成器示例
+<ul>
+<li class="">地图生成器中对“道路缺陷”“土壤”等场景使用随机分布与物品组生成。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/map_extras.cpp</li>
+<li class="">src/mapgen.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">低耦合高内聚
+<ul>
+<li class="">RNG 与地图生成解耦，通过接口注入；overmap 与 mapgen 通过注册表解耦。</li>
+</ul>
+</li>
+<li class="">关键依赖链
+<ul>
+<li class="">worldfactory → overmap → mapgen → submap</li>
+<li class="">overmap → overmap_noise → simplexnoise</li>
+<li class="">mapgen → mapgendata → map</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/rng.cpp</li>
+<li class="">src/worldfactory.cpp</li>
+<li class="">src/overmap.cpp</li>
+<li class="">src/overmap_noise.cpp</li>
+<li class="">src/simplexnoise.cpp</li>
+<li class="">src/mapgen.cpp</li>
+<li class="">src/mapgendata.cpp</li>
+<li class="">src/submap.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/rng.cpp</li>
+<li class="">src/worldfactory.cpp</li>
+<li class="">src/overmap.cpp</li>
+<li class="">src/overmap_noise.cpp</li>
+<li class="">src/simplexnoise.cpp</li>
+<li class="">src/mapgen.cpp</li>
+<li class="">src/mapgendata.cpp</li>
+<li class="">src/submap.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">噪声计算
+<ul>
+<li class="">多层噪声叠加与缩放会增加计算量；建议在 overmap 初始化时缓存噪声结果，避免重复计算。</li>
+</ul>
+</li>
+<li class="">地图生成阶段
+<ul>
+<li class="">分阶段执行减少一次性复杂度；尽量将昂贵操作（如路径/连通性检查）限制在必要区域。</li>
+</ul>
+</li>
+<li class="">子地图合并
+<ul>
+<li class="">合并时逐格扫描与字段累加是主要开销；可考虑批量更新与惰性求值。</li>
+</ul>
+</li>
+<li class="">随机数
+<ul>
+<li class="">频繁调用随机函数会引入抖动；对确定性要求高的场景应集中播种与重用随机序列。</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排查指南">故障排查指南<a href="#故障排查指南" class="hash-link" aria-label="故障排查指南的直接链接" title="故障排查指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">生成不一致
+<ul>
+<li class="">检查是否显式设置了种子；确认世界名与模组列表未改变；核对 overmap 生成参数与噪声层配置。</li>
+</ul>
+</li>
+<li class="">过程卡顿
+<ul>
+<li class="">关注噪声层与路径生成的循环次数；适当降低噪声层数或采样频率。</li>
+</ul>
+</li>
+<li class="">地图异常
+<ul>
+<li class="">检查 mapgen 阶段顺序与参数一致性；验证覆盖层合并逻辑与 Z 层依赖。</li>
+</ul>
+</li>
+<li class="">物品未生成
+<ul>
+<li class="">核对生成率与类别生成率；确认目标区域可放置且未被过滤。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/overmap.cpp</li>
+<li class="">src/mapgen.cpp</li>
+<li class="">src/submap.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>CDDA 的程序化生成体系以“确定性 + 可扩展 + 渐进式阶段化”为核心设计，通过噪声层与地形函数的组合实现自然感地形，借助 JSON 与内置函数的双轨机制满足多样化的生成需求。配合子地图的空间索引与合并策略，系统在可维护性与性能之间取得平衡。建议在实际开发中优先保证种子与参数稳定，合理利用噪声缓存与阶段化生成，以获得最佳体验。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录">附录<a href="#附录" class="hash-link" aria-label="附录的直接链接" title="附录的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">生成参数配置要点
+<ul>
+<li class="">overmap 噪声层参数（层数、持续性、缩放）影响地貌细节与连续性。</li>
+<li class="">地图生成器阶段权重与条件需与地形类型匹配，避免冲突。</li>
+<li class="">物品生成率与类别生成率需结合游戏节奏调整。</li>
+</ul>
+</li>
+<li class="">自定义生成器开发指南
+<ul>
+<li class="">新增地形类型：在 overmap 与 mapgen 注册表中添加映射。</li>
+<li class="">新增 JSON 地图片段：遵循 jmapgen 规范，按阶段声明操作与条件。</li>
+<li class="">新增内置生成函数：实现 mapgen_function 接口并在注册表中绑定。</li>
+<li class="">测试与验证：使用确定性序列与固定种子进行回归测试。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/mapgen.h</li>
+<li class="">src/mapgen_functions.h</li>
+<li class="">src/overmap.cpp</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/游戏核心系统/世界生成系统/程序化生成.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/时间与日历"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">时间与日历</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">地图系统</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#世界种子系统与随机数生成" class="table-of-contents__link toc-highlight">世界种子系统与随机数生成</a></li><li><a href="#overmap-生成与地形类型分布" class="table-of-contents__link toc-highlight">Overmap 生成与地形类型分布</a></li><li><a href="#地图生成算法与确定性流程" class="table-of-contents__link toc-highlight">地图生成算法与确定性流程</a></li><li><a href="#子地图创建与空间索引机制" class="table-of-contents__link toc-highlight">子地图创建与空间索引机制</a></li><li><a href="#资源与物品生成规则" class="table-of-contents__link toc-highlight">资源与物品生成规则</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排查指南" class="table-of-contents__link toc-highlight">故障排查指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录" class="table-of-contents__link toc-highlight">附录</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

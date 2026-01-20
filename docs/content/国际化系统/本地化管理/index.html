@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/国际化系统/本地化管理" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">本地化管理 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/国际化系统/本地化管理"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="本地化管理 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文引用的文件"><meta data-rh="true" property="og:description" content="本文引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/国际化系统/本地化管理"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/国际化系统/本地化管理" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/国际化系统/本地化管理" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"国际化系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/国际化系统/"},{"@type":"ListItem","position":2,"name":"本地化管理","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/国际化系统/本地化管理"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="折叠侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/Unicode字符编码"><span title="Unicode字符编码" class="linkLabel_WmDU">Unicode字符编码</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/多语言支持"><span title="多语言支持" class="linkLabel_WmDU">多语言支持</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/本地化管理"><span title="本地化管理" class="linkLabel_WmDU">本地化管理</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="展开侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span>国际化系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">本地化管理</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>本地化管理</h1></header><cite>
+**本文引用的文件**
+- doc/TRANSLATING.md
+- lang/CMakeLists.txt
+- lang/Makefile
+- lang/compile_mo.sh
+- lang/update_pot.sh
+- lang/extract_json_strings.py
+- lang/merge_po.sh
+- lang/discard_invalid_po.sh
+- lang/strip_line_numbers.py
+- lang/unicode_check.py
+- lang/update_stats.sh
+- src/translation.h
+- src/translation.cpp
+- src/translations.h
+- src/translations.cpp
+- src/translation_manager.h
+- src/translation_manager.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="#%E6%9C%AC%E5%9C%B0%E5%8C%96%E7%AE%A1%E7%90%86" class="">本地化管理</a>
+<ul>
+<li class=""><a href="#%E7%9B%AE%E5%BD%95" class="">目录</a></li>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E7%BB%84%E4%BB%B6%E8%AF%A6%E8%A7%A3" class="">组件详解</a>
+<ul>
+<li class=""><a href="#%E7%BF%BB%E8%AF%91%E6%96%87%E4%BB%B6%E7%BB%84%E7%BB%87%E4%B8%8E%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83" class="">翻译文件组织与命名规范</a></li>
+<li class=""><a href="#%E6%89%B9%E9%87%8F%E7%BF%BB%E8%AF%91%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%E9%93%BE" class="">批量翻译处理工具链</a></li>
+<li class=""><a href="#%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE%E4%B8%8E%E5%AE%A1%E6%A0%B8%E6%B5%81%E7%A8%8B" class="">社区贡献与审核流程</a></li>
+<li class=""><a href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E7%BF%BB%E8%AF%91%E4%B8%8E%E7%BC%93%E5%AD%98" class="">运行时翻译与缓存</a></li>
+<li class=""><a href="#%E4%B8%8D%E5%90%8C%E8%AF%AD%E8%A8%80%E7%9A%84%E6%8E%92%E7%89%88%E4%B8%8E%E5%AD%97%E4%BD%93%E6%94%AF%E6%8C%81" class="">不同语言的排版与字体支持</a></li>
+</ul>
+</li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E4%B8%8E%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7" class="">性能与可维护性</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97" class="">故障排查指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95" class="">附录</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件面向Cataclysm: DDA（以下简称“DDA”）的本地化管理，系统化梳理翻译文件组织与命名规范、批量翻译处理工具链、社区贡献流程、排版与字体支持策略，并给出维护指南与最佳实践。内容基于仓库内官方文档与本地化脚本、源码实现进行提炼，帮助开发者、维护者与翻译人员高效协作。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>DDA的本地化体系由“官方文档指引 + 脚本工具链 + 源码翻译接口 + 构建集成”四部分组成：</p>
+<ul>
+<li class="">官方文档：提供翻译流程、术语表、上下文性别规则、平台与工具使用说明等</li>
+<li class="">工具链：负责从C++与JSON抽取字符串、生成.pot模板、合并与编译.po/.mo、统计与校验</li>
+<li class="">源码接口：提供标记可翻译字符串、运行时翻译函数、翻译对象封装、语言切换与缓存</li>
+<li class="">构建集成：通过CMake/Makefile在构建期生成.mo并安装到系统或游戏数据目录</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">doc/TRANSLATING.md</li>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/extract_json_strings.py</li>
+<li class="">lang/compile_mo.sh</li>
+<li class="">lang/merge_po.sh</li>
+<li class="">lang/discard_invalid_po.sh</li>
+<li class="">lang/strip_line_numbers.py</li>
+<li class="">lang/unicode_check.py</li>
+<li class="">lang/update_stats.sh</li>
+<li class="">src/translation.h</li>
+<li class="">src/translation.cpp</li>
+<li class="">src/translations.h</li>
+<li class="">src/translations.cpp</li>
+<li class="">src/translation_manager.h</li>
+<li class="">src/translation_manager.cpp</li>
+<li class="">lang/CMakeLists.txt</li>
+<li class="">lang/Makefile</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">doc/TRANSLATING.md</li>
+<li class="">lang/CMakeLists.txt</li>
+<li class="">lang/Makefile</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">文档与流程：官方翻译指南，定义术语、上下文性别、平台与工具使用</li>
+<li class="">抽取与模板：从C++与JSON抽取字符串，生成.pot模板，统一注释与换行</li>
+<li class="">合并与编译：合并外部贡献的.po，编译为.mo，支持按语言选择</li>
+<li class="">运行时翻译：提供便捷宏与类封装，延迟翻译、缓存、复数与上下文支持</li>
+<li class="">构建集成：CMake/Makefile在构建期生成.mo并安装</li>
+<li class="">统计与校验：生成语言完成度统计，校验Unicode与无效.po</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">doc/TRANSLATING.md</li>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/extract_json_strings.py</li>
+<li class="">lang/compile_mo.sh</li>
+<li class="">lang/merge_po.sh</li>
+<li class="">src/translation.h</li>
+<li class="">src/translation.cpp</li>
+<li class="">src/translations.h</li>
+<li class="">src/translations.cpp</li>
+<li class="">src/translation_manager.h</li>
+<li class="">src/translation_manager.cpp</li>
+<li class="">lang/update_stats.sh</li>
+<li class="">lang/unicode_check.py</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>下图展示从源码到运行时的翻译调用链，以及构建期的.mo生成路径。</p>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/extract_json_strings.py</li>
+<li class="">lang/compile_mo.sh</li>
+<li class="">src/translations.h</li>
+<li class="">src/translation.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件详解">组件详解<a href="#组件详解" class="hash-link" aria-label="组件详解的直接链接" title="组件详解的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="翻译文件组织与命名规范">翻译文件组织与命名规范<a href="#翻译文件组织与命名规范" class="hash-link" aria-label="翻译文件组织与命名规范的直接链接" title="翻译文件组织与命名规范的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">语言代码与目录结构
+<ul>
+<li class="">语言代码遵循标准命名，如 zh_CN、en、ru 等</li>
+<li class="">.po文件位于 <code>lang/po/&lt;lang&gt;.po</code></li>
+<li class="">.mo文件输出至 <code>lang/mo/&lt;lang&gt;/LC_MESSAGES/cataclysm-dda.mo</code></li>
+<li class="">构建期安装路径受安装选项影响，可能为 share/locale 或相对路径</li>
+</ul>
+</li>
+<li class="">版本管理策略
+<ul>
+<li class="">通过脚本生成的.pot作为模板，.po基于.pot更新</li>
+<li class="">语言统计文件写入 <code>lang/stats/&lt;lang&gt;</code> 并汇总到 src/lang_stats.inc</li>
+</ul>
+</li>
+<li class="">命名与路径一致性
+<ul>
+<li class="">incoming目录用于临时存放外部贡献的.po，随后被merge_po.sh合并进lang/po</li>
+<li class="">编译脚本支持按语言参数选择编译，便于测试与CI</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">doc/TRANSLATING.md</li>
+<li class="">lang/CMakeLists.txt</li>
+<li class="">lang/Makefile</li>
+<li class="">lang/compile_mo.sh</li>
+<li class="">lang/update_stats.sh</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="批量翻译处理工具链">批量翻译处理工具链<a href="#批量翻译处理工具链" class="hash-link" aria-label="批量翻译处理工具链的直接链接" title="批量翻译处理工具链的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">字符串抽取
+<ul>
+<li class="">C++：通过update_pot.sh调用xgettext，关键字覆盖 _、pgettext、n_gettext、to_translation/pl_translation等</li>
+<li class="">JSON：通过extract_json_strings.py递归扫描data与mods目录，排除特定文件/目录，追加到.pot</li>
+</ul>
+</li>
+<li class="">模板生成与校验
+<ul>
+<li class="">去重与规范化：msguniq去重；统一换行为Unix风格；Unicode完整性检查</li>
+<li class="">编译自检：msgfmt -c对.pot进行语法检查</li>
+</ul>
+</li>
+<li class="">合并与编译
+<ul>
+<li class="">合并：merge_po.sh将incoming/<em>.po与lang/po/</em>.po合并，更新并清理模糊标记</li>
+<li class="">编译：compile_mo.sh按语言编译为.mo，支持指定语言或全量</li>
+</ul>
+</li>
+<li class="">统计与清理
+<ul>
+<li class="">update_stats.sh统计每种语言已/未翻译条目，生成语言统计</li>
+<li class="">discard_invalid_po.sh对无法msgfmt的.po执行回滚，避免CI阻塞</li>
+<li class="">strip_line_numbers.py清洗.pot/.po中的行号注释，减少差异</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/extract_json_strings.py</li>
+<li class="">lang/merge_po.sh</li>
+<li class="">lang/compile_mo.sh</li>
+<li class="">lang/update_stats.sh</li>
+<li class="">lang/discard_invalid_po.sh</li>
+<li class="">lang/strip_line_numbers.py</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/extract_json_strings.py</li>
+<li class="">lang/merge_po.sh</li>
+<li class="">lang/compile_mo.sh</li>
+<li class="">lang/update_stats.sh</li>
+<li class="">lang/discard_invalid_po.sh</li>
+<li class="">lang/strip_line_numbers.py</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="社区贡献与审核流程">社区贡献与审核流程<a href="#社区贡献与审核流程" class="hash-link" aria-label="社区贡献与审核流程的直接链接" title="社区贡献与审核流程的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">官方平台：使用Transifex进行翻译，社区可在项目中加入新语言</li>
+<li class="">提交流程：下载.po → 放入lang/incoming → update_pot.sh更新.pot → merge_po.sh合并 → compile_mo.sh编译</li>
+<li class="">冲突与回归：merge_po.sh采用--use-first策略并清理模糊标记；discard_invalid_po.sh自动回滚无效文件</li>
+<li class="">发布协调：每周GitHub工作流pull-translations自动更新；手动更新步骤见文档</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">doc/TRANSLATING.md</li>
+<li class="">doc/TRANSLATING.md</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="运行时翻译与缓存">运行时翻译与缓存<a href="#运行时翻译与缓存" class="hash-link" aria-label="运行时翻译与缓存的直接链接" title="运行时翻译与缓存的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">翻译函数与宏
+<ul>
+<li class="">单数：_()、pgettext()</li>
+<li class="">复数：n_gettext()、npgettext()</li>
+<li class="">对象封装：translation类，支持上下文、复数、JSON序列化/反序列化</li>
+</ul>
+</li>
+<li class="">延迟翻译与缓存
+<ul>
+<li class="">translation::translated()根据语言版本与num缓存结果，避免重复查询</li>
+<li class="">切换语言会递增语言版本以失效缓存</li>
+</ul>
+</li>
+<li class="">语言选择与安装路径
+<ul>
+<li class="">set_language_from_options()/set_language()设置当前语言</li>
+<li class="">locale_dir()决定.mo安装位置（系统或应用数据目录）</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/translation.h</li>
+<li class="">src/translation.cpp</li>
+<li class="">src/translation_manager.h</li>
+<li class="">src/translation_manager.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/translations.h</li>
+<li class="">src/translations.cpp</li>
+<li class="">src/translation.h</li>
+<li class="">src/translation.cpp</li>
+<li class="">src/translation_manager.h</li>
+<li class="">src/translation_manager.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="不同语言的排版与字体支持">不同语言的排版与字体支持<a href="#不同语言的排版与字体支持" class="hash-link" aria-label="不同语言的排版与字体支持的直接链接" title="不同语言的排版与字体支持的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">上下文性别与复数
+<ul>
+<li class="">通过grammatical gender list与上下文标识（如npc:m）支持性别化翻译</li>
+<li class="">复数规则由n_gettext/npgettext处理，translation类支持复数缓存</li>
+</ul>
+</li>
+<li class="">特殊字符与Unicode
+<ul>
+<li class="">update_pot.sh在生成.pot后执行Unicode检查，确保无编码错误</li>
+<li class="">strip_line_numbers.py清洗行号注释，减少差异与CI噪声</li>
+</ul>
+</li>
+<li class="">字体与渲染
+<ul>
+<li class="">仓库包含字体配置与加载相关源码（如font_loader、sdl_font），建议在目标语言环境中验证字体覆盖与渲染效果</li>
+<li class="">对于从右到左（RTL）语言，需结合UI布局与文本方向策略进行适配</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">doc/TRANSLATING.md</li>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/strip_line_numbers.py</li>
+<li class="">src/translation.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">构建期依赖
+<ul>
+<li class="">CMakeLists.txt依赖gettext/msgfmt，生成locale目标并安装.mo</li>
+<li class="">Makefile提供简化的编译与安装流程</li>
+</ul>
+</li>
+<li class="">运行时依赖
+<ul>
+<li class="">translations.h/cpp提供语言选择与翻译入口</li>
+<li class="">translation_manager.h/cpp封装底层翻译实现</li>
+<li class="">translation.h/cpp提供高层封装与缓存</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">lang/CMakeLists.txt</li>
+<li class="">lang/Makefile</li>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/extract_json_strings.py</li>
+<li class="">lang/merge_po.sh</li>
+<li class="">lang/compile_mo.sh</li>
+<li class="">src/translations.h</li>
+<li class="">src/translations.cpp</li>
+<li class="">src/translation.h</li>
+<li class="">src/translation.cpp</li>
+<li class="">src/translation_manager.h</li>
+<li class="">src/translation_manager.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">lang/CMakeLists.txt</li>
+<li class="">lang/Makefile</li>
+<li class="">src/translations.h</li>
+<li class="">src/translation_manager.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能与可维护性">性能与可维护性<a href="#性能与可维护性" class="hash-link" aria-label="性能与可维护性的直接链接" title="性能与可维护性的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">性能
+<ul>
+<li class="">翻译缓存：translation按语言版本与复数参数缓存结果，降低重复查询开销</li>
+<li class="">选择性编译：compile_mo.sh支持按语言编译，缩短测试周期</li>
+</ul>
+</li>
+<li class="">可维护性
+<ul>
+<li class="">统一的抽取与校验流程：update_pot.sh串联xgettext与JSON抽取，msguniq与Unicode检查保障质量</li>
+<li class="">清晰的构建集成：CMake/Makefile职责明确，便于CI与手动构建</li>
+<li class="">无效文件自动清理：discard_invalid_po.sh避免CI失败阻塞</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/translation.cpp</li>
+<li class="">lang/compile_mo.sh</li>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/discard_invalid_po.sh</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排查指南">故障排查指南<a href="#故障排查指南" class="hash-link" aria-label="故障排查指南的直接链接" title="故障排查指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">无法找到lang/po目录
+<ul>
+<li class="">脚本会在当前目录或上层目录查找lang/po，若仍失败请确认工作目录</li>
+</ul>
+</li>
+<li class="">msgfmt编译失败
+<ul>
+<li class="">检查.pot是否通过msgfmt -c自检；使用discard_invalid_po.sh回滚无效文件</li>
+</ul>
+</li>
+<li class="">Unicode错误
+<ul>
+<li class="">使用unicode_check.py定位错误行，修正编码问题后再生成.pot</li>
+</ul>
+</li>
+<li class="">行号注释导致差异过大
+<ul>
+<li class="">使用strip_line_numbers.py清洗.pot/.po中的行号注释</li>
+</ul>
+</li>
+<li class="">语言统计异常
+<ul>
+<li class="">使用update_stats.sh重新统计，确认输出文件生成</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">lang/compile_mo.sh</li>
+<li class="">lang/update_pot.sh</li>
+<li class="">lang/unicode_check.py</li>
+<li class="">lang/strip_line_numbers.py</li>
+<li class="">lang/update_stats.sh</li>
+<li class="">lang/discard_invalid_po.sh</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>DDA的本地化体系以官方文档为纲、脚本工具为轴、源码接口为核、构建集成为基，形成从抽取、校验、合并、编译到运行时翻译的完整闭环。通过明确的语言代码与目录规范、严格的Unicode与模板校验、完善的缓存与安装机制，既保证了翻译质量，也提升了团队协作效率。建议在日常维护中坚持使用统一的工具链与流程，配合CI自动校验，持续提升翻译完成度与稳定性。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录">附录<a href="#附录" class="hash-link" aria-label="附录的直接链接" title="附录的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">术语与上下文性别
+<ul>
+<li class="">在JSON中为对话等字符串提供上下文性别列表，翻译时按上下文区分</li>
+</ul>
+</li>
+<li class="">静态变量初始化注意事项
+<ul>
+<li class="">避免在静态变量初始化时调用翻译函数，应使用translation对象并在运行时获取翻译</li>
+</ul>
+</li>
+<li class="">错误与调试信息
+<ul>
+<li class="">错误与调试信息不应标记为可翻译，以便玩家准确反馈</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">doc/TRANSLATING.md</li>
+<li class="">src/translation.cpp</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/国际化系统/本地化管理.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/国际化系统/多语言支持"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">多语言支持</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/平台适配/"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">平台适配</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#组件详解" class="table-of-contents__link toc-highlight">组件详解</a><ul><li><a href="#翻译文件组织与命名规范" class="table-of-contents__link toc-highlight">翻译文件组织与命名规范</a></li><li><a href="#批量翻译处理工具链" class="table-of-contents__link toc-highlight">批量翻译处理工具链</a></li><li><a href="#社区贡献与审核流程" class="table-of-contents__link toc-highlight">社区贡献与审核流程</a></li><li><a href="#运行时翻译与缓存" class="table-of-contents__link toc-highlight">运行时翻译与缓存</a></li><li><a href="#不同语言的排版与字体支持" class="table-of-contents__link toc-highlight">不同语言的排版与字体支持</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能与可维护性" class="table-of-contents__link toc-highlight">性能与可维护性</a></li><li><a href="#故障排查指南" class="table-of-contents__link toc-highlight">故障排查指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录" class="table-of-contents__link toc-highlight">附录</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

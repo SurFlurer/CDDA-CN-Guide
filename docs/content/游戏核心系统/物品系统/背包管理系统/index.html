@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/游戏核心系统/物品系统/背包管理系统" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">背包管理系统 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/背包管理系统"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="背包管理系统 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文档引用的文件"><meta data-rh="true" property="og:description" content="本文档引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/背包管理系统"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/背包管理系统" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/背包管理系统" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"游戏核心系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/"},{"@type":"ListItem","position":2,"name":"物品系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"},{"@type":"ListItem","position":3,"name":"背包管理系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/背包管理系统"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="折叠侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><span title="地图系统" class="categoryLinkLabel_W154">地图系统</span></a><button aria-label="展开侧边栏分类 &#x27;地图系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span title="怪物系统" class="categoryLinkLabel_W154">怪物系统</span></a><button aria-label="展开侧边栏分类 &#x27;怪物系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/游戏主循环"><span title="游戏主循环" class="linkLabel_WmDU">游戏主循环</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"><span title="物品系统" class="categoryLinkLabel_W154">物品系统</span></a><button aria-label="折叠侧边栏分类 &#x27;物品系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/武器装备系统"><span title="武器装备系统" class="linkLabel_WmDU">武器装备系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/物品属性系统"><span title="物品属性系统" class="linkLabel_WmDU">物品属性系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/物品工厂系统"><span title="物品工厂系统" class="linkLabel_WmDU">物品工厂系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/物品序列化系统"><span title="物品序列化系统" class="linkLabel_WmDU">物品序列化系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/背包管理系统"><span title="背包管理系统" class="linkLabel_WmDU">背包管理系统</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span title="角色系统" class="categoryLinkLabel_W154">角色系统</span></a><button aria-label="展开侧边栏分类 &#x27;角色系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span>游戏核心系统</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"><span>物品系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">背包管理系统</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>背包管理系统</h1></header><cite>
+**本文档引用的文件**
+- src/inventory.h
+- src/inventory.cpp
+- src/item_stack.h
+- src/item_stack.cpp
+- src/item_pocket.h
+- src/item_pocket.cpp
+- src/item.h
+- src/item.cpp
+- src/item_contents.h
+- src/item_contents.cpp
+- src/advanced_inv.h
+- src/advanced_inv.cpp
+- src/advanced_inv_listitem.h
+- src/advanced_inv_listitem.cpp
+- src/advanced_inv_pane.h
+- src/advanced_inv_pane.cpp
+- src/advanced_inv_pagination.h
+- src/advanced_inv_pagination.cpp
+- src/advanced_inv_area.h
+- src/advanced_inv_area.cpp
+- src/inventory_ui.h
+- src/inventory_ui.cpp
+- src/item_search.h
+- src/item_search.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E8%99%91" class="">性能考虑</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%8C%87%E5%8D%97" class="">故障排除指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95" class="">附录</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件为 Cataclysm-DDA 背包管理系统的综合技术文档，覆盖以下主题：</p>
+<ul>
+<li class="">背包容量计算与重量限制系统</li>
+<li class="">物品堆叠机制（按类型、按充能/电荷）</li>
+<li class="">物品槽位管理、Pocket 系统与容器嵌套</li>
+<li class="">物品移动、分割与合并操作</li>
+<li class="">背包 UI 交互、排序与搜索功能</li>
+<li class="">性能优化策略、内存管理与批量操作实践</li>
+</ul>
+<p>该系统以 C++ 实现，采用分层设计：顶层是角色背包（inventory），中间层是物品（item）及其内容系统（item_contents），底层是口袋（item_pocket）与堆叠抽象（item_stack）。UI 层通过高级背包界面（advanced_inv）提供交互。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>背包管理相关代码主要分布在以下模块：</p>
+<ul>
+<li class="">背包与库存：inventory.h/.cpp</li>
+<li class="">物品与内容：item.h/.cpp、item_contents.h/.cpp</li>
+<li class="">口袋与容器：item_pocket.h/.cpp</li>
+<li class="">堆叠抽象：item_stack.h/.cpp</li>
+<li class="">高级背包 UI：advanced_inv*.h/.cpp</li>
+<li class="">搜索与排序：item_search.h/.cpp</li>
+<li class="">背包 UI：inventory_ui.h/.cpp</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/inventory.h</li>
+<li class="">src/item.h</li>
+<li class="">src/item_contents.h</li>
+<li class="">src/item_pocket.h</li>
+<li class="">src/item_stack.h</li>
+<li class="">src/advanced_inv.h</li>
+<li class="">src/inventory_ui.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/inventory.h</li>
+<li class="">src/inventory.cpp</li>
+<li class="">src/item.h</li>
+<li class="">src/item_contents.h</li>
+<li class="">src/item_pocket.h</li>
+<li class="">src/item_stack.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">inventory：背包主容器，维护物品堆栈列表，提供增删改查、重量/体积统计、重排、从地图收集等能力。</li>
+<li class="">item：物品实体，支持显示名、重量/体积计算、充能/电荷合并、内容嵌套、属性与标志等。</li>
+<li class="">item_contents：物品内部的内容系统，管理所有标准与附加口袋，负责插入/取出、容量计算与遍历。</li>
+<li class="">item_pocket：具体口袋/容器实现，定义容量、密封性、限制条件、可兼容性检查、剩余空间计算、溢出处理等。</li>
+<li class="">item_stack：堆叠抽象基类，统一地图/容器上的物品集合接口，提供计数上限、体积上限、可用空间、叠加判断与消耗逻辑。</li>
+<li class="">advanced_inv：高级背包界面，提供排序、搜索、分页、批量操作等交互能力。</li>
+<li class="">inventory_ui：基础背包 UI，与 inventory 协作进行显示与交互。</li>
+<li class="">item_search：搜索与过滤工具，支持按名称、类别、标志等条件筛选。</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/inventory.h</li>
+<li class="">src/inventory.cpp</li>
+<li class="">src/item.h</li>
+<li class="">src/item_contents.h</li>
+<li class="">src/item_pocket.h</li>
+<li class="">src/item_stack.h</li>
+<li class="">src/advanced_inv.h</li>
+<li class="">src/inventory_ui.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>背包系统采用“容器-内容-口袋”的层次化设计：</p>
+<ul>
+<li class="">inventory 作为顶层容器，管理多个 item 堆栈（每堆代表一类可堆叠的物品）。</li>
+<li class="">item 内部通过 item_contents 维护标准口袋列表，并可附加额外口袋。</li>
+<li class="">item_pocket 定义了具体的容器行为（容量、限制、密封、溢出等）。</li>
+<li class="">item_stack 提供统一的堆叠接口，既可用于地图地面堆叠，也可用于容器内堆叠。</li>
+<li class="">UI 层通过 advanced_inv 对 inventory 进行展示与操作，结合 item_search 提供搜索与过滤。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/inventory.h</li>
+<li class="">src/item.h</li>
+<li class="">src/item_contents.h</li>
+<li class="">src/item_pocket.h</li>
+<li class="">src/item_stack.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="背包容量计算与重量限制系统">背包容量计算与重量限制系统<a href="#背包容量计算与重量限制系统" class="hash-link" aria-label="背包容量计算与重量限制系统的直接链接" title="背包容量计算与重量限制系统的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">inventory 提供整体重量与体积统计，以及按排除项计算的净重/体积。</li>
+<li class="">item 的重量/体积计算会递归包含其 contents 中的所有物品；对于按充能耗尽的物品，使用“每充能量积”估算体积与重量。</li>
+<li class="">item_pocket 提供：
+<ul>
+<li class="">体积/重量容量上限（volume_capacity/weight_capacity）</li>
+<li class="">已用体积/重量（contains_volume/contains_weight）</li>
+<li class="">剩余空间（remaining_volume/remaining_weight）</li>
+<li class="">充能/电荷剩余容量计算（charges_per_remaining_volume/charges_per_remaining_weight）</li>
+</ul>
+</li>
+<li class="">item_stack 提供：
+<ul>
+<li class="">计数上限与体积上限</li>
+<li class="">存储体积与可用体积</li>
+<li class="">amount_can_fit 判断在不违反限制的前提下还能放入多少个指定物品或充能数量</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/item_pocket.cpp</li>
+<li class="">src/item_stack.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/inventory.cpp</li>
+<li class="">src/item.cpp</li>
+<li class="">src/item_pocket.cpp</li>
+<li class="">src/item_stack.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="物品堆叠机制">物品堆叠机制<a href="#物品堆叠机制" class="hash-link" aria-label="物品堆叠机制的直接链接" title="物品堆叠机制的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">同类物品在 inventory 中被组织为堆栈（std::list<item>），同一堆栈内的物品必须满足“可堆叠”条件（如类型一致、状态相同）。</item></li>
+<li class="">item::stacks_with 与 item::merge_charges 控制按类型堆叠与按充能耗尽堆叠。</li>
+<li class="">item_pocket::restack 与 item_pocket::restack(item*) 支持在容器内部对同类充能物品进行合并。</li>
+<li class="">inventory::restack 会对整个背包进行重排，确保同类型物品合并、保持 invlet 一致性，并移除非匹配堆栈。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/inventory.cpp</li>
+<li class="">src/item.cpp</li>
+<li class="">src/item_pocket.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/inventory.cpp</li>
+<li class="">src/item.cpp</li>
+<li class="">src/item_pocket.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="物品槽位管理pocket-系统与容器嵌套">物品槽位管理、Pocket 系统与容器嵌套<a href="#物品槽位管理pocket-系统与容器嵌套" class="hash-link" aria-label="物品槽位管理、Pocket 系统与容器嵌套的直接链接" title="物品槽位管理、Pocket 系统与容器嵌套的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">item_contents 管理标准口袋列表与附加口袋，提供查找最佳口袋、组合内容等功能。</li>
+<li class="">item_pocket 定义多种口袋类型（CONTAINER/MAGAZINE/MAGAZINE_WELL/MOD/CORPSE/SOFTWARE/EBOOK/CABLE/MIGRATION/E_FILE_STORAGE），并支持：
+<ul>
+<li class="">体积/重量限制、最小/最大尺寸限制</li>
+<li class="">watertight/airtight、rigid、透明、继承标志等属性</li>
+<li class="">溢出处理（overflow/spill_contents）、密封（seal/unseal）</li>
+<li class="">弹药限制（ammo_restriction）、物品/材料/标志限制</li>
+</ul>
+</li>
+<li class="">容器嵌套：item_contents::find_pocket_for 支持在 CONTAINER 类型的多层口袋中递归查找最佳适配口袋。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/item_contents.h</li>
+<li class="">src/item_pocket.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/item_contents.h</li>
+<li class="">src/item_pocket.h</li>
+<li class="">src/item_pocket.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="物品移动分割与合并操作">物品移动、分割与合并操作<a href="#物品移动分割与合并操作" class="hash-link" aria-label="物品移动、分割与合并操作的直接链接" title="物品移动、分割与合并操作的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">inventory::reduce_stack：按位置拆分/移除整堆或部分堆。</li>
+<li class="">inventory::remove_item：按位置移除顶部物品并维护 invlet。</li>
+<li class="">item::split：将按充能耗尽的物品分割为独立副本。</li>
+<li class="">item::combine/merge_charges：将同类物品合并，优先合并到已有堆栈。</li>
+<li class="">item_pocket::insert_item/add：向口袋添加物品，忽略内容时跳过复杂检查。</li>
+<li class="">item_pocket::overflow/spill_contents：当容量不足时，按规则溢出或掉落物品。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/inventory.cpp</li>
+<li class="">src/item.cpp</li>
+<li class="">src/item_pocket.cpp</li>
+<li class="">src/item_pocket.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/inventory.cpp</li>
+<li class="">src/item.cpp</li>
+<li class="">src/item_pocket.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="背包-ui-交互排序算法与搜索功能">背包 UI 交互、排序算法与搜索功能<a href="#背包-ui-交互排序算法与搜索功能" class="hash-link" aria-label="背包 UI 交互、排序算法与搜索功能的直接链接" title="背包 UI 交互、排序算法与搜索功能的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">advanced_inv 提供：
+<ul>
+<li class="">分页（pagination）与区域（area）划分，支持快速定位</li>
+<li class="">列表项（advanced_inv_listitem）的渲染与交互</li>
+<li class="">排序（按重量、体积、名称、类别等）</li>
+<li class="">批量操作（选中多个物品进行移动/分割/合并）</li>
+</ul>
+</li>
+<li class="">inventory_ui 提供基础背包界面与快捷键绑定。</li>
+<li class="">item_search 提供按名称、类别、标志等条件的过滤与高亮。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/advanced_inv.h</li>
+<li class="">src/advanced_inv_pane.h</li>
+<li class="">src/advanced_inv_pagination.h</li>
+<li class="">src/advanced_inv_listitem.h</li>
+<li class="">src/item_search.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/advanced_inv.h</li>
+<li class="">src/advanced_inv_pane.h</li>
+<li class="">src/advanced_inv_pagination.h</li>
+<li class="">src/advanced_inv_listitem.h</li>
+<li class="">src/item_search.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">inventory 依赖 item、item_contents、item_pocket、item_stack 等组件，负责顶层的增删改查与统计。</li>
+<li class="">item_contents 依赖 item_pocket，提供口袋查找与组合逻辑。</li>
+<li class="">item_pocket 依赖 pocket_data（定义口袋属性），并与 item_stack 接口协作。</li>
+<li class="">advanced_inv 依赖 inventory 与 item_search，提供 UI 与交互。</li>
+<li class="">inventory_ui 依赖 inventory，提供基础显示与快捷键。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/inventory.h</li>
+<li class="">src/item.h</li>
+<li class="">src/item_contents.h</li>
+<li class="">src/item_pocket.h</li>
+<li class="">src/item_stack.h</li>
+<li class="">src/advanced_inv.h</li>
+<li class="">src/inventory_ui.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/inventory.h</li>
+<li class="">src/item.h</li>
+<li class="">src/item_contents.h</li>
+<li class="">src/item_pocket.h</li>
+<li class="">src/item_stack.h</li>
+<li class="">src/advanced_inv.h</li>
+<li class="">src/inventory_ui.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考虑">性能考虑<a href="#性能考虑" class="hash-link" aria-label="性能考虑的直接链接" title="性能考虑的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">时间复杂度
+<ul>
+<li class="">inventory::add_item：最坏 O(n_items_in_stack)，n_items_in_stack 通常较小，摊还接近 O(1)。</li>
+<li class="">inventory::restack：双重循环合并堆栈，复杂度 O(n_stacks^2)，但实际 n_stacks 很小。</li>
+<li class="">item_pocket::restack：对充能物品合并，复杂度 O(n_contents^2)。</li>
+<li class="">item_stack::amount_can_fit：线性扫描，O(n_items_on_tile)。</li>
+</ul>
+</li>
+<li class="">空间复杂度
+<ul>
+<li class="">inventory 使用 std::list&lt;std::list<item>&gt; 存储堆栈，内存占用与物品数量线性相关。</item></li>
+<li class="">item_contents 与 item_pocket 使用 std::list 存放物品，便于频繁插入/删除。</li>
+</ul>
+</li>
+<li class="">优化建议
+<ul>
+<li class="">使用 invlet 缓存与 binning（按类型分组）减少重复遍历。</li>
+<li class="">在高频操作（如地图拾取）中，先进行“可容纳数量”预估，避免无效插入。</li>
+<li class="">对于大量物品的批量操作，尽量使用 inventory::operator+= 一次性合并，减少多次重建索引。</li>
+<li class="">在 UI 层使用分页与延迟加载，避免一次性渲染过多物品。</li>
+</ul>
+</li>
+</ul>
+<p>[本节为通用指导，无需特定文件引用]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排除指南">故障排除指南<a href="#故障排除指南" class="hash-link" aria-label="故障排除指南的直接链接" title="故障排除指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">物品无法放入容器
+<ul>
+<li class="">检查 item_pocket::can_contain 的错误码（ERR_TOO_BIG/ERR_TOO_HEAVY/ERR_NO_SPACE/ERR_CANNOT_SUPPORT/ERR_LIQUID/ERR_GAS/ERR_FLAG/ERR_AMMO）。</li>
+<li class="">确认容器 watertight/airtight 与物品相态匹配。</li>
+<li class="">若为弹药容器，确认 ammo_restriction 与 ammo 类型一致。</li>
+</ul>
+</li>
+<li class="">密封容器问题
+<ul>
+<li class="">sealable() 为真且 sealed_data 存在才可密封；密封后某些属性变化（如 spoil_multiplier）。</li>
+</ul>
+</li>
+<li class="">溢出与掉落
+<ul>
+<li class="">当容器超容或打开容器（open_container）时，触发 overflow/spill_contents，物品可能掉落。</li>
+</ul>
+</li>
+<li class="">重量/体积异常
+<ul>
+<li class="">检查 item::weight/volume 是否包含 contents；确认 item_pocket::item_weight_modifier/item_size_modifier 的乘数影响。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/item_pocket.cpp</li>
+<li class="">src/item_pocket.cpp</li>
+<li class="">src/item_pocket.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>Cataclysm-DDA 的背包管理系统通过清晰的分层设计实现了灵活的物品管理：inventory 负责顶层容器与统计，item 与 item_contents 提供内容与嵌套能力，item_pocket 定义了丰富的容器语义与限制，item_stack 抽象了堆叠行为，UI 层则提供了强大的交互与批量操作能力。通过合理的容量计算、堆叠机制与溢出处理，系统在保证真实感的同时兼顾了可玩性与性能。</p>
+<p>[本节为总结，无需特定文件引用]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录">附录<a href="#附录" class="hash-link" aria-label="附录的直接链接" title="附录的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">关键 API 路径参考
+<ul>
+<li class="">背包增删改查与统计：src/inventory.cpp</li>
+<li class="">物品堆叠与分割：src/item.cpp</li>
+<li class="">容器容量与剩余空间：src/item_pocket.cpp</li>
+<li class="">地面堆叠与可用空间：src/item_stack.cpp</li>
+<li class="">高级背包界面与搜索：src/advanced_inv.h、src/item_search.h</li>
+</ul>
+</li>
+</ul>
+<p>[本节为补充说明，无需特定文件引用]</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/游戏核心系统/物品系统/背包管理系统.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/物品序列化系统"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">物品序列化系统</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">角色系统</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#背包容量计算与重量限制系统" class="table-of-contents__link toc-highlight">背包容量计算与重量限制系统</a></li><li><a href="#物品堆叠机制" class="table-of-contents__link toc-highlight">物品堆叠机制</a></li><li><a href="#物品槽位管理pocket-系统与容器嵌套" class="table-of-contents__link toc-highlight">物品槽位管理、Pocket 系统与容器嵌套</a></li><li><a href="#物品移动分割与合并操作" class="table-of-contents__link toc-highlight">物品移动、分割与合并操作</a></li><li><a href="#背包-ui-交互排序算法与搜索功能" class="table-of-contents__link toc-highlight">背包 UI 交互、排序算法与搜索功能</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考虑" class="table-of-contents__link toc-highlight">性能考虑</a></li><li><a href="#故障排除指南" class="table-of-contents__link toc-highlight">故障排除指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录" class="table-of-contents__link toc-highlight">附录</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

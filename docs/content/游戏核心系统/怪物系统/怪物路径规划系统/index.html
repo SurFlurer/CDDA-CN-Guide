@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/游戏核心系统/怪物系统/怪物路径规划系统" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">怪物路径规划系统 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物路径规划系统"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="怪物路径规划系统 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文档引用的文件"><meta data-rh="true" property="og:description" content="本文档引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物路径规划系统"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物路径规划系统" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物路径规划系统" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"游戏核心系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/"},{"@type":"ListItem","position":2,"name":"怪物系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"},{"@type":"ListItem","position":3,"name":"怪物路径规划系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物路径规划系统"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="折叠侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><span title="地图系统" class="categoryLinkLabel_W154">地图系统</span></a><button aria-label="展开侧边栏分类 &#x27;地图系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span title="怪物系统" class="categoryLinkLabel_W154">怪物系统</span></a><button aria-label="折叠侧边栏分类 &#x27;怪物系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物AI行为系统"><span title="怪物AI行为系统" class="linkLabel_WmDU">怪物AI行为系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物特殊能力系统"><span title="怪物特殊能力系统" class="linkLabel_WmDU">怪物特殊能力系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物群体管理系统"><span title="怪物群体管理系统" class="linkLabel_WmDU">怪物群体管理系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物触发器系统"><span title="怪物触发器系统" class="linkLabel_WmDU">怪物触发器系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物路径规划系统"><span title="怪物路径规划系统" class="linkLabel_WmDU">怪物路径规划系统</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/游戏主循环"><span title="游戏主循环" class="linkLabel_WmDU">游戏主循环</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"><span title="物品系统" class="categoryLinkLabel_W154">物品系统</span></a><button aria-label="展开侧边栏分类 &#x27;物品系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span title="角色系统" class="categoryLinkLabel_W154">角色系统</span></a><button aria-label="展开侧边栏分类 &#x27;角色系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span>游戏核心系统</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span>怪物系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">怪物路径规划系统</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>怪物路径规划系统</h1></header><cite>
+**本文档引用的文件**
+- pathfinding.cpp
+- pathfinding.h
+- simple_pathfinding.cpp
+- simple_pathfinding.h
+- map_path_test.cpp
+- simple_pathfinding_test.cpp
+- map.h
+- debug_menu.cpp
+- character.cpp
+- game.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%A6%82%E8%A7%88" class="">架构概览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E8%99%91" class="">性能考虑</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%8C%87%E5%8D%97" class="">故障排除指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>Cataclysm-DDA的怪物路径规划系统是一个复杂的寻路引擎，专门为后末日游戏环境设计。该系统实现了多种路径规划算法，包括A*算法、贪婪最佳优先搜索和专门的overmap寻路算法，能够处理复杂的地形、障碍物、动态变化的环境和不同移动类型的生物。</p>
+<p>系统的核心特点包括：</p>
+<ul>
+<li class="">支持3D空间寻路（包含垂直移动）</li>
+<li class="">动态路径重规划机制</li>
+<li class="">智能障碍物避让和拥挤避免</li>
+<li class="">多种移动类型适配</li>
+<li class="">高效的缓存机制</li>
+<li class="">丰富的调试工具</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>路径规划系统主要分布在以下文件中：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+<li class="">simple_pathfinding.cpp</li>
+<li class="">map_path_test.cpp</li>
+<li class="">simple_pathfinding_test.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+<li class="">simple_pathfinding.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="路径规划标志系统">路径规划标志系统<a href="#路径规划标志系统" class="hash-link" aria-label="路径规划标志系统的直接链接" title="路径规划标志系统的直接链接" translate="no">​</a></h3>
+<p>系统使用PathfindingFlags枚举来描述地图格子的各种属性：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="路径规划设置">路径规划设置<a href="#路径规划设置" class="hash-link" aria-label="路径规划设置的直接链接" title="路径规划设置的直接链接" translate="no">​</a></h3>
+<p>路径规划器支持多种可配置参数：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>参数</th><th>类型</th><th>描述</th><th>默认值</th></tr></thead><tbody><tr><td>bash_strength</td><td>int</td><td>破坏强度</td><td>0</td></tr><tr><td>max_dist</td><td>int</td><td>最大距离</td><td>0</td></tr><tr><td>max_length</td><td>int</td><td>最大路径长度</td><td>0</td></tr><tr><td>climb_cost</td><td>int</td><td>爬升成本</td><td>0</td></tr><tr><td>allow_open_doors</td><td>bool</td><td>允许开门</td><td>false</td></tr><tr><td>allow_unlock_doors</td><td>bool</td><td>允许解锁</td><td>false</td></tr><tr><td>avoid_traps</td><td>bool</td><td>避开陷阱</td><td>false</td></tr><tr><td>allow_climb_stairs</td><td>bool</td><td>允许爬楼梯</td><td>true</td></tr><tr><td>avoid_rough_terrain</td><td>bool</td><td>避开崎岖地形</td><td>false</td></tr><tr><td>avoid_sharp</td><td>bool</td><td>避开尖锐物品</td><td>false</td></tr><tr><td>size</td><td>optional&lt;creature_size&gt;</td><td>生物体型限制</td><td>nullopt</td></tr></tbody></table>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">pathfinding.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构概览">架构概览<a href="#架构概览" class="hash-link" aria-label="架构概览的直接链接" title="架构概览的直接链接" translate="no">​</a></h2>
+<p>系统采用分层架构设计，从底层的地图数据到高层的寻路算法：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+<li class="">pathfinding.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="a算法实现">A*算法实现<a href="#a算法实现" class="hash-link" aria-label="A*算法实现的直接链接" title="A*算法实现的直接链接" translate="no">​</a></h3>
+<p>核心A*算法实现在<code>pathfinder</code>类中，采用了优化的数据结构来提高性能：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="成本计算机制">成本计算机制<a href="#成本计算机制" class="hash-link" aria-label="成本计算机制的直接链接" title="成本计算机制的直接链接" translate="no">​</a></h4>
+<p>系统实现了多层次的成本计算：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="地形可达性检查">地形可达性检查<a href="#地形可达性检查" class="hash-link" aria-label="地形可达性检查的直接链接" title="地形可达性检查的直接链接" translate="no">​</a></h3>
+<p>系统通过<code>pathfinding_cache</code>实现高效的地形可达性检查：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+<li class="">pathfinding.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="动态路径重规划">动态路径重规划<a href="#动态路径重规划" class="hash-link" aria-label="动态路径重规划的直接链接" title="动态路径重规划的直接链接" translate="no">​</a></h3>
+<p>系统支持动态路径重规划，能够响应环境变化：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="不同移动类型的路径规划">不同移动类型的路径规划<a href="#不同移动类型的路径规划" class="hash-link" aria-label="不同移动类型的路径规划的直接链接" title="不同移动类型的路径规划的直接链接" translate="no">​</a></h3>
+<p>系统为不同生物类型提供了专门的路径规划支持：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>移动类型</th><th>特殊处理</th><th>限制条件</th></tr></thead><tbody><tr><td>步行生物</td><td>基础A*算法</td><td>地面行走</td></tr><tr><td>爬行生物</td><td>支持攀爬标志</td><td>可攀爬表面</td></tr><tr><td>水生生物</td><td>支持游泳标志</td><td>深水区域</td></tr><tr><td>飞行生物</td><td>支持空中标志</td><td>高空路径</td></tr><tr><td>大型生物</td><td>体型限制检查</td><td>通道宽度</td></tr></tbody></table>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">pathfinding.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="路径缓存机制">路径缓存机制<a href="#路径缓存机制" class="hash-link" aria-label="路径缓存机制的直接链接" title="路径缓存机制的直接链接" translate="no">​</a></h3>
+<p>系统实现了多层缓存机制来提高性能：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">pathfinding.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="寻路调试工具">寻路调试工具<a href="#寻路调试工具" class="hash-link" aria-label="寻路调试工具的直接链接" title="寻路调试工具的直接链接" translate="no">​</a></h3>
+<p>系统提供了丰富的调试功能：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">debug_menu.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">debug_menu.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<p>路径规划系统与其他模块的依赖关系：</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+<li class="">simple_pathfinding.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">pathfinding.cpp</li>
+<li class="">simple_pathfinding.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考虑">性能考虑<a href="#性能考虑" class="hash-link" aria-label="性能考虑的直接链接" title="性能考虑的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="空间复杂度优化">空间复杂度优化<a href="#空间复杂度优化" class="hash-link" aria-label="空间复杂度优化的直接链接" title="空间复杂度优化的直接链接" translate="no">​</a></h3>
+<p>系统采用了多种技术来优化内存使用：</p>
+<ol>
+<li class=""><strong>位集优化</strong>: 使用<code>std::bitset</code>存储开放/关闭列表</li>
+<li class=""><strong>扁平化数组</strong>: 将二维坐标映射到一维数组</li>
+<li class=""><strong>延迟初始化</strong>: 仅在需要时创建路径数据层</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="时间复杂度优化">时间复杂度优化<a href="#时间复杂度优化" class="hash-link" aria-label="时间复杂度优化的直接链接" title="时间复杂度优化的直接链接" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>启发式函数</strong>: 使用曼哈顿距离作为启发式函数</li>
+<li class=""><strong>早期终止</strong>: 当达到最大距离时提前终止</li>
+<li class=""><strong>缓存利用</strong>: 重用之前的计算结果</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="内存管理">内存管理<a href="#内存管理" class="hash-link" aria-label="内存管理的直接链接" title="内存管理的直接链接" translate="no">​</a></h3>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排除指南">故障排除指南<a href="#故障排除指南" class="hash-link" aria-label="故障排除指南的直接链接" title="故障排除指南的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="常见问题诊断">常见问题诊断<a href="#常见问题诊断" class="hash-link" aria-label="常见问题诊断的直接链接" title="常见问题诊断的直接链接" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>路径不完整</strong>: 检查<code>max_length</code>设置是否过小</li>
+<li class=""><strong>性能问题</strong>: 验证缓存是否正常工作</li>
+<li class=""><strong>错误路径</strong>: 检查地形标志是否正确设置</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="调试技巧">调试技巧<a href="#调试技巧" class="hash-link" aria-label="调试技巧的直接链接" title="调试技巧的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">启用路径可视化显示</li>
+<li class="">检查路径缓存状态</li>
+<li class="">验证成本计算逻辑</li>
+<li class="">分析开放列表大小</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">debug_menu.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>Cataclysm-DDA的怪物路径规划系统是一个高度优化的寻路引擎，具有以下特点：</p>
+<ol>
+<li class=""><strong>功能完整性</strong>: 支持3D空间、多种移动类型和复杂地形</li>
+<li class=""><strong>性能高效</strong>: 通过缓存和优化算法实现快速寻路</li>
+<li class=""><strong>可扩展性</strong>: 模块化设计便于添加新功能</li>
+<li class=""><strong>可维护性</strong>: 清晰的代码结构和完善的测试覆盖</li>
+</ol>
+<p>该系统为游戏中的AI行为提供了坚实的基础，能够处理各种复杂的寻路场景，从简单的直线路径到复杂的多层建筑导航。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/游戏核心系统/怪物系统/怪物路径规划系统.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物触发器系统"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">怪物触发器系统</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/游戏核心系统/游戏主循环"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">游戏主循环</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a><ul><li><a href="#路径规划标志系统" class="table-of-contents__link toc-highlight">路径规划标志系统</a></li><li><a href="#路径规划设置" class="table-of-contents__link toc-highlight">路径规划设置</a></li></ul></li><li><a href="#架构概览" class="table-of-contents__link toc-highlight">架构概览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#a算法实现" class="table-of-contents__link toc-highlight">A*算法实现</a></li><li><a href="#地形可达性检查" class="table-of-contents__link toc-highlight">地形可达性检查</a></li><li><a href="#动态路径重规划" class="table-of-contents__link toc-highlight">动态路径重规划</a></li><li><a href="#不同移动类型的路径规划" class="table-of-contents__link toc-highlight">不同移动类型的路径规划</a></li><li><a href="#路径缓存机制" class="table-of-contents__link toc-highlight">路径缓存机制</a></li><li><a href="#寻路调试工具" class="table-of-contents__link toc-highlight">寻路调试工具</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考虑" class="table-of-contents__link toc-highlight">性能考虑</a><ul><li><a href="#空间复杂度优化" class="table-of-contents__link toc-highlight">空间复杂度优化</a></li><li><a href="#时间复杂度优化" class="table-of-contents__link toc-highlight">时间复杂度优化</a></li><li><a href="#内存管理" class="table-of-contents__link toc-highlight">内存管理</a></li></ul></li><li><a href="#故障排除指南" class="table-of-contents__link toc-highlight">故障排除指南</a><ul><li><a href="#常见问题诊断" class="table-of-contents__link toc-highlight">常见问题诊断</a></li><li><a href="#调试技巧" class="table-of-contents__link toc-highlight">调试技巧</a></li></ul></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

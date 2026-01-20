@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/游戏核心系统/角色系统/玩家角色管理" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">玩家角色管理 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/玩家角色管理"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="玩家角色管理 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文引用的文件"><meta data-rh="true" property="og:description" content="本文引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/玩家角色管理"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/玩家角色管理" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/玩家角色管理" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"游戏核心系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/"},{"@type":"ListItem","position":2,"name":"角色系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"},{"@type":"ListItem","position":3,"name":"玩家角色管理","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/玩家角色管理"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="折叠侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><span title="地图系统" class="categoryLinkLabel_W154">地图系统</span></a><button aria-label="展开侧边栏分类 &#x27;地图系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span title="怪物系统" class="categoryLinkLabel_W154">怪物系统</span></a><button aria-label="展开侧边栏分类 &#x27;怪物系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/游戏主循环"><span title="游戏主循环" class="linkLabel_WmDU">游戏主循环</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"><span title="物品系统" class="categoryLinkLabel_W154">物品系统</span></a><button aria-label="展开侧边栏分类 &#x27;物品系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span title="角色系统" class="categoryLinkLabel_W154">角色系统</span></a><button aria-label="折叠侧边栏分类 &#x27;角色系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/NPC系统设计"><span title="NPC系统设计" class="linkLabel_WmDU">NPC系统设计</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/技能与经验系统"><span title="技能与经验系统" class="linkLabel_WmDU">技能与经验系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/玩家角色管理"><span title="玩家角色管理" class="linkLabel_WmDU">玩家角色管理</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/角色属性系统"><span title="角色属性系统" class="linkLabel_WmDU">角色属性系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/角色状态与效果"><span title="角色状态与效果" class="linkLabel_WmDU">角色状态与效果</span></a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span>游戏核心系统</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span>角色系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">玩家角色管理</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>玩家角色管理</h1></header><cite>
+**本文引用的文件**
+- avatar.h
+- avatar.cpp
+- newcharacter.cpp
+- profession.h
+- profession.cpp
+- martialarts.h
+- martialarts.cpp
+- character.h
+- skill.h
+- savegame_json.cpp
+- gamemode_tutorial.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%8C%87%E5%8D%97" class="">故障排除指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件系统性梳理Cataclysm-DDA中“玩家角色管理”子系统，围绕Avatar类与Character基类的关系、角色创建与初始化流程、核心属性与状态管理、技能树与经验体系、职业与初始装备、Martial Arts（格斗流派）集成与特殊能力机制，以及与游戏世界的交互（探索、战斗、制作等）进行深入解析。文档兼顾技术深度与可读性，既适合开发者也适合希望理解底层机制的高级用户。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>玩家角色管理涉及以下关键模块：</p>
+<ul>
+<li class="">角色基础：Character（角色抽象）、avatar（玩家特化）</li>
+<li class="">创建与初始化：newcharacter（角色创建UI与逻辑）、profession（职业系统）</li>
+<li class="">格斗系统：martialarts（格斗流派、技巧、增益）</li>
+<li class="">技能系统：skill（技能定义与训练）</li>
+<li class="">存档与模板：savegame_json（存档加载）、avatar::load_template（模板保存/加载）</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">character.h</li>
+<li class="">newcharacter.cpp</li>
+<li class="">profession.h</li>
+<li class="">martialarts.h</li>
+<li class="">skill.h</li>
+<li class="">savegame_json.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">character.h</li>
+<li class="">newcharacter.cpp</li>
+<li class="">profession.h</li>
+<li class="">martialarts.h</li>
+<li class="">skill.h</li>
+<li class="">savegame_json.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">角色抽象与玩家特化
+<ul>
+<li class="">Character提供通用角色能力（属性、技能、物品、活动、状态等）</li>
+<li class="">avatar继承自Character，扩展玩家专属功能（任务、日记、地图记忆、NPC接管、读物学习、日常卡路里统计等）</li>
+</ul>
+</li>
+<li class="">职业系统
+<ul>
+<li class="">profession定义职业名称、描述、初始物品、CBM、专业技能、起始法术、起始宠物、起始车辆、起始任务等</li>
+<li class="">avatar在初始化时应用职业的起始内容</li>
+</ul>
+</li>
+<li class="">格斗系统
+<ul>
+<li class="">martialarts定义流派、技巧、攻击向量、需求条件、效果与增益</li>
+<li class="">avatar通过职业或特性解锁/选择格斗流派，并在战斗中应用</li>
+</ul>
+</li>
+<li class="">技能系统
+<ul>
+<li class="">skill定义技能元数据与训练机制；avatar使用技能进行阅读、制作、战斗等</li>
+</ul>
+</li>
+<li class="">创建与模板
+<ul>
+<li class="">newcharacter负责交互式角色创建（点池、场景、职业、背景、属性、特质、技能、描述）</li>
+<li class="">avatar支持模板保存/加载，便于快速复用角色</li>
+</ul>
+</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">profession.h</li>
+<li class="">martialarts.h</li>
+<li class="">skill.h</li>
+<li class="">newcharacter.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>Avatar作为玩家角色的核心，承担以下职责：</p>
+<ul>
+<li class="">角色创建与初始化：调用newcharacter流程，应用profession与场景设定</li>
+<li class="">属性与状态管理：重置统计、处理疲劳/饥饿/口渴/睡眠等状态</li>
+<li class="">技能与经验：基于技能系统进行训练与知识积累</li>
+<li class="">职业与初始装备：从profession加载初始物品、CBM、起始法术、起始宠物与车辆</li>
+<li class="">格斗系统集成：根据职业/特性解锁/选择格斗流派，应用技巧与增益</li>
+<li class="">世界交互：任务系统、日记、地图记忆、NPC接管、读物学习、日常卡路里统计</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">profession.h</li>
+<li class="">martialarts.h</li>
+<li class="">skill.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">profession.h</li>
+<li class="">martialarts.h</li>
+<li class="">skill.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件aavatar类与character的关系">组件A：Avatar类与Character的关系<a href="#组件aavatar类与character的关系" class="hash-link" aria-label="组件A：Avatar类与Character的关系的直接链接" title="组件A：Avatar类与Character的关系的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">继承关系：avatar继承自Character，获得通用角色能力后扩展玩家专属功能</li>
+<li class="">玩家标识：is_avatar返回true，便于系统区分玩家与其他角色</li>
+<li class="">初始化：avatar::initialize调用Character::initialize并应用profession的起始内容（包括格斗流派）</li>
+<li class="">状态重置：avatar::reset_stats在进入新游戏或加载存档后重置统计与临时效果缓存</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件b角色创建与初始化流程">组件B：角色创建与初始化流程<a href="#组件b角色创建与初始化流程" class="hash-link" aria-label="组件B：角色创建与初始化流程的直接链接" title="组件B：角色创建与初始化流程的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">创建入口：avatar::create(type,tempname)负责交互式角色创建</li>
+<li class="">流程要点：
+<ul>
+<li class="">设置默认职业与场景</li>
+<li class="">交互式界面（点池、场景、职业、背景、属性、特质、技能、描述）</li>
+<li class="">随机化模式：随机场景/随机姓名/完全随机</li>
+<li class="">应用profession的初始物品、CBM、起始法术、起始宠物与车辆</li>
+<li class="">初始化avatar：avatar::initialize应用profession的起始格斗流派与选择项</li>
+</ul>
+</li>
+<li class="">模板：avatar::save_template与avatar::load_template支持角色模板保存/加载</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">newcharacter.cpp</li>
+<li class="">avatar.cpp</li>
+<li class="">profession.h</li>
+<li class="">martialarts.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">newcharacter.cpp</li>
+<li class="">avatar.cpp</li>
+<li class="">profession.h</li>
+<li class="">martialarts.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件c职业系统与初始装备配置">组件C：职业系统与初始装备配置<a href="#组件c职业系统与初始装备配置" class="hash-link" aria-label="组件C：职业系统与初始装备配置的直接链接" title="组件C：职业系统与初始装备配置的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">职业定义：profession包含名称/描述、初始物品组、CBM、专业技能、起始法术、起始宠物、起始车辆、起始任务等</li>
+<li class="">初始物品：profession::items按性别与特性生成初始物品列表，支持替换与合并</li>
+<li class="">起始内容应用：avatar::initialize在创建后应用profession的ma_known/ma_choices等</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">profession.h</li>
+<li class="">profession.cpp</li>
+<li class="">avatar.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">profession.h</li>
+<li class="">profession.cpp</li>
+<li class="">avatar.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件d技能树系统与经验计算">组件D：技能树系统与经验计算<a href="#组件d技能树系统与经验计算" class="hash-link" aria-label="组件D：技能树系统与经验计算的直接链接" title="组件D：技能树系统与经验计算的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">技能定义：skill提供技能元数据（名称、描述、标签、显示类型、时间信息等）</li>
+<li class="">训练机制：SkillLevel提供训练、练习、知识训练、生锈与rust累积等</li>
+<li class="">经验公式：newcharacter中存在累计经验计算函数，用于等级与经验换算</li>
+<li class="">使用场景：avatar::read在阅读书籍时结合技能进行训练与进度记录</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">skill.h</li>
+<li class="">newcharacter.cpp</li>
+<li class="">avatar.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">skill.h</li>
+<li class="">newcharacter.cpp</li>
+<li class="">avatar.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件emartial-arts系统集成与特殊能力">组件E：Martial Arts系统集成与特殊能力<a href="#组件emartial-arts系统集成与特殊能力" class="hash-link" aria-label="组件E：Martial Arts系统集成与特殊能力的直接链接" title="组件E：Martial Arts系统集成与特殊能力的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">格斗流派：martialart定义流派、技巧、攻击向量、需求条件、静态/动态增益与EOC</li>
+<li class="">条件验证：ma_requirements校验是否满足武器类别、技能等级、角色标志、武器标志等</li>
+<li class="">应用时机：avatar在初始化时应用profession的起始流派；战斗中根据当前流派与技巧生效</li>
+<li class="">特殊能力：通过ma_buff与ma_technique为角色提供命中、闪避、伤害、护甲穿透等加成</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">martialarts.h</li>
+<li class="">martialarts.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">martialarts.h</li>
+<li class="">martialarts.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件f状态管理与日常统计">组件F：状态管理与日常统计<a href="#组件f状态管理与日常统计" class="hash-link" aria-label="组件F：状态管理与日常统计的直接链接" title="组件F：状态管理与日常统计的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">状态重置：avatar::reset_stats在进入新游戏或加载存档后重置统计与临时效果</li>
+<li class="">日常卡路里：avatar::daily_calories记录每日摄入/消耗/获得，支持日志与活动水平记录</li>
+<li class="">地图记忆：avatar提供地图记忆的开启/关闭、区域准备、地形/装饰记忆与符号记忆</li>
+<li class="">任务系统：avatar维护活跃/完成/失败任务列表，支持设置/移除/完成回调</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">avatar.cpp</li>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">avatar.cpp</li>
+<li class="">avatar.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">avatar.cpp</li>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">avatar.cpp</li>
+<li class="">avatar.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件g与游戏世界的交互">组件G：与游戏世界的交互<a href="#组件g与游戏世界的交互" class="hash-link" aria-label="组件G：与游戏世界的交互的直接链接" title="组件G：与游戏世界的交互的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">探索：地图记忆与可见怪物信息（monster_visible_info），支持安全模式与指南针方向</li>
+<li class="">战斗：格斗系统与技巧应用，结合技能与装备进行攻击/防御</li>
+<li class="">制作：profession提供起始配方，avatar::read可学习制作配方</li>
+<li class="">对话与交易：avatar提供对话/谈判接口，支持NPC互动</li>
+<li class="">读物学习：avatar::read支持书籍/手册的单次/持续学习，结合技能与同伴参与</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">avatar.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">avatar.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">Avatar依赖
+<ul>
+<li class="">Character：通用角色能力</li>
+<li class="">profession：职业初始内容</li>
+<li class="">martialarts：格斗流派与技巧</li>
+<li class="">skill：技能训练与经验</li>
+<li class="">savegame_json：存档加载</li>
+</ul>
+</li>
+<li class="">创建流程耦合
+<ul>
+<li class="">newcharacter与avatar紧密耦合，newcharacter负责交互与点池/场景/职业选择，avatar负责应用与初始化</li>
+</ul>
+</li>
+<li class="">外部依赖
+<ul>
+<li class="">游戏世界（overmap、地图、NPC、任务系统）通过avatar进行交互</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">newcharacter.cpp</li>
+<li class="">savegame_json.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">avatar.h</li>
+<li class="">avatar.cpp</li>
+<li class="">newcharacter.cpp</li>
+<li class="">savegame_json.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">地图记忆缓存：avatar的地图记忆功能通过player_map_memory管理，避免重复计算；建议在大范围探索时合理使用prepare_map_memory_region以减少内存压力</li>
+<li class="">技能训练批处理：批量训练/练习应考虑时间步进与生锈衰减，避免频繁小步训练导致效率低下</li>
+<li class="">格斗系统判定：ma_requirements的条件检查在战斗中频繁触发，建议保持条件集合最小化与缓存常用结果</li>
+<li class="">存档序列化：avatar的序列化/反序列化涉及大量数据（物品、任务、日记、卡路里日志），建议在存档前清理冗余数据</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排除指南">故障排除指南<a href="#故障排除指南" class="hash-link" aria-label="故障排除指南的直接链接" title="故障排除指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">角色创建异常
+<ul>
+<li class="">检查profession定义是否有效（profession::check_definition），确保物品/法术/技能/宠物等ID正确</li>
+<li class="">确认newcharacter的点池/场景/职业选择逻辑未越界</li>
+</ul>
+</li>
+<li class="">格斗流派不可用
+<ul>
+<li class="">检查ma_requirements的武器类别/技能等级/角色标志是否满足</li>
+<li class="">确认martialart::weapon_valid与允许的武器/类别一致</li>
+</ul>
+</li>
+<li class="">技能训练无效
+<ul>
+<li class="">检查SkillLevel的训练参数与生锈衰减逻辑</li>
+<li class="">确认avatar::read的书籍/手册是否正确绑定技能</li>
+</ul>
+</li>
+<li class="">存档加载失败
+<ul>
+<li class="">检查savegame_json::avatar::load中profession与hobbies的兼容性</li>
+<li class="">确认模板版本与当前定义的兼容性</li>
+</ul>
+</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">profession.cpp</li>
+<li class="">martialarts.cpp</li>
+<li class="">avatar.cpp</li>
+<li class="">savegame_json.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>Avatar作为Cataclysm-DDA玩家角色管理的核心，通过与Character、profession、martialarts、skill等模块的协同，实现了从角色创建到日常状态管理、从技能训练到格斗系统集成的完整闭环。其设计强调可扩展性（模板/职业/流派）与可玩性（任务/日记/地图记忆），同时在性能与稳定性方面提供了清晰的边界与优化空间。对于开发者而言，理解Avatar与各子系统的接口契约与数据流转是高效迭代的关键。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/游戏核心系统/角色系统/玩家角色管理.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/技能与经验系统"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">技能与经验系统</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/角色属性系统"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">角色属性系统</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#组件aavatar类与character的关系" class="table-of-contents__link toc-highlight">组件A：Avatar类与Character的关系</a></li><li><a href="#组件b角色创建与初始化流程" class="table-of-contents__link toc-highlight">组件B：角色创建与初始化流程</a></li><li><a href="#组件c职业系统与初始装备配置" class="table-of-contents__link toc-highlight">组件C：职业系统与初始装备配置</a></li><li><a href="#组件d技能树系统与经验计算" class="table-of-contents__link toc-highlight">组件D：技能树系统与经验计算</a></li><li><a href="#组件emartial-arts系统集成与特殊能力" class="table-of-contents__link toc-highlight">组件E：Martial Arts系统集成与特殊能力</a></li><li><a href="#组件f状态管理与日常统计" class="table-of-contents__link toc-highlight">组件F：状态管理与日常统计</a></li><li><a href="#组件g与游戏世界的交互" class="table-of-contents__link toc-highlight">组件G：与游戏世界的交互</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排除指南" class="table-of-contents__link toc-highlight">故障排除指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

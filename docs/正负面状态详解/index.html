@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-正负面状态详解" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">正负面状态详解 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/正负面状态详解"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="正负面状态详解 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="气候状态"><meta data-rh="true" property="og:description" content="气候状态"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/正负面状态详解"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/正负面状态详解" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/正负面状态详解" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"正负面状态详解","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/正负面状态详解"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/基础教程"><span title="基础教程" class="linkLabel_WmDU">基础教程</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/世界设置详解"><span title="世界设置详解" class="linkLabel_WmDU">世界设置详解</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/刷新范围，现实气泡"><span title="刷新范围，现实气泡" class="linkLabel_WmDU">刷新范围，现实气泡</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/常见问题 Q&amp;A"><span title="常见问题 Q&amp;A" class="linkLabel_WmDU">常见问题 Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/CDDA-CN-Guide/docs/属性的影响"><span title="小@的状态" class="categoryLinkLabel_W154">小@的状态</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/属性的影响"><span title="属性的影响" class="linkLabel_WmDU">属性的影响</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/健身·心肺运动"><span title="健身·心肺运动" class="linkLabel_WmDU">健身·心肺运动</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/疼痛与止痛药"><span title="疼痛与止痛药" class="linkLabel_WmDU">疼痛与止痛药</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/速度与移动耗时"><span title="速度与移动耗时" class="linkLabel_WmDU">速度与移动耗时</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/正负面状态详解"><span title="正负面状态详解" class="linkLabel_WmDU">正负面状态详解</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/常见疾病诊治方法"><span title="常见疾病诊治方法" class="linkLabel_WmDU">常见疾病诊治方法</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/技能与专长"><span title="技能与专长" class="linkLabel_WmDU">技能与专长</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/特性解释及评价"><span title="特性解释及评价" class="linkLabel_WmDU">特性解释及评价</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/怪物机制"><span title="怪物机制" class="linkLabel_WmDU">怪物机制</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/攻击与防御"><span title="攻击与防御" class="categoryLinkLabel_W154">攻击与防御</span></a><button aria-label="展开侧边栏分类 &#x27;攻击与防御&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/CDDA-CN-Guide/docs/CBM体系与功能详解"><span title="CBM/变异" class="categoryLinkLabel_W154">CBM/变异</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/NPC与任务流程"><span title="NPC与任务流程" class="linkLabel_WmDU">NPC与任务流程</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/食物获取与储存"><span title="食物获取与储存" class="linkLabel_WmDU">食物获取与储存</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/载具机制"><span title="载具机制" class="linkLabel_WmDU">载具机制</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/实验版家电系统"><span title="实验版家电系统" class="linkLabel_WmDU">实验版家电系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/空间风暴事件"><span title="空间风暴事件" class="linkLabel_WmDU">空间风暴事件</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/地点概述与探索建议"><span title="地点概述与探索建议" class="linkLabel_WmDU">地点概述与探索建议</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/神器系统详细解释"><span title="神器系统详细解释" class="linkLabel_WmDU">神器系统详细解释</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">玩家手册</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">小@的状态</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">正负面状态详解</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>正负面状态详解</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="气候状态">气候状态<a href="#气候状态" class="hash-link" aria-label="气候状态的直接链接" title="气候状态的直接链接" translate="no">​</a></h2>
+<p>气候状态主要来源于天气，装备可以有效避免，但不管也不是太有所谓……就是尽量别淋雨；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="眩目">眩目<a href="#眩目" class="hash-link" aria-label="眩目的直接链接" title="眩目的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于「晴」天气，只要还处在阳光照射范围下便会-1感知。</strong></p>
+<p><strong>应对手段</strong>：佩戴含有「遮挡刺眼阳光」词条的装备可避免此效应；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="湿润">湿润<a href="#湿润" class="hash-link" aria-label="湿润的直接链接" title="湿润的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于雨天或玩家进入深水，湿润会降低衣物的保暖性，并降低一定的心情。</strong></p>
+<p><strong>应对手段</strong>：一些变异会让你被淋湿或进入水中时心情愉悦。</p>
+<p>打伞可以避免头、身、手被雨淋湿，但腿脚依然会受到影响。</p>
+<p>防水衣物可以让你避免湿润的影响，但进入深水还是会湿。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="控制类状态">控制类状态<a href="#控制类状态" class="hash-link" aria-label="控制类状态的直接链接" title="控制类状态的直接链接" translate="no">​</a></h2>
+<p>控制类状态通常发生于陷阱、敌人的特殊攻击或单纯的过度疲惫导致不慎失去行动能力，一些特殊地块也会附加此类效果；尽量别踩坑里就好；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="捕熊陷阱">捕熊陷阱<a href="#捕熊陷阱" class="hash-link" aria-label="捕熊陷阱的直接链接" title="捕熊陷阱的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于你一脚踩进捕熊陷阱时，立刻造成35点伤害，使你无法移动。</strong></p>
+<p><strong>应对手段</strong>：每回合会自动尝试挣脱陷阱，高力量有助于成功率；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="掩埋">掩埋<a href="#掩埋" class="hash-link" aria-label="掩埋的直接链接" title="掩埋的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于承重柱被摧毁导致建筑坍塌，然后你还正好在底下站着时。</strong></p>
+<p><strong>通常会导致你被砸伤，并且你在挣脱之前无法移动；</strong></p>
+<p><strong>应对手段</strong>：每回合会自动尝试挣脱瓦砾，高力量有助于成功率；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被抓取">被抓取<a href="#被抓取" class="hash-link" aria-label="被抓取的直接链接" title="被抓取的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于被具有抓取敌人的攻击抓取时。</strong></p>
+<p><strong>一旦被抓取，则你身边其他具有抓取技能的敌人同时也会抓取你；</strong></p>
+<p><strong>被抓取时，你的闪避会下降，具体幅度取决于抓取你的敌人数量；</strong></p>
+<p><strong>被抓取时，你的速度会下降，具体幅度取决于抓取你的敌人数量；</strong></p>
+<p><strong>应对手段：尝试远离抓取你的单位即可试图挣脱，杀死抓取你的单位也可挣脱。</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="陷入深坑">陷入深坑<a href="#陷入深坑" class="hash-link" aria-label="陷入深坑的直接链接" title="陷入深坑的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于踩进深坑的时候……为啥会踩深坑。</strong></p>
+<p><strong>通常会导致你摔伤，在坑内时只能看到周围1格距离；</strong></p>
+<p><strong>应对手段：朝空地移动以尝试从坑中爬出，成功率受力量、敏捷等影响；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="步履不稳">步履不稳<a href="#步履不稳" class="hash-link" aria-label="步履不稳的直接链接" title="步履不稳的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：进入会提示「你试着保持平衡」的地块时。</strong></p>
+<p><strong>通常会导致：闪避除4、近战命中率-25%；</strong></p>
+<p><strong>应对手段：离开地块就行，请把敌人引到这个地方而不是自己站上去；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="气喘吁吁">气喘吁吁<a href="#气喘吁吁" class="hash-link" aria-label="气喘吁吁的直接链接" title="气喘吁吁的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：耐力低于20%时随机发生，越接近于零概率越高；</strong></p>
+<p><strong>通常会导致：-3力量、-1敏捷、-1感知，-30速度，持续增加疼痛（最高+20），无法触发闪避、格挡，无法跑步、骑自行车，耐力恢复速度降低90%；</strong></p>
+<p>这通常是我反复强调要控制耐力的原因；</p>
+<p><strong>应对手段：最短10秒，最长30秒，控制耐力并及时退出战场恢复更佳；</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="地域类状态">地域类状态<a href="#地域类状态" class="hash-link" aria-label="地域类状态的直接链接" title="地域类状态的直接链接" translate="no">​</a></h2>
+<p>地域类状态通常发生于各种各样的地域之上；通常地图方格上可以明显的看到诸如起火、烟雾、蛛网等各种各样的地域效果，有些可能由特殊的敌人生成。总之请小心谨慎；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="着火">着火<a href="#着火" class="hash-link" aria-label="着火的直接链接" title="着火的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被各种东西点燃，火中做自己；</strong></p>
+<p><strong>通常会导致：着火部位持续损失生命值，通常也会导致大量疼痛积累；烧焦并最终烧毁身上的装备；</strong></p>
+<p><strong>应对手段：移动到水面上可立即灭火，在原地等待也会尝试扑灭火焰；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="沾满汁液">沾满汁液<a href="#沾满汁液" class="hash-link" aria-label="沾满汁液的直接链接" title="沾满汁液的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被异形花喷了一脸或踩在了异形花喷出的树液上；</strong></p>
+<p><strong>通常会导致：降低3点敏捷，25速度；</strong></p>
+<p><strong>应对手段：自然消散；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="沾满粘液">沾满粘液<a href="#沾满粘液" class="hash-link" aria-label="沾满粘液的直接链接" title="沾满粘液的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被变形怪喷了一腿，踩到粘液坑；</strong></p>
+<p><strong>通常会导致：降低2点敏捷，25速度，如果是粘液坑，双腿受到轻度伤害；</strong></p>
+<p><strong>应对手段：自然消散或者用毛巾擦拭；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="吸入烟雾">吸入烟雾<a href="#吸入烟雾" class="hash-link" aria-label="吸入烟雾的直接链接" title="吸入烟雾的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：身处烟雾地形，站在火上（然后吸入烟雾）；</strong></p>
+<p><strong>通常会导致：降低1点敏捷，1点力量，20%概率发出咳嗽，咳嗽产生12点噪音，消耗80行动点，伤害躯干1点；</strong></p>
+<p>一般就是跟一些烟雾丧尸时可能会吸入大量烟雾，烟雾还有遮蔽气味和阻断视线的额外效果，其实可以利用起来规避敌人；</p>
+<p><strong>应对手段：启用防毒面具、过滤面具可使你免疫此状态；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="麻醉气体">麻醉气体<a href="#麻醉气体" class="hash-link" aria-label="麻醉气体的直接链接" title="麻醉气体的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：身处麻醉毒气地形；</strong></p>
+<p><strong>通常会导致：降低3点力量、3点敏捷、2点智力、4点感知；大幅下降近战、远程、投掷攻击的成功率并附加特殊描述。</strong></p>
+<p>镇暴机器人配备有这玩意，而且这玩意能直接干碎作战能力。</p>
+<p><strong>应对手段：启用防毒面具、过滤面具可使你免疫此状态；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="催泪瓦斯">催泪瓦斯<a href="#催泪瓦斯" class="hash-link" aria-label="催泪瓦斯的直接链接" title="催泪瓦斯的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：身处催泪瓦斯地形；</strong></p>
+<p><strong>通常会导致：降低2点力量、2点敏捷、5点感知、10点速度、33%概率发出咳嗽，咳嗽产生12点噪音，消耗80行动点，伤害躯干1点；</strong></p>
+<p><strong>如果眼部缺乏防护，还有可能会导致暂时失明。</strong></p>
+<p><strong>应对手段：启用防毒面具、过滤面具可使你免疫此状态，佩戴过滤面具时需额外佩戴一些眼部防护；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被网住">被网住<a href="#被网住" class="hash-link" aria-label="被网住的直接链接" title="被网住的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被蛛网网了，别踩在蜘蛛网上；</strong></p>
+<p><strong>通常会导致：降低10/20/30的速度，取决于网你的是什么网；</strong></p>
+<p><strong>应对手段：很容易挣脱，有相关变异可以免疫蛛网；</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="攻击性状态">攻击性状态<a href="#攻击性状态" class="hash-link" aria-label="攻击性状态的直接链接" title="攻击性状态的直接链接" translate="no">​</a></h2>
+<p>攻击性状态通常来自于敌人的特殊攻击，有一些则是受伤时的连带反应，但基本都发生于战斗之中； 大部分攻击性异常都具有可预测性，如对抗带电丧尸一定有被电击的可能性，对抗爆汁系丧尸也有大概率被吐胆汁；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="失血">失血<a href="#失血" class="hash-link" aria-label="失血的直接链接" title="失血的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：受到伤害</strong></p>
+<p><strong>通常会导致：生命值持续下降、疼痛提升，</strong></p>
+<p>更详细的失血解释请看下方的疾病诊治关于失血的条目；</p>
+<p><strong>应对手段：打绷带；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="失明">失明<a href="#失明" class="hash-link" aria-label="失明的直接链接" title="失明的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：受伤时有可能会抓伤眼部、被闪光弹闪了、催泪瓦斯等</strong></p>
+<p><strong>通常会导致：无法视物，撞到不可通过的障碍物时损失100行动点，无法自动开门，一般持续1~5回合；</strong></p>
+<p><strong>应对手段：自然回复；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被喷胆汁">被喷胆汁<a href="#被喷胆汁" class="hash-link" aria-label="被喷胆汁的直接链接" title="被喷胆汁的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：跟爆汁系丧尸对线时被喷一脸，传送病</strong></p>
+<p><strong>通常会导致：减少3点感知，视野范围缩减至1点；</strong></p>
+<p><strong>如果爆汁系丧尸爆炸，则至少造成20点左右的噪音；</strong></p>
+<p>如果在尸潮里被喷上了，那问题就有点大了；</p>
+<p><strong>应对手段：自然回复、毛巾擦干、生理盐水；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被腐蚀">被腐蚀<a href="#被腐蚀" class="hash-link" aria-label="被腐蚀的直接链接" title="被腐蚀的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：踩到酸液池，跟酸液系敌人对线时被喷一身，不穿胶鞋就捣碎酸液丧尸；</strong></p>
+<p><strong>通常会导致：持续性对被腐蚀部位造成伤害、积累疼痛；</strong></p>
+<p><strong>应对手段：有效对酸的环境保护装备可有效对抗酸蚀伤害，橡胶鞋能让你安全的来往于酸液池中（仍有警示）；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="失聪">失聪<a href="#失聪" class="hash-link" aria-label="失聪的直接链接" title="失聪的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：听到高于150的噪音时、被闪光弹糊脸时、爆炸、建筑倒塌；</strong></p>
+<p><strong>通常会导致：丧失声音信息、无法与NPC交流；</strong></p>
+<p>通常而言，毫无防护的听到炸药爆炸必然会导致长时间失聪，平时备战状态就打开射击护耳吧。</p>
+<p><strong>应对手段：常备耳塞、射击护耳；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被震晕">被震晕<a href="#被震晕" class="hash-link" aria-label="被震晕的直接链接" title="被震晕的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：遭受尖啸丧尸、利爪怪等尖叫生物的声波攻击；</strong></p>
+<p><strong>通常会导致：减少5点感知、3点敏捷，可叠加的速度减益；</strong></p>
+<p><strong>应对手段：戴上耳塞，世界与你无关；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被击倒">被击倒<a href="#被击倒" class="hash-link" aria-label="被击倒的直接链接" title="被击倒的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被你殴打的各种敌人身上，一些敌人的特殊攻击；</strong></p>
+<p><strong>通常会导致：被击倒在地动弹不得，每轮需要通过力量检定起身，无论有没有爬起来都要消耗100行动点；</strong></p>
+<p><strong>应对手段：用移动键尝试爬起来，必须尝试爬起来！</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被寄生">被寄生<a href="#被寄生" class="hash-link" aria-label="被寄生的直接链接" title="被寄生的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：寄生蜂在你身上产卵的时候；</strong></p>
+<p><strong>通常会导致：随机出现抓挠自己的现象，如发生此现象，降低1点力量、2点智力，消耗150行动点；寄生持续一天后将导致幼虫从身体中喷涌而出，随机部位受到轻微伤害。幼虫数量取决于力量水平（最多10点力量，出现6只），幼虫有33%概率对你友好。</strong></p>
+<p><strong>个人建议：能用远程解决就用远程解决寄生蜂吧，巢穴的射界还挺好的。</strong></p>
+<p><strong>应对手段：酸性血液、寄生虫免疫可以避免此类现象，闪避、招架、高护甲均可避免被产卵。</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="疼痛">疼痛<a href="#疼痛" class="hash-link" aria-label="疼痛的直接链接" title="疼痛的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：受到伤害；</strong></p>
+<p><strong>通常会导致：随疼痛水平增长的惩罚。</strong></p>
+<p><strong>应对手段：止痛药，详细请查看属性影响「疼痛条目」。</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="中毒严重中毒虚弱毒素">中毒\严重中毒\虚弱毒素<a href="#中毒严重中毒虚弱毒素" class="hash-link" aria-label="中毒\严重中毒\虚弱毒素的直接链接" title="中毒\严重中毒\虚弱毒素的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被带有毒素的敌人攻击、被蜘蛛咬伤，处于有毒气体之中，吃了些奇怪的蘑菇；</strong></p>
+<p><strong>通常会导致：中毒将导致敏捷、感知减少1点、力量减少2点、躯干每轮有概率受到伤害、每轮概率增加疼痛。</strong></p>
+<p><strong>严重中毒将导致速度-10、敏捷、感知减少2点、力量减少3点，躯干每轮有更高概率受到伤害、更高概率增加疼痛。</strong></p>
+<p><strong>虚弱毒素将导致力量、敏捷减少4点，速度减少23点；</strong></p>
+<p>玩家可以通过一些变异以获得剧毒攻击，在敌人身上就不那么显著了。</p>
+<p><strong>个人建议</strong>：请尽可能通过远程手段对抗具有毒性攻击的单位，中毒带来的后果十分持久且严重。</p>
+<p><strong>应对手段：防毒面具可以有效避免毒气，但无法避免毒性攻击。血液过滤CBM可以解毒，没有就忍着吧。</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="类鼠疫">类鼠疫<a href="#类鼠疫" class="hash-link" aria-label="类鼠疫的直接链接" title="类鼠疫的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：跟鼠王对线时站在鼠王9格内时，每三轮都会听到鼠王的小声BB，该特殊攻击将会为你叠加类鼠疫效果；</strong></p>
+<p><strong>通常会导致：此类减益状态会不断的叠加，将迅速且极大地减少智力、感知与力量水平，每轮都有极低概率呕吐。</strong></p>
+<p><strong>当叠加一定程度后会导致鼠类变异，再重新记层；实验版机制不明；</strong></p>
+<p>鼠王本身是个没护甲、低攻击、血量偏少的精英怪，你很容易在属性惩罚提高到不可控制之前完成击杀……你说你要用他刷鼠类变异？</p>
+<p><strong>应对手段：击杀鼠王可立刻消除此状态；即便你感觉无法处理鼠王，远离它也可以快速消除类鼠疫效果；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="眩晕">眩晕<a href="#眩晕" class="hash-link" aria-label="眩晕的直接链接" title="眩晕的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被你殴打的各种敌人，被NPC殴打的你；</strong></p>
+<p><strong>通常会导致：被击晕的目标将会随机移动，如果移动到障碍物上，则损失100行动点数；</strong></p>
+<p><strong>应对手段：一般击晕是玩家专属的控制手段，如果被击晕了也没办法，反正持续时间短，慢慢来；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="沾满孢子">沾满孢子<a href="#沾满孢子" class="hash-link" aria-label="沾满孢子的直接链接" title="沾满孢子的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：毫无防护处于真菌地带，或者被真菌打了；</strong></p>
+<p><strong>通常会导致：减少15点速度，大概率再送你一个真菌感染；</strong></p>
+<p><strong>应对手段：15速度不是大问题，麻烦的是真菌感染，请参考下方疾病诊断问诊；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被电击">被电击<a href="#被电击" class="hash-link" aria-label="被电击的直接链接" title="被电击的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被警用机器人等电了；被带电的丧尸电了；被电击枪电了；</strong></p>
+<p><strong>通常会导致：高昂的疼痛积累，短期内承受大量敏捷、速度惩罚，基本意味着数回合内无法行动；</strong></p>
+<p><strong>应对手段：电免装备一套、电容CBM、都没有就硬吃吧；别用导电武器打带电的东西；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="阿弥壳断层怪效应">阿弥壳断层怪效应<a href="#阿弥壳断层怪效应" class="hash-link" aria-label="阿弥壳断层怪效应的直接链接" title="阿弥壳断层怪效应的直接链接" translate="no">​</a></h3>
+<p>游戏里一般翻译叫阿米格拉，出自伊藤润二的恐怖漫画《阿弥壳断层之怪》，其大致还原了阿弥壳岳那诡异的吸引力……但毕竟不能真的让你挤进断层，游戏里有断层吗？</p>
+<p><strong>通常发生于：当矿洞最后一层为阿米格拉事件时，破解底层电脑并启动地震源将附加2分钟此类特殊状态并在30秒后召唤出数个阿米格拉；</strong></p>
+<p><strong>通常会导致：显示“你紧盯着裂痕...”，无法向远离阿米格拉断层方向移动（“你无法逃离裂痕……”），可以平行于阿米格拉断层移动或向其靠近；</strong></p>
+<p><strong>应对手段：以最快的速度杀死矿洞内所有的阿米格拉，然后再把整个楼层探索一遍，一般只要杀死区域内所有的阿米格拉就会在矿洞内生成一个「神器」，我可不希望你错过这个；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="恐惧">恐惧<a href="#恐惧" class="hash-link" aria-label="恐惧的直接链接" title="恐惧的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：恐怖类敌人的特殊攻击；黑暗恐惧症离谱的负面之一；</strong></p>
+<p><strong>通常会导致：立刻损失少量回合；</strong></p>
+<p><strong>应对手段：（1）戴上眼罩等失明手段可以使玩家完全免遭恐惧攻击的影响，不过战斗会受到一些阻碍，尤其是远程；（2）戴锡纸帽、穿相位防护服（开）可以概率豁免恐惧攻击，锡纸帽很好做；（3）智力越高被麻痹的概率越低，智力达到20可以完全免疫影响，通常恐怖类怪物不太会集群出现，如果有，第一时间解决；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="异界关注">异界关注<a href="#异界关注" class="hash-link" aria-label="异界关注的直接链接" title="异界关注的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：一些神器主动所带来的负面效果；</strong></p>
+<p><strong>通常会导致：每回合都有概率生成一些异界类怪物，一旦生成则大幅减少持续时间；最大的麻烦主要是有可能生成数据颇为离谱的廷达罗斯猎犬，如果没有应对这玩意的手段，通常会导致游戏直接结束；</strong></p>
+<p><strong>应对手段：如果是神器效应，考虑下值不值得吧。</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="传送病">传送病<a href="#传送病" class="hash-link" aria-label="传送病的直接链接" title="传送病的直接链接" translate="no">​</a></h3>
+<p>通常是一种隐形病症，一些贴图包会非常友善的给你指明你患上这玩意了，<strong>当你使用传送装置、使用时间膨胀CBM及一些神器都会导致此类状态；</strong></p>
+<p><strong>该状态的负面效果取决于持续时间，叠加的持续时间越长，可能出现的负面效果就越多，相对来说也就越危险；</strong></p>
+<p><strong>传送病效果：（按照判定顺序）</strong></p>
+<p><strong>①持续时长&gt;10小时</strong>：</p>
+<ul>
+<li class=""><strong>1/(6600-持续时长分钟数)概率</strong>：</li>
+</ul>
+<p><strong>传送自身（会增加30分钟时长），1/10概率移除传送病</strong></p>
+<p><strong>②1/(7290-时长分钟数/4)概率</strong>：</p>
+<p><strong>增加“廷达罗斯裂隙”效果5分钟，1/2概率移除传送病</strong></p>
+<p><strong>③1/((8400-时长分钟数2)20)概率</strong>：</p>
+<p><strong>显示“你失去了意识。”，昏迷两小时，1/6概率移除传送病</strong></p>
+<p><strong>④持续时长&gt;6小时</strong>：</p>
+<ul>
+<li class=""><strong>1/(29400-时长分钟数*15)概率</strong>：</li>
+</ul>
+<p><strong>在玩家为中心9*9的正方形范围内尝试生成异界怪物；</strong></p>
+<p><strong>若生成成功，显示“一道传送门在你附近开启了，一个怪物从     中爬了出来！”，1/2概率移除传送病</strong></p>
+<ul>
+<li class=""><strong>1/(26400-时长分钟数*15)概率</strong>：</li>
+</ul>
+<p><strong>显示“你突然颤抖。”，随机变异，1/4概率移除传送病</strong></p>
+<p><strong>⑤持续时长&gt;4小时</strong>：</p>
+<ul>
+<li class=""><strong>若无“服用抗惊厥药物”状态时，1/(60000-持续时长秒数)概率</strong>：</li>
+</ul>
+<p><strong>增加颤抖状态4到8分钟；</strong></p>
+<ul>
+<li class=""><strong>1/(72000-持续时长秒数)概率</strong>：</li>
+</ul>
+<p><strong>显示“你的视野内充满了亮光……”，致盲1到2分钟，1/8概率移除</strong></p>
+<p><strong>传送病</strong></p>
+<ul>
+<li class=""><strong>若无幻觉状态时，1/5000概率</strong>：</li>
+</ul>
+<p><strong>增加幻觉状态6小时，1/5概率移除传送病</strong></p>
+<p><strong>⑥1/4000概率</strong>：</p>
+<p><strong>显示“你突然被一层灵能物质所覆盖。”，胆汁糊脸10分钟，1/4概    率移除传送病</strong></p>
+<p><strong>⑦1/10000概率</strong>：</p>
+<p><strong>若无马卡斯认同特性</strong>：</p>
+<p><strong>真菌感染，移除传送病</strong></p>
+<p><strong>否则显示“吾等尚有许多开拓者等待通行。”，无效果</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="精神污染">精神污染<a href="#精神污染" class="hash-link" aria-label="精神污染的直接链接" title="精神污染的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：被燃烧之眼瞪了；</strong></p>
+<p><strong>通常会导致</strong>：</p>
+<p><strong>长时间的失明、长时间的幻觉、有可能附加廷达罗斯裂隙；</strong></p>
+<p><strong>随污染程度提高的全属性惩罚，随机发生呕吐；</strong></p>
+<p><strong>应对手段：要么不招惹燃烧之眼，要么第一时间处理燃烧之眼，燃烧之眼的凝视攻击可以使用开启的五点式空间锚完全防御；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="廷达罗斯裂隙">廷达罗斯裂隙<a href="#廷达罗斯裂隙" class="hash-link" aria-label="廷达罗斯裂隙的直接链接" title="廷达罗斯裂隙的直接链接" translate="no">​</a></h3>
+<p><strong>通常发生于：一些负面状态的附加效果；</strong></p>
+<p><strong>通常会导致：如果你的周围有墙角，在墙角生成数个裂痕，每个裂痕概率生成廷达罗斯猎犬，移除廷达罗斯裂痕；</strong></p>
+<p><strong>应对手段：一般产生这个buff要么是燃烧之眼，要么是传送病；</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="戒断状态">戒断状态<a href="#戒断状态" class="hash-link" aria-label="戒断状态的直接链接" title="戒断状态的直接链接" translate="no">​</a></h2>
+<p>游戏内存在一些成瘾物品，如常见的咖啡因、尼古丁及一些不那么常见的成瘾品；如果你在短时间内大量消耗了一种成瘾品，则有极大可能性导致成瘾症状；成瘾通常会导致非常严重的后果，如果无法定期使用成瘾物质就会遭受惩罚，具体惩罚高低取决于成瘾品的成瘾强度；咖啡因、尼古丁的惩罚总归比吗啡要小的多；</p>
+<p>通常情况下，玩家对每个成瘾症状都有一个隐藏计数，当你不摄入成瘾物品时，此计数就保持为0；一旦你摄入成瘾物质，则该计数就有一定可能性提高1点，概率主要取决于成瘾品的类型，具体只能靠生活经验判断；一旦计数抵达到3点则视为成瘾；一旦信息栏中出现你迫切需要某种物质，则代表成瘾已经开始产生影响；</p>
+<p>成瘾发生时你有两种选择，忽略它以彻底戒除成瘾，满足它以结束成瘾；如果选择满足它，则成瘾症状暂时消失，但下次他会更快到来也更难被戒断；如果选择忽略它，你将会经受漫长且逐渐显著的负面状态，承担各种各样的后果，但最终你会战胜并彻底戒断它；</p>
+<p>在游戏中使用成瘾品需秉承谨慎适量原则，有节制且保持一段时间间隔的使用而不是短期内大量使用，即使是最为紧急的时刻也请保持谨慎给药，控制剂量；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="尼古丁戒断">尼古丁戒断<a href="#尼古丁戒断" class="hash-link" aria-label="尼古丁戒断的直接链接" title="尼古丁戒断的直接链接" translate="no">​</a></h3>
+<p>一般含有尼古丁一类的只有香烟了，倒是很好满足，就是大晚上烟瘾上来了会把自己变成黑夜里的萤火虫，让一堆丧尸迫不及待的朝你冲过来；</p>
+<ul>
+<li class=""><strong>每次触发降低15点心情，上限取决于积累的成瘾强度；</strong></li>
+<li class=""><strong>有较低概率导致玩家疲劳；</strong></li>
+<li class=""><strong>有概率增加1点镇静剂水平；</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="咖啡因戒断">咖啡因戒断<a href="#咖啡因戒断" class="hash-link" aria-label="咖啡因戒断的直接链接" title="咖啡因戒断的直接链接" translate="no">​</a></h3>
+<p>你要是把原子咖啡当水喝就容易出这事儿，咖啡也不能当水喝；</p>
+<ul>
+<li class=""><strong>每次触发降低5点心情，最多降低30点；</strong></li>
+<li class=""><strong>有概率增加1点镇静剂水平；</strong></li>
+<li class=""><strong>成瘾强度较高时，戒断会导致「颤抖」</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="酒精戒断">酒精戒断<a href="#酒精戒断" class="hash-link" aria-label="酒精戒断的直接链接" title="酒精戒断的直接链接" translate="no">​</a></h3>
+<p>呃，真的有人会一次摄入大量酒精吗；</p>
+<ul>
+<li class=""><strong>智力和感知下降1点；</strong></li>
+<li class=""><strong>每次触发降低35点心情，上限取决于积累的成瘾强度；</strong></li>
+<li class=""><strong>颤抖、幻觉</strong></li>
+<li class=""><strong>极少量的随机部位生命值损失；</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="镇静剂戒断">镇静剂戒断<a href="#镇静剂戒断" class="hash-link" aria-label="镇静剂戒断的直接链接" title="镇静剂戒断的直接链接" translate="no">​</a></h3>
+<p>这个戒断难度还挺大的；</p>
+<ul>
+<li class=""><strong>智力和感知下降1点；</strong></li>
+<li class=""><strong>每次触发降低35点心情，上限取决于积累的成瘾强度；</strong></li>
+<li class=""><strong>颤抖、幻觉</strong></li>
+<li class=""><strong>极少量的随机部位生命值损失；</strong></li>
+<li class=""><strong>跟酒精的分开算</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="镇痛剂戒断">镇痛剂戒断<a href="#镇痛剂戒断" class="hash-link" aria-label="镇痛剂戒断的直接链接" title="镇痛剂戒断的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>力量、感知、敏捷各降低1点；</strong></li>
+<li class=""><strong>每次触发降低30心情，上限取决于积累的成瘾强度；</strong></li>
+<li class=""><strong>导致颤抖或呕吐；</strong></li>
+<li class=""><strong>造成轻微疼痛；</strong></li>
+<li class=""><strong>产生对止痛药的耐药性；</strong></li>
+<li class=""><strong>极少量的随机部位生命值损失</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="冰毒戒断">冰毒戒断<a href="#冰毒戒断" class="hash-link" aria-label="冰毒戒断的直接链接" title="冰毒戒断的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>智力、力量各降低1点；</strong></li>
+<li class=""><strong>每次触发降低30心情，上限取决于积累的成瘾强度；</strong></li>
+<li class=""><strong>有概率增加1点镇静剂水平；</strong></li>
+<li class=""><strong>极少量的随机部位生命值损失</strong></li>
+<li class=""><strong>偶发性失神，大概会损耗300行动点数用于原地发呆；</strong></li>
+<li class=""><strong>颤抖和幻觉</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="可卡因戒断">可卡因戒断<a href="#可卡因戒断" class="hash-link" aria-label="可卡因戒断的直接链接" title="可卡因戒断的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>智力、感知各降低1点；</strong></li>
+<li class=""><strong>每次触发降低20心情，上限取决于积累的成瘾强度；</strong></li>
+<li class=""><strong>有概率增加3点镇静剂水平；</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="快客可卡因戒断">快客可卡因戒断<a href="#快客可卡因戒断" class="hash-link" aria-label="快客可卡因戒断的直接链接" title="快客可卡因戒断的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>智力、感知各降低1点；</strong></li>
+<li class=""><strong>每次触发降低20心情，上限取决于积累的成瘾强度；</strong></li>
+<li class=""><strong>有概率增加3点镇静剂水平；</strong></li>
+<li class=""><strong>可以和可卡因阶段叠加</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="安眠药戒断">安眠药戒断<a href="#安眠药戒断" class="hash-link" aria-label="安眠药戒断的直接链接" title="安眠药戒断的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>很难睡着；</strong></li>
+<li class=""><strong>吃止咳糖浆也有可能导致安眠药戒断</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="诱变剂戒断">诱变剂戒断<a href="#诱变剂戒断" class="hash-link" aria-label="诱变剂戒断的直接链接" title="诱变剂戒断的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>只会降低心情；</strong></li>
+<li class=""><strong>当拥有「诱变剂迷恋」时，大幅提高戒断带来的心情减益及减益上限；</strong></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="医疗状态">医疗状态<a href="#医疗状态" class="hash-link" aria-label="医疗状态的直接链接" title="医疗状态的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="已包扎已消毒">已包扎、已消毒<a href="#已包扎已消毒" class="hash-link" aria-label="已包扎、已消毒的直接链接" title="已包扎、已消毒的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>根据包扎、消毒效果提高伤口痊愈速度；</strong></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/正负面状态详解.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/速度与移动耗时"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">速度与移动耗时</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/常见疾病诊治方法"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">常见疾病诊治方法</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#气候状态" class="table-of-contents__link toc-highlight">气候状态</a><ul><li><a href="#眩目" class="table-of-contents__link toc-highlight">眩目</a></li><li><a href="#湿润" class="table-of-contents__link toc-highlight">湿润</a></li></ul></li><li><a href="#控制类状态" class="table-of-contents__link toc-highlight">控制类状态</a><ul><li><a href="#捕熊陷阱" class="table-of-contents__link toc-highlight">捕熊陷阱</a></li><li><a href="#掩埋" class="table-of-contents__link toc-highlight">掩埋</a></li><li><a href="#被抓取" class="table-of-contents__link toc-highlight">被抓取</a></li><li><a href="#陷入深坑" class="table-of-contents__link toc-highlight">陷入深坑</a></li><li><a href="#步履不稳" class="table-of-contents__link toc-highlight">步履不稳</a></li><li><a href="#气喘吁吁" class="table-of-contents__link toc-highlight">气喘吁吁</a></li></ul></li><li><a href="#地域类状态" class="table-of-contents__link toc-highlight">地域类状态</a><ul><li><a href="#着火" class="table-of-contents__link toc-highlight">着火</a></li><li><a href="#沾满汁液" class="table-of-contents__link toc-highlight">沾满汁液</a></li><li><a href="#沾满粘液" class="table-of-contents__link toc-highlight">沾满粘液</a></li><li><a href="#吸入烟雾" class="table-of-contents__link toc-highlight">吸入烟雾</a></li><li><a href="#麻醉气体" class="table-of-contents__link toc-highlight">麻醉气体</a></li><li><a href="#催泪瓦斯" class="table-of-contents__link toc-highlight">催泪瓦斯</a></li><li><a href="#被网住" class="table-of-contents__link toc-highlight">被网住</a></li></ul></li><li><a href="#攻击性状态" class="table-of-contents__link toc-highlight">攻击性状态</a><ul><li><a href="#失血" class="table-of-contents__link toc-highlight">失血</a></li><li><a href="#失明" class="table-of-contents__link toc-highlight">失明</a></li><li><a href="#被喷胆汁" class="table-of-contents__link toc-highlight">被喷胆汁</a></li><li><a href="#被腐蚀" class="table-of-contents__link toc-highlight">被腐蚀</a></li><li><a href="#失聪" class="table-of-contents__link toc-highlight">失聪</a></li><li><a href="#被震晕" class="table-of-contents__link toc-highlight">被震晕</a></li><li><a href="#被击倒" class="table-of-contents__link toc-highlight">被击倒</a></li><li><a href="#被寄生" class="table-of-contents__link toc-highlight">被寄生</a></li><li><a href="#疼痛" class="table-of-contents__link toc-highlight">疼痛</a></li><li><a href="#中毒严重中毒虚弱毒素" class="table-of-contents__link toc-highlight">中毒\严重中毒\虚弱毒素</a></li><li><a href="#类鼠疫" class="table-of-contents__link toc-highlight">类鼠疫</a></li><li><a href="#眩晕" class="table-of-contents__link toc-highlight">眩晕</a></li><li><a href="#沾满孢子" class="table-of-contents__link toc-highlight">沾满孢子</a></li><li><a href="#被电击" class="table-of-contents__link toc-highlight">被电击</a></li><li><a href="#阿弥壳断层怪效应" class="table-of-contents__link toc-highlight">阿弥壳断层怪效应</a></li><li><a href="#恐惧" class="table-of-contents__link toc-highlight">恐惧</a></li><li><a href="#异界关注" class="table-of-contents__link toc-highlight">异界关注</a></li><li><a href="#传送病" class="table-of-contents__link toc-highlight">传送病</a></li><li><a href="#精神污染" class="table-of-contents__link toc-highlight">精神污染</a></li><li><a href="#廷达罗斯裂隙" class="table-of-contents__link toc-highlight">廷达罗斯裂隙</a></li></ul></li><li><a href="#戒断状态" class="table-of-contents__link toc-highlight">戒断状态</a><ul><li><a href="#尼古丁戒断" class="table-of-contents__link toc-highlight">尼古丁戒断</a></li><li><a href="#咖啡因戒断" class="table-of-contents__link toc-highlight">咖啡因戒断</a></li><li><a href="#酒精戒断" class="table-of-contents__link toc-highlight">酒精戒断</a></li><li><a href="#镇静剂戒断" class="table-of-contents__link toc-highlight">镇静剂戒断</a></li><li><a href="#镇痛剂戒断" class="table-of-contents__link toc-highlight">镇痛剂戒断</a></li><li><a href="#冰毒戒断" class="table-of-contents__link toc-highlight">冰毒戒断</a></li><li><a href="#可卡因戒断" class="table-of-contents__link toc-highlight">可卡因戒断</a></li><li><a href="#快客可卡因戒断" class="table-of-contents__link toc-highlight">快客可卡因戒断</a></li><li><a href="#安眠药戒断" class="table-of-contents__link toc-highlight">安眠药戒断</a></li><li><a href="#诱变剂戒断" class="table-of-contents__link toc-highlight">诱变剂戒断</a></li></ul></li><li><a href="#医疗状态" class="table-of-contents__link toc-highlight">医疗状态</a><ul><li><a href="#已包扎已消毒" class="table-of-contents__link toc-highlight">已包扎、已消毒</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

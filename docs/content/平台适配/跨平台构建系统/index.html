@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/平台适配/跨平台构建系统" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">跨平台构建系统 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/平台适配/跨平台构建系统"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="跨平台构建系统 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文引用的文件"><meta data-rh="true" property="og:description" content="本文引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/平台适配/跨平台构建系统"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/平台适配/跨平台构建系统" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/平台适配/跨平台构建系统" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"平台适配","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/平台适配/"},{"@type":"ListItem","position":2,"name":"跨平台构建系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/平台适配/跨平台构建系统"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="折叠侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/Android平台适配"><span title="Android平台适配" class="linkLabel_WmDU">Android平台适配</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/Web平台适配"><span title="Web平台适配" class="linkLabel_WmDU">Web平台适配</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/Windows平台适配"><span title="Windows平台适配" class="linkLabel_WmDU">Windows平台适配</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/跨平台构建系统"><span title="跨平台构建系统" class="linkLabel_WmDU">跨平台构建系统</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="展开侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/平台适配/"><span>平台适配</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">跨平台构建系统</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>跨平台构建系统</h1></header><cite>
+**本文引用的文件**
+- CMakeLists.txt
+- CMakePresets.json
+- CMakeUserPresets.json.in
+- build.sh
+- MSVC.cmake
+- LLVM.cmake
+- x64-windows-static.cmake
+- windows-tiles-sounds-x64-msvc.cmake
+- src/CMakeLists.txt
+- data/CMakeLists.txt
+- clang-tidy-build.sh
+- clang-tidy-run.sh
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97" class="">故障排查指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95" class="">附录</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件面向Cataclysm-DDA的跨平台构建系统，系统性梳理CMake配置与预设、条件编译与平台检测、工具链与交叉编译、构建脚本组织与自动化任务，并给出扩展方法与常见问题诊断。文档以仓库中实际文件为依据，通过图示与分层说明帮助读者快速理解并高效使用该构建体系。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>仓库采用“顶层CMake + 子目录模块”的组织方式：</p>
+<ul>
+<li class="">顶层根CMakeLists.txt负责全局选项、平台检测、库查找与安装规则</li>
+<li class="">src/data等子目录分别定义可执行目标与数据安装</li>
+<li class="">build-scripts提供跨平台工具链、CI脚本与clang-tidy支持</li>
+<li class="">CMakePresets.json集中描述多平台构建预设，支持继承与环境注入</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">src/CMakeLists.txt</li>
+<li class="">data/CMakeLists.txt</li>
+<li class="">CMakePresets.json</li>
+<li class="">MSVC.cmake</li>
+<li class="">LLVM.cmake</li>
+<li class="">x64-windows-static.cmake</li>
+<li class="">windows-tiles-sounds-x64-msvc.cmake</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">CMakePresets.json</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">全局构建选项与平台检测：在顶层CMakeLists中定义构建类型、编译器警告、动态/静态链接策略、国际化与本地化开关、测试开关等；通过CMAKE_SYSTEM_NAME与CMAKE_HOST_SYSTEM_PROCESSOR输出构建环境信息，并对MSYS2、Darwin等进行差异化处理。</li>
+<li class="">条件编译与功能开关：TILES/CURSES/SOUND/BACKTRACE/LOCALIZE/USE_XDG_DIR/USE_HOME_DIR/DYNAMIC_LINKING/JSON_FORMAT/CATA_CCACHE等选项控制功能组合与链接模式。</li>
+<li class="">库查找与目标生成：根据选项查找SDL2/SDL2_ttf/SDL2_image/SDL2_mixer/ncurses/zlib/threads等；在src/CMakeLists中按平台生成cataclysm与cataclysm-tiles两个可执行目标及其公共对象库。</li>
+<li class="">预设系统：CMakePresets.json集中定义Windows/Linux多套预设，支持继承、环境变量注入、工具链文件与项目前置脚本。</li>
+<li class="">工具链与交叉编译：MSVC.cmake/LLVM.cmake/x64-windows-static.cmake提供编译器、链接器、运行时与VCPKG集成；windows-tiles-sounds-x64-msvc.cmake用于预加载VCPKG根路径。</li>
+<li class="">构建脚本：build-scripts/build.sh统一CI与本地构建流程，支持clang-tidy插件构建与测试；clang-tidy-run.sh/clang-tidy-build.sh提供clang-tidy检查流水线。</li>
+<li class="">数据安装：data/CMakeLists.txt按SOUND开关安装音效资源，按RELEASE安装游戏数据目录与文件。</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">src/CMakeLists.txt</li>
+<li class="">data/CMakeLists.txt</li>
+<li class="">CMakePresets.json</li>
+<li class="">MSVC.cmake</li>
+<li class="">LLVM.cmake</li>
+<li class="">x64-windows-static.cmake</li>
+<li class="">windows-tiles-sounds-x64-msvc.cmake</li>
+<li class="">build.sh</li>
+<li class="">clang-tidy-build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>下图展示从用户选择预设到生成可执行目标与安装数据的整体流程，以及工具链与VCPKG的集成点。</p>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">CMakePresets.json</li>
+<li class="">MSVC.cmake</li>
+<li class="">LLVM.cmake</li>
+<li class="">src/CMakeLists.txt</li>
+<li class="">data/CMakeLists.txt</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件a顶层cmake配置与条件编译">组件A：顶层CMake配置与条件编译<a href="#组件a顶层cmake配置与条件编译" class="hash-link" aria-label="组件A：顶层CMake配置与条件编译的直接链接" title="组件A：顶层CMake配置与条件编译的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">平台检测与宏定义：基于CMAKE_SYSTEM_NAME设置_OS_*宏，Darwin平台附加MACOSX与SDL相关宏；MSYS2环境下添加MSYS2宏。</li>
+<li class="">动态/静态链接策略：DYNAMIC_LINKING关闭时强制静态链接，设置BUILD_SHARED_LIBRARIES与链接器标志；MINGW非MSVC时避免依赖MinGW运行时DLL。</li>
+<li class="">编译器警告与标准：非MSVC启用严格警告集合并按编译器差异调整；强制C++17标准。</li>
+<li class="">构建类型与输出：Debug默认开发模式，输出至源目录；Release设置安装前缀与数据目录布局。</li>
+<li class="">功能开关与互斥：TILES与CURSES互斥；USE_XDG_DIR与USE_HOME_DIR互斥；LOCALIZE与GETTEXT集成。</li>
+<li class="">库查找与目标：按需查找SDL2/SDL2_ttf/SDL2_image/SDL2_mixer/ncurses/zlib/Threads；添加lang/src/data/tests等子目录。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">CMakeLists.txt</li>
+<li class="">CMakeLists.txt</li>
+<li class="">CMakeLists.txt</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件bcmake预设系统与变量继承">组件B：CMake预设系统与变量继承<a href="#组件bcmake预设系统与变量继承" class="hash-link" aria-label="组件B：CMake预设系统与变量继承的直接链接" title="组件B：CMake预设系统与变量继承的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">预设分层：windows/linux两类，每类包含基础与带图形/声音的变体；部分预设通过inherits继承，减少重复配置。</li>
+<li class="">关键变量：
+<ul>
+<li class="">generator：Ninja Multi-Config或Visual Studio 17 2022</li>
+<li class="">cacheVariables：DYNAMIC_LINKING、CURSES/LOCALIZE/TILES/SOUND/TESTS等</li>
+<li class="">toolset：ClangCL用于ClangCL环境</li>
+<li class="">environment：VCPKG_ROOT/VCPKG_APPLOCAL_DEPS等</li>
+<li class="">CMAKE_PROJECT_INCLUDE_BEFORE：预加载VCPKG根路径</li>
+<li class="">CMAKE_TOOLCHAIN_FILE：指向MSVC.cmake或LLVM.cmake</li>
+<li class="">VCPKG_TARGET_TRIPLET：x64-windows-static等</li>
+</ul>
+</li>
+<li class="">用户预设模板：CMakeUserPresets.json.in提供用户级构建预设模板，便于本地覆盖。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">CMakePresets.json</li>
+<li class="">CMakeUserPresets.json.in</li>
+<li class="">windows-tiles-sounds-x64-msvc.cmake</li>
+<li class="">MSVC.cmake</li>
+<li class="">LLVM.cmake</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakePresets.json</li>
+<li class="">CMakeUserPresets.json.in</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件c工具链与交叉编译配置">组件C：工具链与交叉编译配置<a href="#组件c工具链与交叉编译配置" class="hash-link" aria-label="组件C：工具链与交叉编译配置的直接链接" title="组件C：工具链与交叉编译配置的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">MSVC.cmake：指定cl.exe/clang-cl.exe作为编译器，统一编译/链接选项与编译器定义；设置多进程编译、UTF-8字符集、禁用部分安全检查；注入VCPKG_ROOT并包含vcpkg.cmake。</li>
+<li class="">LLVM.cmake：在ClangCL基础上复用MSVC.cmake的大部分标志，适配LLVM工具链。</li>
+<li class="">x64-windows-static.cmake：设置VCPKG_TARGET_ARCHITECTURE、CRT与库链接均为静态，构建类型为release。</li>
+<li class="">windows-tiles-sounds-x64-msvc.cmake：在VS环境中预加载VCPKG_ROOT，确保后续工具链与预设正确解析。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">MSVC.cmake</li>
+<li class="">LLVM.cmake</li>
+<li class="">x64-windows-static.cmake</li>
+<li class="">windows-tiles-sounds-x64-msvc.cmake</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">MSVC.cmake</li>
+<li class="">LLVM.cmake</li>
+<li class="">x64-windows-static.cmake</li>
+<li class="">windows-tiles-sounds-x64-msvc.cmake</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件d构建脚本组织与自动化任务">组件D：构建脚本组织与自动化任务<a href="#组件d构建脚本组织与自动化任务" class="hash-link" aria-label="组件D：构建脚本组织与自动化任务的直接链接" title="组件D：构建脚本组织与自动化任务的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">build.sh：统一CI与本地构建入口，支持CMAKE/NATIVE两种模式；在CMAKE模式下生成compile_commands.json并可选clang-tidy分析；在NATIVE模式下直接调用make并运行测试；支持Android NDK构建。</li>
+<li class="">clang-tidy-run.sh：导出compile_commands.json后，按变更文件集合与subset策略并行分析受影响文件；支持CI中全量分析触发。</li>
+<li class="">clang-tidy-build.sh：构建clang-tidy插件并验证测试，便于本地调试自定义检查。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">clang-tidy-build.sh</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">clang-tidy-build.sh</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件e目标平台检测与条件编译逻辑">组件E：目标平台检测与条件编译逻辑<a href="#组件e目标平台检测与条件编译逻辑" class="hash-link" aria-label="组件E：目标平台检测与条件编译逻辑的直接链接" title="组件E：目标平台检测与条件编译逻辑的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">平台宏：<em>OS_LINUX</em>/<em>OS_BSD</em>/_OS_DARWIN_用于条件编译与特性开关。</li>
+<li class="">MSYS2检测：通过环境变量标记，影响编译器与运行时行为。</li>
+<li class="">Windows/Apple特例：Windows目标链接gdi32/winmm/imm32/ole32等；Apple目标链接CoreFoundation框架。</li>
+<li class="">TILES/CURSES互斥：确保图形版与文本版二选一。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">CMakeLists.txt</li>
+<li class="">src/CMakeLists.txt</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">src/CMakeLists.txt</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件f可执行目标与安装规则">组件F：可执行目标与安装规则<a href="#组件f可执行目标与安装规则" class="hash-link" aria-label="组件F：可执行目标与安装规则的直接链接" title="组件F：可执行目标与安装规则的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">图形版(cataclysm-tiles)与文本版(cataclysm)：均以公共对象库聚合源码，再链接第三方库与系统库；图形版额外链接SDL2系列与可选SDL2_mixer。</li>
+<li class="">Windows清单与资源：在Win32下设置资源文件依赖与链接器参数；MSYS2 RelWithDebInfo下进行调试符号分离与剥离。</li>
+<li class="">安装规则：Release模式安装可执行文件与数据目录；按SOUND开关决定是否安装sound目录。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">src/CMakeLists.txt</li>
+<li class="">src/CMakeLists.txt</li>
+<li class="">data/CMakeLists.txt</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">src/CMakeLists.txt</li>
+<li class="">data/CMakeLists.txt</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">顶层CMake对src/data/tests/工具模块有直接依赖；src依赖third-party与平台库；data依赖顶层选项控制安装范围。</li>
+<li class="">预设通过CMAKE_PROJECT_INCLUDE_BEFORE与CMAKE_TOOLCHAIN_FILE间接耦合工具链与VCPKG。</li>
+<li class="">clang-tidy相关脚本依赖compile_commands.json与VCPKG提供的clang-tidy插件。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">src/CMakeLists.txt</li>
+<li class="">data/CMakeLists.txt</li>
+<li class="">CMakePresets.json</li>
+<li class="">MSVC.cmake</li>
+<li class="">LLVM.cmake</li>
+<li class="">x64-windows-static.cmake</li>
+<li class="">windows-tiles-sounds-x64-msvc.cmake</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">clang-tidy-build.sh</li>
+<li class="">build.sh</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">CMakePresets.json</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">编译加速：启用ccache并通过CMAKE_C/CXX_LINKER_LAUNCHER注入；RelWithDebInfo优化与调试信息平衡。</li>
+<li class="">并行构建：Ninja Multi-Config与多核编译；clang-tidy分析采用随机打散与并行执行。</li>
+<li class="">链接优化：Windows下使用/OPT:REF/ICF减少冗余；RelWithDebInfo启用函数内联提示。</li>
+<li class="">体积与发布：Release模式安装数据目录，图形版按需安装gfx；静态链接减少运行时依赖但增大体积。</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">build.sh</li>
+<li class="">MSVC.cmake</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排查指南">故障排查指南<a href="#故障排查指南" class="hash-link" aria-label="故障排查指南的直接链接" title="故障排查指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">未找到Git导致版本号为空：顶层CMake会输出警告并回退至空版本；可通过-DGIT_BINARY指定git路径。</li>
+<li class="">缺少SDL2/SDL2_ttf/SDL2_image/SDL2_mixer或ncurses：顶层CMake会在对应选项开启时要求相应库；请安装开发包或切换到另一模式。</li>
+<li class="">MSVC/ClangCL工具链问题：确认VCPKG_ROOT与CMAKE_TOOLCHAIN_FILE；ClangCL需设置toolset与环境变量。</li>
+<li class="">静态链接失败：检查CMAKE_EXE_LINKER_FLAGS与BUILD_SHARED_LIBRARIES；Windows下可能需要特定CRT链接策略。</li>
+<li class="">测试与clang-tidy：确保生成compile_commands.json；CI中若无插件则脚本会提前退出，需手动指定检查范围。</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">CMakeLists.txt</li>
+<li class="">CMakeLists.txt</li>
+<li class="">MSVC.cmake</li>
+<li class="">clang-tidy-run.sh</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>该构建系统通过CMake顶层配置、子目录目标与数据安装、CMakePresets.json预设、工具链与VCPKG集成，以及完善的CI/本地构建脚本，实现了跨平台、可扩展且可维护的构建流程。建议在新增平台或第三方库时遵循现有预设与工具链模式，保持变量继承与环境注入的一致性，以降低维护成本并提升可移植性。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录">附录<a href="#附录" class="hash-link" aria-label="附录的直接链接" title="附录的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">扩展方法
+<ul>
+<li class="">自定义模块：在CMakeModules目录下新增Find*.cmake或模块脚本，纳入CMAKE_MODULE_PATH</li>
+<li class="">第三方库集成：优先通过VCPKG triplet管理；若需本地库，参考MSVC.cmake中的包含与链接方式</li>
+<li class="">构建优化：根据平台调整编译/链接选项；利用ccache与并行构建；合理选择DYNAMIC_LINKING</li>
+</ul>
+</li>
+<li class="">常见问题
+<ul>
+<li class="">预设未生效：检查generator与缓存变量；确认CMAKE_PROJECT_INCLUDE_BEFORE与CMAKE_TOOLCHAIN_FILE路径</li>
+<li class="">VCPKG找不到：确保VCPKG_ROOT或VCPKG_MANIFEST_DIR正确；triplet与目标架构一致</li>
+<li class="">测试失败：查看clang-tidy-run.sh的subset与files_changed逻辑；必要时全量分析</li>
+</ul>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/平台适配/跨平台构建系统.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/平台适配/Windows平台适配"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">Windows平台适配</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">开发工具与测试</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#组件a顶层cmake配置与条件编译" class="table-of-contents__link toc-highlight">组件A：顶层CMake配置与条件编译</a></li><li><a href="#组件bcmake预设系统与变量继承" class="table-of-contents__link toc-highlight">组件B：CMake预设系统与变量继承</a></li><li><a href="#组件c工具链与交叉编译配置" class="table-of-contents__link toc-highlight">组件C：工具链与交叉编译配置</a></li><li><a href="#组件d构建脚本组织与自动化任务" class="table-of-contents__link toc-highlight">组件D：构建脚本组织与自动化任务</a></li><li><a href="#组件e目标平台检测与条件编译逻辑" class="table-of-contents__link toc-highlight">组件E：目标平台检测与条件编译逻辑</a></li><li><a href="#组件f可执行目标与安装规则" class="table-of-contents__link toc-highlight">组件F：可执行目标与安装规则</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排查指南" class="table-of-contents__link toc-highlight">故障排查指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录" class="table-of-contents__link toc-highlight">附录</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

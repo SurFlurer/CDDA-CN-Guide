@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/战斗与AI系统/怪物AI系统" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">怪物AI系统 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/战斗与AI系统/怪物AI系统"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="怪物AI系统 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文引用的文件"><meta data-rh="true" property="og:description" content="本文引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/战斗与AI系统/怪物AI系统"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/战斗与AI系统/怪物AI系统" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/战斗与AI系统/怪物AI系统" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"战斗与AI系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/战斗与AI系统/"},{"@type":"ListItem","position":2,"name":"怪物AI系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/战斗与AI系统/怪物AI系统"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="折叠侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/怪物AI系统"><span title="怪物AI系统" class="linkLabel_WmDU">怪物AI系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/战斗机制"><span title="战斗机制" class="linkLabel_WmDU">战斗机制</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/武器与弹药系统"><span title="武器与弹药系统" class="linkLabel_WmDU">武器与弹药系统</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="展开侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span>战斗与AI系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">怪物AI系统</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>怪物AI系统</h1></header><cite>
+**本文引用的文件**
+- behavior.h
+- behavior.cpp
+- behavior_strategy.h
+- behavior_strategy.cpp
+- monster_oracle.h
+- monster_oracle.cpp
+- pathfinding.h
+- pathfinding.cpp
+- simple_pathfinding.h
+- simple_pathfinding.cpp
+- monster.h
+- monster.cpp
+- monmove.cpp
+- mtype.h
+- mongroup.h
+- monfaction.h
+- creature.h
+- map.h
+- field.h
+- effect.h
+- item.h
+- messages.h
+- rng.h
+- scent_map.h
+- sounds.h
+- debug.h
+- game.h
+- options.h
+- effect_on_condition.h
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E5%BC%95%E8%A8%80" class="">引言</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97" class="">故障排查指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95%E8%B0%83%E8%AF%95%E4%B8%8E%E6%89%A9%E5%B1%95" class="">附录：调试与扩展</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="引言">引言<a href="#引言" class="hash-link" aria-label="引言的直接链接" title="引言的直接链接" translate="no">​</a></h2>
+<p>本文件面向Cataclysm-DDA的怪物AI系统，聚焦行为树驱动的决策框架、感知与导航子系统、群体行为与威胁评估、学习与适应机制，以及调试与性能优化实践。文档以代码级分析为基础，辅以图示帮助理解从感知到行动的完整闭环。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>怪物AI相关代码主要分布在以下模块：</p>
+<ul>
+<li class="">行为树与策略：behavior.h/.cpp、behavior_strategy.h/.cpp</li>
+<li class="">事实查询接口（感知）：monster_oracle.h/.cpp</li>
+<li class="">导航与寻路：pathfinding.h/.cpp、simple_pathfinding.h/.cpp</li>
+<li class="">怪物实体与移动：monster.h/.cpp、monmove.cpp</li>
+<li class="">类型与群体：mtype.h、mongroup.h、monfaction.h</li>
+<li class="">地图与环境：map.h、field.h</li>
+<li class="">其他支撑：effect.h、item.h、messages.h、rng.h、scent_map.h、sounds.h、debug.h、game.h、options.h、effect_on_condition.h</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">behavior.h</li>
+<li class="">behavior_strategy.h</li>
+<li class="">monster_oracle.h</li>
+<li class="">pathfinding.h</li>
+<li class="">simple_pathfinding.h</li>
+<li class="">monster.h</li>
+<li class="">monmove.cpp</li>
+<li class="">map.h</li>
+<li class="">field.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">behavior.h</li>
+<li class="">behavior_strategy.h</li>
+<li class="">monster_oracle.h</li>
+<li class="">pathfinding.h</li>
+<li class="">simple_pathfinding.h</li>
+<li class="">monster.h</li>
+<li class="">monmove.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">行为树与策略
+<ul>
+<li class="">行为树tree负责优先级遍历，策略strategy决定兄弟节点的访问顺序；条件predicates用于剪枝与短路。</li>
+<li class="">策略包括sequential、fallback、sequential_until_done三种标准策略。</li>
+</ul>
+</li>
+<li class="">感知接口oracle
+<ul>
+<li class="">提供“非幻觉”“有物品可用”“邻近植物”“特殊可用”“可分裂”等谓词，作为行为树的外部事实来源。</li>
+</ul>
+</li>
+<li class="">导航与寻路
+<ul>
+<li class="">基于A<em>的复杂寻路（含楼梯/坡道/陷阱规避），以及面向Overmap的贪心/近似A</em>路径。</li>
+</ul>
+</li>
+<li class="">实体与移动
+<ul>
+<li class="">怪物实体封装属性、效果、阵营与类型；monmove集中处理移动优先级与路径执行。</li>
+</ul>
+</li>
+<li class="">群体与派系
+<ul>
+<li class="">mongroup与monfaction影响威胁评估、协同与目标选择。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">behavior.h</li>
+<li class="">behavior_strategy.cpp</li>
+<li class="">monster_oracle.cpp</li>
+<li class="">pathfinding.cpp</li>
+<li class="">simple_pathfinding.cpp</li>
+<li class="">monster.h</li>
+<li class="">monmove.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>怪物AI以“行为树决策 + 多源感知 + 导航执行”的分层架构运行。每回合，怪物通过oracle查询当前环境事实，行为树按策略遍历节点，选择最高优先级可行目标；随后由导航子系统计算路径并执行移动或攻击。</p>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">monmove.cpp</li>
+<li class="">behavior.cpp</li>
+<li class="">monster_oracle.cpp</li>
+<li class="">pathfinding.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="行为树与策略">行为树与策略<a href="#行为树与策略" class="hash-link" aria-label="行为树与策略的直接链接" title="行为树与策略的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">tree与node_t
+<ul>
+<li class="">tree持有根节点，tick返回当前活跃节点的目标字符串；node_t支持添加子节点、设置策略、添加条件谓词。</li>
+<li class="">条件谓词可反转结果，实现“否定”语义；策略决定兄弟节点遍历顺序与短路条件。</li>
+</ul>
+</li>
+<li class="">策略
+<ul>
+<li class="">sequential：顺序执行直到失败或running，适合高优先级链。</li>
+<li class="">fallback：顺序执行直到成功，适合备选方案。</li>
+<li class="">sequential_until_done：无条件顺序执行，适合需要连续完成的一系列步骤。</li>
+</ul>
+</li>
+<li class="">加载与校验
+<ul>
+<li class="">支持JSON加载节点、策略绑定与条件注册；最终化阶段建立父子关系；提供一致性检查。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">behavior.h</li>
+<li class="">behavior_strategy.h</li>
+<li class="">behavior.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">behavior.h</li>
+<li class="">behavior.cpp</li>
+<li class="">behavior_strategy.h</li>
+<li class="">behavior_strategy.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="感知接口monster_oracle">感知接口（monster_oracle）<a href="#感知接口monster_oracle" class="hash-link" aria-label="感知接口（monster_oracle）的直接链接" title="感知接口（monster_oracle）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">提供怪物视角的事实查询：
+<ul>
+<li class="">not_hallucination：排除幻觉目标</li>
+<li class="">items_available：当前位置是否有可吸收/拾取的物品</li>
+<li class="">adjacent_plants：邻近可利用植物</li>
+<li class="">special_available：特定特殊能力可用</li>
+<li class="">split_possible：可进行分裂</li>
+</ul>
+</li>
+<li class="">这些谓词直接驱动行为树的条件分支，决定目标是否可达成。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">monster_oracle.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">monster_oracle.h</li>
+<li class="">monster_oracle.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="导航与寻路">导航与寻路<a href="#导航与寻路" class="hash-link" aria-label="导航与寻路的直接链接" title="导航与寻路的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">复杂寻路（A*）
+<ul>
+<li class="">支持代价函数：地形/家具/场域/车辆/门/攀爬/破坏/楼梯/坡道/陷阱/危险区域/尖锐地形/尺寸限制等。</li>
+<li class="">含直线优化：若直线上无障碍则直接走直线；否则回退A*。</li>
+<li class="">高层目标：point/adjacent/radius三种目标形式。</li>
+</ul>
+</li>
+<li class="">Overmap简单路径
+<ul>
+<li class="">使用贪心/近似A*在三维（X/Y/Z）上搜索，支持方向成本模型与最大半径/成本约束。</li>
+</ul>
+</li>
+<li class="">性能要点
+<ul>
+<li class="">闭集/开集位图、优先队列、启发式裁剪、z层跳转、垂直移动辅助。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">pathfinding.cpp</li>
+<li class="">pathfinding.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">pathfinding.h</li>
+<li class="">pathfinding.cpp</li>
+<li class="">simple_pathfinding.h</li>
+<li class="">simple_pathfinding.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="实体与移动monmove">实体与移动（monmove）<a href="#实体与移动monmove" class="hash-link" aria-label="实体与移动（monmove）的直接链接" title="实体与移动（monmove）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">移动优先级
+<ul>
+<li class="">特殊攻击 → 视觉追踪 → 气味追踪 → 声音追踪 → 徘徊/巡逻</li>
+</ul>
+</li>
+<li class="">危险规避
+<ul>
+<li class="">可配置危险规避标志：火焰、坠落、尖锐地形、危险场域、陷阱等</li>
+</ul>
+</li>
+<li class="">路径执行
+<ul>
+<li class="">将行为树目标转换为导航目标，调用route计算路径，逐步移动</li>
+</ul>
+</li>
+<li class="">特殊行为
+<ul>
+<li class="">分裂、吸收、拖拽、眩晕/麻痹/束缚等效果对移动与目标选择的影响</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">monmove.cpp</li>
+<li class="">pathfinding.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">monmove.cpp</li>
+<li class="">monmove.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="群体行为与威胁评估">群体行为与威胁评估<a href="#群体行为与威胁评估" class="hash-link" aria-label="群体行为与威胁评估的直接链接" title="群体行为与威胁评估的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">群体/恐慌/蜂拥
+<ul>
+<li class="">通过monster_plan与群组标志控制是否群聚、是否因低血量而恐惧</li>
+</ul>
+</li>
+<li class="">威胁评估
+<ul>
+<li class="">动作智能度、敌友态势、距离权重、火力值归一化</li>
+</ul>
+</li>
+<li class="">目标选择
+<ul>
+<li class="">基于视野、气味、声音、玩家位置与威胁等级选择优先目标</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">monmove.cpp</li>
+<li class="">mongroup.h</li>
+<li class="">monfaction.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="学习与适应状态变化与特殊模式">学习与适应、状态变化与特殊模式<a href="#学习与适应状态变化与特殊模式" class="hash-link" aria-label="学习与适应、状态变化与特殊模式的直接链接" title="学习与适应、状态变化与特殊模式的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">效果与状态
+<ul>
+<li class="">恐惧、眩晕、麻痹、束缚、眩晕感等直接影响行动与路径选择</li>
+</ul>
+</li>
+<li class="">生物学/抗性
+<ul>
+<li class="">对不同场域/伤害类型的抗性改变免疫与移动策略</li>
+</ul>
+</li>
+<li class="">特殊模式
+<ul>
+<li class="">分裂、吸收、拖拽、宠物/驯服状态、派系互动</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">effect.h</li>
+<li class="">monster.h</li>
+<li class="">monster_oracle.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">行为树依赖策略与oracle；oracle依赖怪物实体与地图；导航依赖地图与代价函数；怪物实体依赖类型、效果、地图与群组。</li>
+<li class="">关键耦合点
+<ul>
+<li class="">行为树与oracle：通过谓词接口解耦环境查询</li>
+<li class="">导航与地图：通过PathfindingFlags与代价函数抽象地形</li>
+<li class="">实体与导航：通过Creature接口与路径设置参数</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">behavior.h</li>
+<li class="">monster_oracle.h</li>
+<li class="">pathfinding.h</li>
+<li class="">monster.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">behavior.h</li>
+<li class="">monster_oracle.h</li>
+<li class="">pathfinding.h</li>
+<li class="">monster.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">行为树
+<ul>
+<li class="">采用深度优先与策略短路，减少无效遍历；条件谓词可快速剪枝</li>
+</ul>
+</li>
+<li class="">导航
+<ul>
+<li class="">直线路径优化避免不必要的A*；代价函数提前判定不可达；z层跳转与垂直移动缓存</li>
+</ul>
+</li>
+<li class="">内存与数据结构
+<ul>
+<li class="">闭集/开集位图降低空间占用；优先队列按启发式排序</li>
+</ul>
+</li>
+<li class="">参数化
+<ul>
+<li class="">max_dist/max_length、尺寸限制、危险规避开关等可调参数平衡性能与行为质量</li>
+</ul>
+</li>
+</ul>
+<p>[本节为通用指导，无需列出具体文件来源]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排查指南">故障排查指南<a href="#故障排查指南" class="hash-link" aria-label="故障排查指南的直接链接" title="故障排查指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">行为树问题
+<ul>
+<li class="">检查节点是否同时具备children与goal；策略是否缺失</li>
+<li class="">使用check_consistency与debug输出定位加载错误</li>
+</ul>
+</li>
+<li class="">导航问题
+<ul>
+<li class="">检查目标越界与不可达；确认代价函数与危险规避设置</li>
+<li class="">使用debug输出路径点与代价</li>
+</ul>
+</li>
+<li class="">怪物行为异常
+<ul>
+<li class="">检查效果状态（眩晕/麻痹/束缚）与抗性</li>
+<li class="">核对感知谓词返回值与目标优先级</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">behavior.cpp</li>
+<li class="">pathfinding.cpp</li>
+<li class="">debug.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>CDDA的怪物AI以行为树为核心，结合多源感知与高效寻路，在复杂环境中实现灵活、可扩展的怪物行为。通过策略化节点组织、可配置的导航代价与危险规避、以及基于群体与派系的状态管理，系统在可维护性与性能之间取得良好平衡。进一步的扩展可通过新增谓词、策略与代价项来实现更丰富的AI行为。</p>
+<p>[本节为总结性内容，无需列出具体文件来源]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录调试与扩展">附录：调试与扩展<a href="#附录调试与扩展" class="hash-link" aria-label="附录：调试与扩展的直接链接" title="附录：调试与扩展的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai调试工具与方法">AI调试工具与方法<a href="#ai调试工具与方法" class="hash-link" aria-label="AI调试工具与方法的直接链接" title="AI调试工具与方法的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">行为树
+<ul>
+<li class="">使用行为树的goal()与active_node跟踪当前目标</li>
+<li class="">在节点加载时启用check()与一致性检查</li>
+</ul>
+</li>
+<li class="">导航
+<ul>
+<li class="">输出路径点序列与代价，验证目标可达性</li>
+<li class="">调整max_dist/max_length与危险规避参数观察行为变化</li>
+</ul>
+</li>
+<li class="">怪物状态
+<ul>
+<li class="">使用debug输出怪物当前效果、威胁评估与目标选择</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">behavior.cpp</li>
+<li class="">pathfinding.cpp</li>
+<li class="">debug.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能调优建议">性能调优建议<a href="#性能调优建议" class="hash-link" aria-label="性能调优建议的直接链接" title="性能调优建议的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">行为树
+<ul>
+<li class="">将高成本谓词置于深层或使用缓存；合理使用fallback策略</li>
+</ul>
+</li>
+<li class="">导航
+<ul>
+<li class="">合理设置max_dist/max_length；开启直线路径优化</li>
+<li class="">控制危险规避范围，避免过度惩罚</li>
+</ul>
+</li>
+<li class="">实体
+<ul>
+<li class="">减少不必要的感知扫描；合并相似效果判断</li>
+</ul>
+</li>
+</ul>
+<p>[本节为通用指导，无需列出具体文件来源]</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="扩展开发示例路径">扩展开发示例（路径）<a href="#扩展开发示例路径" class="hash-link" aria-label="扩展开发示例（路径）的直接链接" title="扩展开发示例（路径）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">新增谓词
+<ul>
+<li class="">在monster_oracle中添加新谓词，并在行为JSON中引用</li>
+</ul>
+</li>
+<li class="">新增策略
+<ul>
+<li class="">在strategy_map中注册新策略类，行为JSON中指定strategy</li>
+</ul>
+</li>
+<li class="">新增代价项
+<ul>
+<li class="">在pathfinding_settings中增加新开关；在代价函数中加入新判定</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">monster_oracle.h</li>
+<li class="">behavior_strategy.cpp</li>
+<li class="">pathfinding.h</li>
+<li class="">pathfinding.cpp</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/战斗与AI系统/怪物AI系统.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">战斗与AI系统</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/战斗机制"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">战斗机制</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#引言" class="table-of-contents__link toc-highlight">引言</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#行为树与策略" class="table-of-contents__link toc-highlight">行为树与策略</a></li><li><a href="#感知接口monster_oracle" class="table-of-contents__link toc-highlight">感知接口（monster_oracle）</a></li><li><a href="#导航与寻路" class="table-of-contents__link toc-highlight">导航与寻路</a></li><li><a href="#实体与移动monmove" class="table-of-contents__link toc-highlight">实体与移动（monmove）</a></li><li><a href="#群体行为与威胁评估" class="table-of-contents__link toc-highlight">群体行为与威胁评估</a></li><li><a href="#学习与适应状态变化与特殊模式" class="table-of-contents__link toc-highlight">学习与适应、状态变化与特殊模式</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排查指南" class="table-of-contents__link toc-highlight">故障排查指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录调试与扩展" class="table-of-contents__link toc-highlight">附录：调试与扩展</a><ul><li><a href="#ai调试工具与方法" class="table-of-contents__link toc-highlight">AI调试工具与方法</a></li><li><a href="#性能调优建议" class="table-of-contents__link toc-highlight">性能调优建议</a></li><li><a href="#扩展开发示例路径" class="table-of-contents__link toc-highlight">扩展开发示例（路径）</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

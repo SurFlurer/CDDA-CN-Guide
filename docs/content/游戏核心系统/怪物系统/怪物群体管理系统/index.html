@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/游戏核心系统/怪物系统/怪物群体管理系统" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">怪物群体管理系统 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物群体管理系统"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="怪物群体管理系统 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文档引用的文件"><meta data-rh="true" property="og:description" content="本文档引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物群体管理系统"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物群体管理系统" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物群体管理系统" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"游戏核心系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/"},{"@type":"ListItem","position":2,"name":"怪物系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"},{"@type":"ListItem","position":3,"name":"怪物群体管理系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物群体管理系统"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="折叠侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/地图系统/"><span title="地图系统" class="categoryLinkLabel_W154">地图系统</span></a><button aria-label="展开侧边栏分类 &#x27;地图系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span title="怪物系统" class="categoryLinkLabel_W154">怪物系统</span></a><button aria-label="折叠侧边栏分类 &#x27;怪物系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物AI行为系统"><span title="怪物AI行为系统" class="linkLabel_WmDU">怪物AI行为系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物特殊能力系统"><span title="怪物特殊能力系统" class="linkLabel_WmDU">怪物特殊能力系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物群体管理系统"><span title="怪物群体管理系统" class="linkLabel_WmDU">怪物群体管理系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物触发器系统"><span title="怪物触发器系统" class="linkLabel_WmDU">怪物触发器系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物路径规划系统"><span title="怪物路径规划系统" class="linkLabel_WmDU">怪物路径规划系统</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/游戏主循环"><span title="游戏主循环" class="linkLabel_WmDU">游戏主循环</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/物品系统/"><span title="物品系统" class="categoryLinkLabel_W154">物品系统</span></a><button aria-label="展开侧边栏分类 &#x27;物品系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/角色系统/"><span title="角色系统" class="categoryLinkLabel_W154">角色系统</span></a><button aria-label="展开侧边栏分类 &#x27;角色系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span>游戏核心系统</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/"><span>怪物系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">怪物群体管理系统</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>怪物群体管理系统</h1></header><cite>
+**本文档引用的文件**
+- mongroup.h
+- mongroup.cpp
+- mongroup_test.cpp
+- monster.h
+- monster.cpp
+- overmap.h
+- overmap.cpp
+- overmapbuffer.h
+- overmapbuffer.cpp
+- do_turn.cpp
+- sounds.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97" class="">故障排查指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95" class="">附录</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件系统性梳理 Cataclysm-DDA 的怪物群体管理系统，覆盖以下关键主题：</p>
+<ul>
+<li class="">群体生成：基于“怪物群体”定义的随机生成与嵌套组合、事件与时间条件筛选、群体规模（pack_size）控制。</li>
+<li class="">群体行为协调：在大地图层（overmap）上对群体进行“迁徙/游荡/追击”等行为驱动，兴趣度（interest）与目标（target）决定移动速度与反应强度。</li>
+<li class="">群体规模控制：通过 cost_multiplier、pack_size、event_adjusted_freq_total 等参数实现动态规模与成本控制。</li>
+<li class="">群体吸引力与移动策略：结合 horde_attraction、signal_hordes、move_hordes 等机制，实现对玩家声音、爆炸、陷阱等信号的响应。</li>
+<li class="">群体战斗行为：单体怪物 AI（monster）与群体行为的协同，包括路径规划、目标选择、攻击与防御。</li>
+<li class="">群体平衡性与管理工具：黑名单/白名单、默认怪物回退、替换机制、测试用例验证。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>围绕怪物群体管理的核心代码主要分布在以下模块：</p>
+<ul>
+<li class="">群体定义与生成：src/mongroup.{h,cpp}</li>
+<li class="">单体怪物与群体行为：src/monster.{h,cpp}</li>
+<li class="">大地图群体调度：src/overmap.{h,cpp} 及其缓冲区 overmapbuffer.{h,cpp}</li>
+<li class="">游戏主循环中的处理：src/do_turn.cpp</li>
+<li class="">声音触发信号：src/sounds.cpp</li>
+<li class="">测试：tests/mongroup_test.cpp</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">mongroup.h</li>
+<li class="">mongroup.cpp</li>
+<li class="">overmap.h</li>
+<li class="">overmap.cpp</li>
+<li class="">overmapbuffer.h</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">do_turn.cpp</li>
+<li class="">monster.h</li>
+<li class="">monster.cpp</li>
+<li class="">sounds.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">mongroup.h</li>
+<li class="">mongroup.cpp</li>
+<li class="">overmap.h</li>
+<li class="">overmap.cpp</li>
+<li class="">overmapbuffer.h</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">do_turn.cpp</li>
+<li class="">monster.h</li>
+<li class="">monster.cpp</li>
+<li class="">sounds.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">MonsterGroup 与 MonsterGroupEntry：描述“怪物群体”的定义，包含默认怪物、条目列表（含频率、成本倍率、pack_size、spawn_data、条件、起止时间、节日事件等），以及事件调整后的总频率。</li>
+<li class="">mongroup：描述“已生成的群体实例”，包含类型、个体列表或总人口、绝对坐标、目标点、兴趣度、是否为群、行为模式（city/roam/nemesis）、衰减标记等。</li>
+<li class="">MonsterGroupManager：提供加载、校验、查询、随机抽取、结果展开（含嵌套）等功能；支持黑名单/白名单过滤与最终化处理。</li>
+<li class="">overmap/overmapbuffer：负责群体的生命周期管理（生成、移动、信号响应、衰减）。</li>
+<li class="">monster：单体怪物的 AI 行为，包括目标选择、路径规划、战斗与特殊能力。</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">mongroup.h</li>
+<li class="">mongroup.h</li>
+<li class="">mongroup.h</li>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup.cpp</li>
+<li class="">overmap.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">monster.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>下图展示从游戏主循环到大地图群体处理的整体流程，以及声音信号如何影响群体行为。</p>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">do_turn.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmap.cpp</li>
+<li class="">mongroup.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">do_turn.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">overmap.cpp</li>
+<li class="">mongroup.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件a怪物群体定义与生成monstergroupentry">组件A：怪物群体定义与生成（MonsterGroup/Entry）<a href="#组件a怪物群体定义与生成monstergroupentry" class="hash-link" aria-label="组件A：怪物群体定义与生成（MonsterGroup/Entry）的直接链接" title="组件A：怪物群体定义与生成（MonsterGroup/Entry）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">关键点
+<ul>
+<li class="">MonsterGroupEntry：包含 mtype/group、frequency、cost_multiplier、pack_minimum/pack_maximum、spawn_data、conditions、starts/ends、holiday 等。</li>
+<li class="">MonsterGroup：维护 id、defaultMonster、monsters 列表、freq_total、event_freq、is_animal、replace_* 等字段。</li>
+<li class="">MonsterGroupManager::GetResultFromGroup：按事件与时间条件筛选有效条目，按频率加权随机抽取，支持嵌套组展开与 pack_size 扩展，同时更新外部 quantity（cost_multiplier*pack_size）。</li>
+<li class="">事件与时间筛选：is_spawn_valid 检查节日、日出日落时段、季节限制等。</li>
+<li class="">黑名单/白名单：Finalize 阶段移除黑名单怪物，白名单优先；exclusive 模式下仅允许白名单。</li>
+</ul>
+</li>
+<li class="">群体规模控制
+<ul>
+<li class="">pack_size 由 [pack_minimum, pack_maximum] 决定，若 use_pack_size，则每个子项重复 pack_size 次；否则以条目为单位扩展。</li>
+<li class="">cost_multiplier 用于消耗外部 quantity，实现“群体成本预算”的动态控制。</li>
+</ul>
+</li>
+<li class="">嵌套组展开
+<ul>
+<li class="">当条目为组时，递归调用 GetResultFromGroup 并将结果合并；嵌套层的 pack_size 与顶层 pack_size 的乘法关系在测试中得到验证。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">mongroup.h</li>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup_test.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件b群体实例与行为mongroup">组件B：群体实例与行为（mongroup）<a href="#组件b群体实例与行为mongroup" class="hash-link" aria-label="组件B：群体实例与行为（mongroup）的直接链接" title="组件B：群体实例与行为（mongroup）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">关键点
+<ul>
+<li class="">mongroup 描述“已生成的群体”，可直接持有个体列表（优先于 population），记录绝对坐标、目标点、兴趣度 interest（15%-100%边界控制）、是否为群（horde）、行为模式（city/roam/nemesis）。</li>
+<li class="">avg_speed：当个体列表为空时，按频率加权平均各成员速度；否则取实际个体平均速度。</li>
+<li class="">wander：在 overmap 上随机游荡，用于 roamed 群体。</li>
+<li class="">set_target/set_nemesis_target/inc_interest/dec_interest/set_interest：对目标与兴趣度进行安全设置，保证上下界。</li>
+</ul>
+</li>
+<li class="">群体行为模式
+<ul>
+<li class="">none：无特定行为</li>
+<li class="">city：尽量靠近城市并返回</li>
+<li class="">roam：随机游荡</li>
+<li class="">nemesis：追踪特定目标（如玩家）</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">mongroup.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">mongroup.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件c大地图群体调度overmapovermapbuffer">组件C：大地图群体调度（overmap/overmapbuffer）<a href="#组件c大地图群体调度overmapovermapbuffer" class="hash-link" aria-label="组件C：大地图群体调度（overmap/overmapbuffer）的直接链接" title="组件C：大地图群体调度（overmap/overmapbuffer）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">关键点
+<ul>
+<li class="">process_mongroups：遍历并处理群体，根据 interest、目标与行为模式决定移动与衰减。</li>
+<li class="">move_hordes：依据 interest 与目标方向移动群体，实现“向目标靠近”的策略。</li>
+<li class="">signal_hordes：接收来自声音、爆炸等信号，提升 interest 或改变目标，触发群体响应。</li>
+<li class="">overmapbuffer：作为 overmap 的缓冲区接口，统一调度 process_mongroups/move_hordes/signal_hordes。</li>
+</ul>
+</li>
+<li class="">与主循环集成
+<ul>
+<li class="">do_turn 中调用 overmap_buffer 的上述方法，形成每回合的群体处理流水线。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">overmap.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">sounds.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">overmap.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">sounds.cpp</li>
+<li class="">do_turn.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件d单体怪物ai与群体协作monster">组件D：单体怪物AI与群体协作（monster）<a href="#组件d单体怪物ai与群体协作monster" class="hash-link" aria-label="组件D：单体怪物AI与群体协作（monster）的直接链接" title="组件D：单体怪物AI与群体协作（monster）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">关键点
+<ul>
+<li class="">monster.h 定义了怪物的属性、行为枚举（如 monster_attitude、monster_horde_attraction）、目标选择、路径规划接口等。</li>
+<li class="">monster.cpp 实现了怪物的行动、战斗、效果处理、特殊能力等，与 overmap 的群体行为协同（例如被群体吸引、跟随或被推挤）。</li>
+<li class="">get_horde_attraction/will_join_horde：决定怪物是否愿意加入群体及其规模阈值，影响群体吸引力算法。</li>
+</ul>
+</li>
+<li class="">群体吸引力算法
+<ul>
+<li class="">结合 horde_attraction（如 MHA_LARGE/MHA_OUTDOORS 等）与 interest，决定怪物是否加入群体以及加入后的行为倾向。</li>
+<li class="">push_to、group_bash_skill 等机制体现群体内部的协作与推挤。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">monster.h</li>
+<li class="">monster.h</li>
+<li class="">monster.h</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">monster.h</li>
+<li class="">monster.h</li>
+<li class="">monster.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="组件e群体平衡性与管理工具">组件E：群体平衡性与管理工具<a href="#组件e群体平衡性与管理工具" class="hash-link" aria-label="组件E：群体平衡性与管理工具的直接链接" title="组件E：群体平衡性与管理工具的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">黑名单/白名单
+<ul>
+<li class="">支持按怪物 ID、类别、物种维度配置；支持 exclusive 模式，仅允许白名单。</li>
+<li class="">Finalize 阶段移除黑名单怪物，校验白名单有效性。</li>
+</ul>
+</li>
+<li class="">默认怪物回退
+<ul>
+<li class="">若所有条目均不可用，回退到 defaultMonster；mon_null 可显式指定为默认回退。</li>
+</ul>
+</li>
+<li class="">替换机制
+<ul>
+<li class="">replace_monster_group/new_monster_group/monster_group_time：在探索新区域一段时间后替换群体类型，实现“怪物演化”。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">模块耦合
+<ul>
+<li class="">mongroup 与 MonsterGroupManager 为纯数据与逻辑层，不直接依赖 overmap。</li>
+<li class="">overmap/overmapbuffer 依赖 MonsterGroupManager 进行群体定义查询与随机抽取。</li>
+<li class="">monster 与 overmap 交互，通过 horde_attraction 与 interest 影响加入与行为。</li>
+</ul>
+</li>
+<li class="">外部依赖
+<ul>
+<li class="">时间系统（calendar）、选项系统（options）、随机数（rng）等贯穿群体生成与行为判定。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>图表来源</strong></p>
+<ul>
+<li class="">mongroup.cpp</li>
+<li class="">overmap.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">sounds.cpp</li>
+<li class="">do_turn.cpp</li>
+<li class="">monster.cpp</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">mongroup.cpp</li>
+<li class="">overmap.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">sounds.cpp</li>
+<li class="">do_turn.cpp</li>
+<li class="">monster.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">频率加权与事件筛选：通过 event_adjusted_freq_total 与 is_spawn_valid 在生成阶段快速剔除无效条目，减少后续开销。</li>
+<li class="">嵌套展开：递归展开可能带来额外开销，建议合理控制嵌套层级与 pack_size 上限。</li>
+<li class="">overmap 群体处理：每回合对群体进行 interest 更新、移动与衰减，注意大规模群体时的循环次数与信号传播范围。</li>
+<li class="">路径规划冷却：monster 内置路径寻找指数回退机制，降低卡死场景下的 CPU 占用。</li>
+</ul>
+<p>[本节为通用指导，无需具体文件来源]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排查指南">故障排查指南<a href="#故障排查指南" class="hash-link" aria-label="故障排查指南的直接链接" title="故障排查指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">群体未生成
+<ul>
+<li class="">检查 EVENT_SPAWNS 选项与当前节日是否匹配；确认条目的 starts/ends 与 conditions 是否导致不可用。</li>
+<li class="">使用 check_group_definitions 校验群体定义中的未知怪物或子群体。</li>
+</ul>
+</li>
+<li class="">群体规模异常
+<ul>
+<li class="">检查 cost_multiplier 与 quantity 的消耗逻辑；核对 pack_size 的叠加规则（嵌套组与顶层 pack_size 的乘法）。</li>
+</ul>
+</li>
+<li class="">群体不移动
+<ul>
+<li class="">检查 interest 是否过低（低于 15% 上限）；确认目标点与行为模式（city/roam/nemesis）。</li>
+</ul>
+</li>
+<li class="">群体不响应信号
+<ul>
+<li class="">确认 signal_hordes 的调用位置与功率；检查 overmapbuffer/process_mongroups 的调度顺序。</li>
+</ul>
+</li>
+<li class="">单体怪物不加入群体
+<ul>
+<li class="">检查 get_horde_attraction 与 will_join_horde 的阈值；确认 horde_attraction 设置与环境因素（如 outdoors）。</li>
+</ul>
+</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup.cpp</li>
+<li class="">overmap.cpp</li>
+<li class="">overmapbuffer.cpp</li>
+<li class="">monster.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>Cataclysm-DDA 的怪物群体管理系统通过“群体定义 + 实例调度 + 单体 AI 协同”的方式，实现了灵活而可控的群体生成、行为与规模管理。其核心优势在于：</p>
+<ul>
+<li class="">明确的事件与时间筛选机制，确保群体生成符合游戏节奏。</li>
+<li class="">嵌套组与 pack_size 的组合提供了强大的规模与成本控制能力。</li>
+<li class="">overmap 层的 interest/target/behavior 模型使群体具备动态迁移与响应能力。</li>
+<li class="">黑名单/白名单与替换机制为平衡性与可扩展性提供了基础。</li>
+</ul>
+<p>[本节为总结，无需具体文件来源]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录">附录<a href="#附录" class="hash-link" aria-label="附录的直接链接" title="附录的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">配置示例要点（基于源码语义说明）
+<ul>
+<li class="">群体定义（mongroup_id）包含 id、default、monsters（含 weight/freq、cost_multiplier、pack_size、conditions、starts/ends、event）与可选的 replace_* 字段。</li>
+<li class="">事件开关（EVENT_SPAWNS）控制节日相关条目是否生效。</li>
+<li class="">黑白名单（monsters/categories/species）支持 exclusive 模式。</li>
+<li class="">测试用例覆盖事件筛选、嵌套组概率、pack_size 乘法规则、multi-spawn 与时间限制等场景。</li>
+</ul>
+</li>
+</ul>
+<p><strong>章节来源</strong></p>
+<ul>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup.cpp</li>
+<li class="">mongroup_test.cpp</li>
+<li class="">mongroup_test.cpp</li>
+<li class="">mongroup_test.cpp</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/游戏核心系统/怪物系统/怪物群体管理系统.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物特殊能力系统"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">怪物特殊能力系统</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/游戏核心系统/怪物系统/怪物触发器系统"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">怪物触发器系统</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#组件a怪物群体定义与生成monstergroupentry" class="table-of-contents__link toc-highlight">组件A：怪物群体定义与生成（MonsterGroup/Entry）</a></li><li><a href="#组件b群体实例与行为mongroup" class="table-of-contents__link toc-highlight">组件B：群体实例与行为（mongroup）</a></li><li><a href="#组件c大地图群体调度overmapovermapbuffer" class="table-of-contents__link toc-highlight">组件C：大地图群体调度（overmap/overmapbuffer）</a></li><li><a href="#组件d单体怪物ai与群体协作monster" class="table-of-contents__link toc-highlight">组件D：单体怪物AI与群体协作（monster）</a></li><li><a href="#组件e群体平衡性与管理工具" class="table-of-contents__link toc-highlight">组件E：群体平衡性与管理工具</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排查指南" class="table-of-contents__link toc-highlight">故障排查指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录" class="table-of-contents__link toc-highlight">附录</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

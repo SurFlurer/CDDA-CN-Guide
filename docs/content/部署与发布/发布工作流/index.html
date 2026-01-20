@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/部署与发布/发布工作流" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">发布工作流 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/部署与发布/发布工作流"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="发布工作流 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文引用的文件"><meta data-rh="true" property="og:description" content="本文引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/部署与发布/发布工作流"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/部署与发布/发布工作流" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/部署与发布/发布工作流" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"部署与发布","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/部署与发布/"},{"@type":"ListItem","position":2,"name":"发布工作流","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/部署与发布/发布工作流"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="展开侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="展开侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="折叠侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/分发渠道"><span title="分发渠道" class="linkLabel_WmDU">分发渠道</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/发布工作流"><span title="发布工作流" class="linkLabel_WmDU">发布工作流</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/构建系统"><span title="构建系统" class="linkLabel_WmDU">构建系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/版本管理"><span title="版本管理" class="linkLabel_WmDU">版本管理</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span>部署与发布</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">发布工作流</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>发布工作流</h1></header><cite>
+**本文引用的文件**
+- README.md
+- RELEASE_PROCESS.md
+- generate-release-notes.js
+- build.sh
+- windist.ps1
+- CMakeLists.txt
+- version.cpp
+- prepare-web.sh
+- clang-tidy-run.sh
+- clang-tidy-wrapper.sh
+- requirements.sh
+- get_affected_files.py
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97" class="">故障排查指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95" class="">附录</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件面向Cataclysm: Dark Days Ahead（简称CDDA）项目的发布工程团队与贡献者，系统化梳理从代码提交到最终发布的完整工作流，覆盖自动化测试集成、持续集成配置、质量门禁设置、发布前准备、自动化脚本使用、发布后监控与反馈处理，以及标准化模板与最佳实践。文档以仓库内现有脚本与配置为依据，结合CMake构建体系与多平台打包脚本，形成可落地的发布操作指南。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>围绕发布相关的目录与文件主要分布在以下位置：</p>
+<ul>
+<li class="">根级与顶层：README、CMakeLists.txt、VERSION信息入口等</li>
+<li class="">构建与发布脚本：build-scripts 下的各类脚本（构建、测试、静态分析、打包、Web预处理等）</li>
+<li class="">文档：doc/RELEASE_PROCESS.md 提供发布流程与变更统计要点</li>
+<li class="">平台打包：Windows 打包脚本 windist.ps1；Web 预处理 prepare-web.sh</li>
+<li class="">版本与构建选项：CMakeLists.txt 中的构建选项与版本注入逻辑；src/version.cpp 提供运行时版本字符串接口</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">build.sh</li>
+<li class="">requirements.sh</li>
+<li class="">get_affected_files.py</li>
+<li class="">windist.ps1</li>
+<li class="">prepare-web.sh</li>
+<li class="">RELEASE_PROCESS.md</li>
+<li class="">version.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">README.md</li>
+<li class="">CMakeLists.txt</li>
+<li class="">RELEASE_PROCESS.md</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">构建与测试流水线：通过 build.sh 统一入口，支持 CMake/Make 双模式、并行测试、跨平台编译、clang-tidy 分析与增量检测。</li>
+<li class="">质量门禁与静态分析：clang-tidy-run.sh 与 clang-tidy-wrapper.sh 提供插件/可执行两种模式的检查，并基于受影响文件集合进行增量分析。</li>
+<li class="">发布前准备：RELEASE_PROCESS.md 提供变更统计与实体计数差异的生成步骤；prepare-web.sh 用于 Web 平台的数据打包与裁剪。</li>
+<li class="">版本与构建选项：CMakeLists.txt 定义构建选项与安装规则；src/version.cpp 暴露版本字符串接口。</li>
+<li class="">平台打包：windist.ps1 生成 Windows 可分发包；prepare-web.sh 生成 Web 平台资源包。</li>
+<li class="">环境与依赖：requirements.sh 处理问题匹配器、覆盖率、MXE交叉编译、NDK/Android、Wine 初始化等。</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">clang-tidy-wrapper.sh</li>
+<li class="">RELEASE_PROCESS.md</li>
+<li class="">prepare-web.sh</li>
+<li class="">CMakeLists.txt</li>
+<li class="">version.cpp</li>
+<li class="">requirements.sh</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>下图展示从代码提交到发布的关键路径：CI/本地触发构建 → 测试与静态分析 → 质量门禁 → 产物打包 → 发布说明生成 → 发布。</p>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">generate-release-notes.js</li>
+<li class="">windist.ps1</li>
+<li class="">prepare-web.sh</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="构建与测试流水线buildsh">构建与测试流水线（build.sh）<a href="#构建与测试流水线buildsh" class="hash-link" aria-label="构建与测试流水线（build.sh）的直接链接" title="构建与测试流水线（build.sh）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">支持多种模式：CMake/Make、CMake+clang-tidy、Android Gradle、Windows（Wine）测试。</li>
+<li class="">关键能力：
+<ul>
+<li class="">JSON校验与样式检查（仅JSON变更时快速通道）。</li>
+<li class="">并行测试执行，支持模组加载验证与“仅JSON”跳过。</li>
+<li class="">clang-tidy 插件/可执行两种模式，自动解析受影响文件集合，按需全量或增量分析。</li>
+<li class="">ccache 缓存统计与容量设置，提升重复构建效率。</li>
+</ul>
+</li>
+<li class="">入口与控制流参见源码路径与行号。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">build.sh</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">build.sh</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="静态分析与质量门禁clang-tidy-runsh-与-clang-tidy-wrappersh">静态分析与质量门禁（clang-tidy-run.sh 与 clang-tidy-wrapper.sh）<a href="#静态分析与质量门禁clang-tidy-runsh-与-clang-tidy-wrappersh" class="hash-link" aria-label="静态分析与质量门禁（clang-tidy-run.sh 与 clang-tidy-wrapper.sh）的直接链接" title="静态分析与质量门禁（clang-tidy-run.sh 与 clang-tidy-wrapper.sh）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">clang-tidy-run.sh：
+<ul>
+<li class="">生成 compile_commands.json，解析受影响文件集合（基于 git diff 与 includes 文件）。</li>
+<li class="">支持按子集（直接变更/间接变更）拆分分析任务，提高 CI 效率。</li>
+<li class="">自动识别全局变更（如配置/脚本）触发全量分析。</li>
+</ul>
+</li>
+<li class="">clang-tidy-wrapper.sh：
+<ul>
+<li class="">若存在插件库则前置加载，支持检查性能追踪与存储。</li>
+</ul>
+</li>
+<li class="">两者配合实现“按需分析”的质量门禁策略。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">clang-tidy-run.sh</li>
+<li class="">clang-tidy-wrapper.sh</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">clang-tidy-run.sh</li>
+<li class="">clang-tidy-wrapper.sh</li>
+<li class="">get_affected_files.py</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="发布前准备与变更统计release_processmd-与-prepare-websh">发布前准备与变更统计（RELEASE_PROCESS.md 与 prepare-web.sh）<a href="#发布前准备与变更统计release_processmd-与-prepare-websh" class="hash-link" aria-label="发布前准备与变更统计（RELEASE_PROCESS.md 与 prepare-web.sh）的直接链接" title="发布前准备与变更统计（RELEASE_PROCESS.md 与 prepare-web.sh）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">RELEASE_PROCESS.md：
+<ul>
+<li class="">提供变更统计命令（diffstat、提交数、作者数、新增作者）。</li>
+<li class="">实体计数差异生成步骤（JSON 实体前后对比、合并整理）。</li>
+</ul>
+</li>
+<li class="">prepare-web.sh：
+<ul>
+<li class="">清理 web_bundle，复制必要数据与 gfx。</li>
+<li class="">移除过时/废弃模组与特定资源，生成 Web 预加载数据包与页面。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">RELEASE_PROCESS.md</li>
+<li class="">prepare-web.sh</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">RELEASE_PROCESS.md</li>
+<li class="">prepare-web.sh</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="版本与构建选项cmakeliststxt-与-versioncpp">版本与构建选项（CMakeLists.txt 与 version.cpp）<a href="#版本与构建选项cmakeliststxt-与-versioncpp" class="hash-link" aria-label="版本与构建选项（CMakeLists.txt 与 version.cpp）的直接链接" title="版本与构建选项（CMakeLists.txt 与 version.cpp）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">CMakeLists.txt：
+<ul>
+<li class="">定义构建选项（图形界面、声音、本地化、动态/静态链接、测试、clang-tidy 插件等）。</li>
+<li class="">通过 version.cmake 注入版本信息至 VERSION.txt 与编译宏。</li>
+<li class="">安装规则与平台差异化处理（Unix 前缀数据目录、Mac 特定定义等）。</li>
+</ul>
+</li>
+<li class="">version.cpp：
+<ul>
+<li class="">提供运行时版本字符串接口，兼容 Windows/非 Git 环境下的默认版本。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">version.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">version.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="平台打包windistps1-与-prepare-websh">平台打包（windist.ps1 与 prepare-web.sh）<a href="#平台打包windistps1-与-prepare-websh" class="hash-link" aria-label="平台打包（windist.ps1 与 prepare-web.sh）的直接链接" title="平台打包（windist.ps1 与 prepare-web.sh）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">windist.ps1：
+<ul>
+<li class="">清理旧目录，复制核心可执行与语言资源。</li>
+<li class="">复制 data、doc、gfx、许可证与 README 等。</li>
+<li class="">使用压缩归档生成 zip 包。</li>
+</ul>
+</li>
+<li class="">prepare-web.sh：
+<ul>
+<li class="">生成 web_bundle，裁剪废弃模组与特定 gfx。</li>
+<li class="">使用 Emscripten 的 file_packager 生成预加载数据与页面。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">windist.ps1</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">windist.ps1</li>
+<li class="">prepare-web.sh</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="环境与依赖requirementssh">环境与依赖（requirements.sh）<a href="#环境与依赖requirementssh" class="hash-link" aria-label="环境与依赖（requirements.sh）的直接链接" title="环境与依赖（requirements.sh）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">问题匹配器：在 CI 中启用 Catch2 与调试消息的问题匹配器，便于定位错误。</li>
+<li class="">条件构建：根据事件类型（PR）判断是否仅 JSON 变更，决定是否跳过全量构建。</li>
+<li class="">依赖安装：macOS 安装 SDL2/ncurses/ccache 等；MXE 交叉编译环境准备；Wine 初始化。</li>
+<li class="">环境变量持久化：在 GitHub Actions 中将关键变量写入 GITHUB_ENV。</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">requirements.sh</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">构建脚本依赖：
+<ul>
+<li class="">build.sh 依赖 CMakeLists.txt 的构建选项与安装规则，依赖 clang-tidy-run.sh 的增量分析能力。</li>
+<li class="">clang-tidy-run.sh 依赖 get_affected_files.py 计算受影响文件，依赖 clang-tidy-wrapper.sh 的插件加载。</li>
+<li class="">requirements.sh 在 CI 中为后续步骤提供环境与工具。</li>
+</ul>
+</li>
+<li class="">打包脚本依赖：
+<ul>
+<li class="">windist.ps1 依赖已构建产物与语言资源；prepare-web.sh 依赖 Emscripten 工具链与数据目录。</li>
+</ul>
+</li>
+<li class="">文档与流程：
+<ul>
+<li class="">RELEASE_PROCESS.md 为发布摘要与实体统计提供步骤指引。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">requirements.sh</li>
+<li class="">build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">clang-tidy-wrapper.sh</li>
+<li class="">get_affected_files.py</li>
+<li class="">CMakeLists.txt</li>
+<li class="">version.cpp</li>
+<li class="">windist.ps1</li>
+<li class="">prepare-web.sh</li>
+<li class="">RELEASE_PROCESS.md</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">get_affected_files.py</li>
+<li class="">requirements.sh</li>
+<li class="">CMakeLists.txt</li>
+<li class="">version.cpp</li>
+<li class="">windist.ps1</li>
+<li class="">prepare-web.sh</li>
+<li class="">RELEASE_PROCESS.md</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">并行与缓存：
+<ul>
+<li class="">build.sh 使用并行测试与 ccache，提升重复构建速度。</li>
+<li class="">clang-tidy-run.sh 对受影响文件集合进行随机打散并行分析，缩短 CI 时间。</li>
+</ul>
+</li>
+<li class="">增量分析：
+<ul>
+<li class="">通过 get_affected_files.py 基于 includes 与 git diff 计算受影响文件，避免全量分析。</li>
+</ul>
+</li>
+<li class="">资源裁剪：
+<ul>
+<li class="">prepare-web.sh 移除废弃模组与特定 gfx，减少 Web 包体积与加载时间。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">get_affected_files.py</li>
+<li class="">prepare-web.sh</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排查指南">故障排查指南<a href="#故障排查指南" class="hash-link" aria-label="故障排查指南的直接链接" title="故障排查指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">构建失败（缺少依赖）：
+<ul>
+<li class="">检查 CMakeLists.txt 中的依赖查找与错误提示，确保 SDL2/ncurses/SDL_ttf 等库正确安装。</li>
+</ul>
+</li>
+<li class="">测试失败（并行/模组加载）：
+<ul>
+<li class="">查看 build.sh 中的测试调用与并行参数，确认模组列表与加载开关。</li>
+</ul>
+</li>
+<li class="">静态分析异常：
+<ul>
+<li class="">若插件未生成，clang-tidy-run.sh 将直接退出；检查插件构建与路径。</li>
+<li class="">若受影响文件集合为空，确认 includes 生成与 git diff 结果。</li>
+</ul>
+</li>
+<li class="">Windows 打包失败：
+<ul>
+<li class="">检查 windist.ps1 中的复制路径与压缩命令，确认可执行与资源齐全。</li>
+</ul>
+</li>
+<li class="">发布说明生成失败：
+<ul>
+<li class="">检查 generate-release-notes.js 的 GitHub Token、仓库名与标签名参数，确认 API 返回状态。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">CMakeLists.txt</li>
+<li class="">build.sh</li>
+<li class="">clang-tidy-run.sh</li>
+<li class="">windist.ps1</li>
+<li class="">generate-release-notes.js</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>本发布工作流以脚本化与模块化为核心，结合 CMake 构建体系与多平台打包脚本，实现了从代码提交到发布产物的自动化闭环。通过质量门禁（测试与 clang-tidy）、增量分析与资源裁剪，显著提升了发布效率与稳定性。建议在实际发布中严格遵循本文模板与最佳实践，确保每次发布均可追溯、可验证、可回滚。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录">附录<a href="#附录" class="hash-link" aria-label="附录的直接链接" title="附录的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="发布流程标准化模板步骤清单">发布流程标准化模板（步骤清单）<a href="#发布流程标准化模板步骤清单" class="hash-link" aria-label="发布流程标准化模板（步骤清单）的直接链接" title="发布流程标准化模板（步骤清单）的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">准备阶段
+<ul>
+<li class="">确认版本标签与分支状态，更新版本信息（CMakeLists.txt 注入）。</li>
+<li class="">运行 RELEASE_PROCESS.md 中的统计命令，生成变更摘要与实体计数差异。</li>
+</ul>
+</li>
+<li class="">构建与测试
+<ul>
+<li class="">执行 requirements.sh 初始化环境与依赖。</li>
+<li class="">运行 build.sh 完成构建与并行测试，必要时启用 clang-tidy 增量分析。</li>
+</ul>
+</li>
+<li class="">质量门禁
+<ul>
+<li class="">检查测试通过与 clang-tidy 报告，修复阻塞性问题。</li>
+</ul>
+</li>
+<li class="">打包
+<ul>
+<li class="">Windows：执行 windist.ps1 生成 zip 包。</li>
+<li class="">Web：执行 prepare-web.sh 生成预处理包。</li>
+</ul>
+</li>
+<li class="">发布说明
+<ul>
+<li class="">使用 generate-release-notes.js 基于上一稳定版自动生成说明草稿。</li>
+</ul>
+</li>
+<li class="">发布与验证
+<ul>
+<li class="">在发布平台上传产物与说明，验证下载与运行。</li>
+</ul>
+</li>
+<li class="">发布后监控
+<ul>
+<li class="">收集用户反馈与日志，建立紧急修复流程与热修复版本发布计划。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">RELEASE_PROCESS.md</li>
+<li class="">CMakeLists.txt</li>
+<li class="">build.sh</li>
+<li class="">requirements.sh</li>
+<li class="">windist.ps1</li>
+<li class="">prepare-web.sh</li>
+<li class="">generate-release-notes.js</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/部署与发布/发布工作流.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/部署与发布/分发渠道"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">分发渠道</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/部署与发布/构建系统"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">构建系统</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#构建与测试流水线buildsh" class="table-of-contents__link toc-highlight">构建与测试流水线（build.sh）</a></li><li><a href="#静态分析与质量门禁clang-tidy-runsh-与-clang-tidy-wrappersh" class="table-of-contents__link toc-highlight">静态分析与质量门禁（clang-tidy-run.sh 与 clang-tidy-wrapper.sh）</a></li><li><a href="#发布前准备与变更统计release_processmd-与-prepare-websh" class="table-of-contents__link toc-highlight">发布前准备与变更统计（RELEASE_PROCESS.md 与 prepare-web.sh）</a></li><li><a href="#版本与构建选项cmakeliststxt-与-versioncpp" class="table-of-contents__link toc-highlight">版本与构建选项（CMakeLists.txt 与 version.cpp）</a></li><li><a href="#平台打包windistps1-与-prepare-websh" class="table-of-contents__link toc-highlight">平台打包（windist.ps1 与 prepare-web.sh）</a></li><li><a href="#环境与依赖requirementssh" class="table-of-contents__link toc-highlight">环境与依赖（requirements.sh）</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排查指南" class="table-of-contents__link toc-highlight">故障排查指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录" class="table-of-contents__link toc-highlight">附录</a><ul><li><a href="#发布流程标准化模板步骤清单" class="table-of-contents__link toc-highlight">发布流程标准化模板（步骤清单）</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-CBM体系与功能详解" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">CBM体系与功能详解 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/CBM体系与功能详解"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="CBM体系与功能详解 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="- CBM体系与功能详解"><meta data-rh="true" property="og:description" content="- CBM体系与功能详解"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/CBM体系与功能详解"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/CBM体系与功能详解" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/CBM体系与功能详解" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CBM体系与功能详解","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/CBM体系与功能详解"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/基础教程"><span title="基础教程" class="linkLabel_WmDU">基础教程</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/世界设置详解"><span title="世界设置详解" class="linkLabel_WmDU">世界设置详解</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/刷新范围，现实气泡"><span title="刷新范围，现实气泡" class="linkLabel_WmDU">刷新范围，现实气泡</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/常见问题 Q&amp;A"><span title="常见问题 Q&amp;A" class="linkLabel_WmDU">常见问题 Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/CDDA-CN-Guide/docs/属性的影响"><span title="小@的状态" class="categoryLinkLabel_W154">小@的状态</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/技能与专长"><span title="技能与专长" class="linkLabel_WmDU">技能与专长</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/特性解释及评价"><span title="特性解释及评价" class="linkLabel_WmDU">特性解释及评价</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/怪物机制"><span title="怪物机制" class="linkLabel_WmDU">怪物机制</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/攻击与防御"><span title="攻击与防御" class="categoryLinkLabel_W154">攻击与防御</span></a><button aria-label="展开侧边栏分类 &#x27;攻击与防御&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/CDDA-CN-Guide/docs/CBM体系与功能详解"><span title="CBM/变异" class="categoryLinkLabel_W154">CBM/变异</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/CBM体系与功能详解"><span title="CBM体系与功能详解" class="linkLabel_WmDU">CBM体系与功能详解</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/变异体系与路线详解"><span title="变异体系与路线详解" class="linkLabel_WmDU">变异体系与路线详解</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/NPC与任务流程"><span title="NPC与任务流程" class="linkLabel_WmDU">NPC与任务流程</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/食物获取与储存"><span title="食物获取与储存" class="linkLabel_WmDU">食物获取与储存</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/载具机制"><span title="载具机制" class="linkLabel_WmDU">载具机制</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/实验版家电系统"><span title="实验版家电系统" class="linkLabel_WmDU">实验版家电系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/空间风暴事件"><span title="空间风暴事件" class="linkLabel_WmDU">空间风暴事件</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/地点概述与探索建议"><span title="地点概述与探索建议" class="linkLabel_WmDU">地点概述与探索建议</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/神器系统详细解释"><span title="神器系统详细解释" class="linkLabel_WmDU">神器系统详细解释</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">玩家手册</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">CBM/变异</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">CBM体系与功能详解</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>CBM体系与功能详解</h1></header><ul>
+<li class=""><a href="#cbm%E4%BD%93%E7%B3%BB%E4%B8%8E%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3" class="">CBM体系与功能详解</a>
+<ul>
+<li class=""><a href="#%E4%BD%93%E7%B3%BB%E8%A7%A3%E9%87%8A" class="">体系解释</a>
+<ul>
+<li class=""><a href="#%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96cbm" class="">获取</a></li>
+<li class=""><a href="#%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E6%95%85%E9%9A%9C%E7%9A%84cbm%E8%82%AE%E8%84%8F" class="">处理</a></li>
+<li class=""><a href="#%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85cbm" class="">安装</a></li>
+<li class=""><a href="#%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5" class="">失败</a></li>
+<li class=""><a href="#%E7%A7%BB%E9%99%A4cbm" class="">移除</a></li>
+</ul>
+</li>
+<li class=""><a href="#%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3" class="">功能详解</a>
+<ul>
+<li class="">[能量]
+<ul>
+<li class=""><a href="#%E5%82%A8%E8%83%BD%E7%B1%BBcbm" class="">储能类CBM</a></li>
+<li class=""><a href="#%E4%BE%9B%E8%83%BD%E7%B1%BBcbm" class="">供能类CBM</a></li>
+</ul>
+</li>
+<li class="">[被动]
+<ul>
+<li class=""><a href="#%E8%A2%AB%E5%8A%A8%E7%B1%BBcbm" class="">被动类CBM</a></li>
+<li class=""><a href="#%E5%BC%BA%E5%8C%96%E7%B1%BBcbm" class="">强化类CBM</a></li>
+<li class=""><a href="#%E5%8A%9F%E8%83%BD%E7%B1%BBcbm" class="">功能类CBM</a></li>
+</ul>
+</li>
+<li class="">[主动]
+<ul>
+<li class=""><a href="#%E4%B8%BB%E5%8A%A8%E8%BF%9B%E6%94%BB%E7%B1%BBcbm" class="">主动进攻类</a></li>
+<li class=""><a href="#%E4%B8%BB%E5%8A%A8%E9%98%B2%E5%BE%A1%E7%B1%BBcbm" class="">主动防御类</a></li>
+<li class=""><a href="#%E4%B8%BB%E5%8A%A8%E5%8A%9F%E8%83%BD%E7%B1%BBcbm" class="">主动功能类</a></li>
+</ul>
+</li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E7%B1%BBcbm" class="">故障类CBM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="体系解释">体系解释<a href="#体系解释" class="hash-link" aria-label="体系解释的直接链接" title="体系解释的直接链接" translate="no">​</a></h2>
+<p>生化插件，又称之为CBM。系与变异同级，但与变异基本不冲突的后期体系（一部分部位变异与对应部位CBM无法共存），和变异一样可以给予各种各样的被动增益与主动技能，其个别CBM甚至拥有如瞬间移动与时间停止的强大能力，不过其所消耗的能源与附加代价也十分显著；大部分CBM都需要消耗储能，储能的多少取决于储能CBM的数量，而储能的恢复则主要取决于供能CBM。你可以通过「p」开启生化插件菜单以检阅或管理已经安装在你身上的CBM，也可以查看供能与储能的具体情况；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="如何获取cbm">如何获取CBM<a href="#如何获取cbm" class="hash-link" aria-label="如何获取CBM的直接链接" title="如何获取CBM的直接链接" translate="no">​</a></h3>
+<p>你通常可以在实验室、军事设施等地方找到CBM，也可以跟HUB阵营贸易换取，如果运气够好，一些城市内的医院、金库等地方也可以找到CBM，不要给予太多期待就好；</p>
+<p>除上述地点以外，你也可以通过解剖一些变种人尸体（稳定版则包括放电类丧尸、研究员丧尸等）来获取插件，这通常需求大量时间进行解刨，其成功率取决于你所使用的「精细切割」工具等级、医疗技能及电子学技能，尸体的完整水平也会影响成功率，所以尽量别砸碎那些你要解刨的尸体；如果解剖失败，你将会得到烧毁的CBM，此类CBM基本没有什么作用；如果解刨成功，你将得到「故障的xxxxCBM（肮脏）」；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="如何处理故障的cbm肮脏">如何处理故障的CBM(肮脏)<a href="#如何处理故障的cbm肮脏" class="hash-link" aria-label="如何处理故障的CBM(肮脏)的直接链接" title="如何处理故障的CBM(肮脏)的直接链接" translate="no">​</a></h3>
+<p>如果你是直接从各个地方拿到了干净无菌的CBM，那倒没什么太大所谓，从尸体中解剖出来的CBM需要经过十分详尽的处理才能变的安全可用，总而言之你需要如下操作；</p>
+<p>1、采用海绵、抹布、洗涤工具箱等工具清洗CBM，别忘了水和洗涤剂；</p>
+<p>2、按「i」打开背包，选中CBM并按下回车，选择修复以重置其数据；</p>
+<p>3、激活高压灭菌袋，以将CBM包装在高压灭菌袋中；</p>
+<p>4、将包装好的CBM放入高压灭菌釜中，等待消毒完成；</p>
+<p>高压灭菌釜分实验室及个别地点限定的家具版本和能在实验室、医院等地点找到的物品版本，物品版本运行需要消耗极为离谱的电量（约8200单位，仅有钚燃料电池扛得住），基本只有改造成车载灭菌釜并安装在车体上，采用车载发电机供能才勉强吃得住，灭菌流程通常需要一小时三十分钟，读会书做点晚餐都很适合打发时间；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="如何安装cbm">如何安装CBM<a href="#如何安装cbm" class="hash-link" aria-label="如何安装CBM的直接链接" title="如何安装CBM的直接链接" translate="no">​</a></h3>
+<p>安装CBM需要找到全自动医疗仪XI型，且该医疗仪相邻的手术台不得被破坏；该医疗仪可以对玩家及NPC进行各种各样的治疗，也可以帮助你固定断肢，不过我们现在只需要它最为主要的用途，安装或拆除CBM。</p>
+<p>玩家在安装CBM前需要与操作台互动以执行手术，手术的成功几率与消耗的麻醉剂数量都会直接显示在面板之中，如果你拥有「痛觉抑制CBM」或「疼痛麻木」变异，你完全可以在不麻醉的情况下进行手术，否则你需要为其提供麻醉工具箱及麻醉剂；注意一点，当你被麻醉时对于外界没有任何感知能力与反应能力，即便你被攻击也不一定会苏醒，千万确保手术环境的安全；</p>
+<p>安装CBM的成功率主要取决于智力及急救、计算机学、电子学技能；</p>
+<p>安装CBM消耗的时间主要取决于CBM本身；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="安装失败">安装失败<a href="#安装失败" class="hash-link" aria-label="安装失败的直接链接" title="安装失败的直接链接" translate="no">​</a></h3>
+<p>安装总归是存在有失败可能的，安装失败将有可能导致以下风险：</p>
+<ul>
+<li class="">无意外事故的故障；</li>
+<li class="">出现意外事故并导致严重疼痛；</li>
+<li class="">出现意外事故并导致严重的伤害；</li>
+<li class="">出现意外事故并导致出现故障的CBM；</li>
+</ul>
+<p>如果没有出现最糟糕的结果，则你还能得到安装失败的CBM，只是需要重新修理和消毒；如果出现了糟的情况……你有可能还得设法把故障CBM从身上移除，建议缓一缓再继续；如果你具备「实习医生」或「全自动医疗仪专家」的职业特性，则不会出现安装故障CBM的失败结果；</p>
+<p>失败将有可能导致80点左右的严重伤害，请尽量处于健康状态下安装；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="移除cbm">移除CBM<a href="#移除cbm" class="hash-link" aria-label="移除CBM的直接链接" title="移除CBM的直接链接" translate="no">​</a></h3>
+<p>移除CBM同样需要全自动医疗仪XI型，但一些外科医生NPC也可以帮助你移除CBM；移除CBM比安装更为困难且更容易造成几近于致命的损害；如若移除成功则不受伤害；</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="功能详解">功能详解<a href="#功能详解" class="hash-link" aria-label="功能详解的直接链接" title="功能详解的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="储能类cbm">储能类CBM<a href="#储能类cbm" class="hash-link" aria-label="储能类CBM的直接链接" title="储能类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>电池类别，储存供能类CBM提供的生化能量用以各类CBM的消耗，所有耗能的CBM都需要储能CBM作为支撑，与供能类CBM同属于CBM体系的核心。</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="储能模块储能模块mkii">储能模块\储能模块Mk.II：<a href="#储能模块储能模块mkii" class="hash-link" aria-label="储能模块\储能模块Mk.II：的直接链接" title="储能模块\储能模块Mk.II：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>储能模块增加100kJ能量上限，Mk.II则增加250kJ，可无限堆叠；</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="供能类cbm">供能类CBM<a href="#供能类cbm" class="hash-link" aria-label="供能类CBM的直接链接" title="供能类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>供能类别，以各种方式为储能CBM提供能源，与储能类CBM同属于CBM体系的核心所在。</strong></p>
+<ul>
+<li class="">
+<p>2022-09-21-1254号实验版本重构了「供能类CBM」燃料机制。</p>
+<p>原先需要在CBM界面填充燃料的「电池供能」、「酒精锅炉」、「汽油燃料电池」、「燃油发电机」如今作为一种「自体光环」或者说虚拟装备存在于装备栏中，现在需要打开背包填充燃料了；</p>
+<p>「电池供能」采用弹匣机制，需要「装填」轻型、中型电池；</p>
+<p>其余三项采用容器机制，需要「装填」或「放入」对应的燃料；</p>
+<p>燃料装填完毕后，回到CBM界面启用供能即可；</p>
+<p><img decoding="async" loading="lazy" alt="descript" src="data:image/png;base64,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" width="661" height="99" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/CDDA-CN-Guide/assets/images/0a8d07f98c8e428d89d8b016129034da-0268daeb1f4f738ea4904851fca45ff9.png" width="1327" height="419" class="img_ev3q"></p>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="涓流充能">涓流充能：<a href="#涓流充能" class="hash-link" aria-label="涓流充能：的直接链接" title="涓流充能：的直接链接" translate="no">​</a></h4>
+<p><em>「一个低功率、持久的的生化供能装置,由小型核衰变供能。能量输出低,但不需要燃料源,此模块可以同时安装多个。」</em></p>
+<ul>
+<li class=""><strong>每秒供能2J生化能量，估约八分钟1kJ；</strong></li>
+</ul>
+<p>取代了以前消耗钚电池供能的「核反应堆供能」；真正意义上的零成本，连核辐射都没有；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="电池供能">电池供能：<a href="#电池供能" class="hash-link" aria-label="电池供能：的直接链接" title="电池供能：的直接链接" translate="no">​</a></h4>
+<p><em>「这套电池系统可以利用普通电池来恢复生化能量。」</em></p>
+<ul>
+<li class=""><strong>消耗电池燃料舱内的电能，每秒供能1kJ生化能量；</strong></li>
+</ul>
+<p>此CBM在你身体内部增加了一个可装填「轻型电池」和「中型电池」的电池燃料舱，以装备形式存在，按「r」可以将电池装填至电池燃料舱内；</p>
+<p>按「p」并在CBM菜单中启用后即可开始充能；</p>
+<p>该CBM仅消耗电池电能，不消耗电池本体，考虑到电池还能再充电这事儿，性价比颇高；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="酒精锅炉">酒精锅炉：<a href="#酒精锅炉" class="hash-link" aria-label="酒精锅炉：的直接链接" title="酒精锅炉：的直接链接" translate="no">​</a></h4>
+<p><em>「一个生化酒精反应炉。燃烧效率极高。可以储存500毫升乙醇、甲醇或者改性酒精作为燃料。」</em></p>
+<ul>
+<li class=""><strong>消耗酒精燃料舱内的酒精等燃料；</strong></li>
+<li class=""><strong>正常情况下，每秒供能2~8kJ生化能量；</strong></li>
+</ul>
+<p>此CBM在你身体内部增加了一个可装填「酒类」的酒精燃料舱，以装备形式存在，按「r」可以装填酒水至燃料舱内；</p>
+<p>按「p」并在CBM菜单中启用后即可开始充能；</p>
+<p>该CBM启动时会导致保暖升高并向四周辐射热度；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="汽油燃料电池">汽油燃料电池：<a href="#汽油燃料电池" class="hash-link" aria-label="汽油燃料电池：的直接链接" title="汽油燃料电池：的直接链接" translate="no">​</a></h4>
+<p><em>「一个装在肩胛骨上的小型汽油燃料电池。尽管它的能量输出相比其他燃料电池要少，但它仍然会产生大量热量，这些热量仅能通过从你背部伸出的散热系统耗散。一套生物塑胶制成的液囊扩散网络沿着循环系统放置，用以存放燃料；」</em></p>
+<ul>
+<li class=""><strong>消耗汽油燃料舱内的汽油等燃料，每秒供能2~8kJ生化能量；</strong></li>
+</ul>
+<p>此CBM在你身体内部增加了一个可装填「汽油」的汽油燃料舱，以装备形式存在，按「r」可以装填汽油燃料；</p>
+<p>按「p」并在CBM菜单中启用后即可开始充能；</p>
+<p>该CBM启动时会导致保暖升高并向四周辐射热度；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="燃油发电机">燃油发电机：<a href="#燃油发电机" class="hash-link" aria-label="燃油发电机：的直接链接" title="燃油发电机：的直接链接" translate="no">​</a></h4>
+<p><em>「燃烧煤油或机油的供能CBM。它的转换率相当高,可以储存最多750ml的燃油,但能量恢复速度较慢；」</em></p>
+<ul>
+<li class=""><strong>消耗燃油燃料舱内的机油等燃料，每5秒供能8~12kJ生化能量；</strong></li>
+</ul>
+<p>此CBM在你身体内部增加了一个可装填「燃油」的燃油燃料舱，按「r」可以装填机油或煤油；</p>
+<p>按「p」并在CBM菜单中启用后即可开始充能；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="代谢供能">代谢供能：<a href="#代谢供能" class="hash-link" aria-label="代谢供能：的直接链接" title="代谢供能：的直接链接" translate="no">​</a></h4>
+<p><em>「这个模组将受体的消化系统和电源连接起来,使其能够通过消耗卡路里恢复生化能量；」</em></p>
+<ul>
+<li class=""><strong>消耗体内的卡路里供能，1千卡大约等于1KJ；</strong></li>
+</ul>
+<p>此CBM在你体重下降到一定程度时自动停止工作，基本来说不会过于影响你的体重健康水平，停止工作的意思就是你再这样下去就要瘦的不正常了；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="动力齿轮">动力齿轮：<a href="#动力齿轮" class="hash-link" aria-label="动力齿轮：的直接链接" title="动力齿轮：的直接链接" translate="no">​</a></h4>
+<p><em>「你的关节处被植入了齿轮发电机,当你移动时可以缓慢的产生能量。当开启该模块时，移动需要花费更多时间，但能产生更多生化能量；」</em></p>
+<ul>
+<li class=""><strong>开启时步行1格恢复约130J，关闭时步行1格恢复约10J；</strong></li>
+<li class=""><strong>启动此CBM供能时，移动将会消耗更多耐力；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="电缆充电器">电缆充电器：<a href="#电缆充电器" class="hash-link" aria-label="电缆充电器：的直接链接" title="电缆充电器：的直接链接" translate="no">​</a></h4>
+<p><em>「受体臀部上方安装了一个复杂的接口,启动后可以通过跨接电缆与电池连接并恢复生化能量。；」</em></p>
+<ul>
+<li class=""><strong>用电缆与载具链接后，每秒供能1kJ，用电缆与太阳能背包链接后，在有阳光的环境下每秒供能约50J，</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="被动类cbm">被动类CBM<a href="#被动类cbm" class="hash-link" aria-label="被动类CBM的直接链接" title="被动类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>此类CBM借助各种体内植入物为你提供被动增益；一般不需要主动开启，通常不消耗能量或耗能极低；</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="空气过滤系统">空气过滤系统：<a href="#空气过滤系统" class="hash-link" aria-label="空气过滤系统：的直接链接" title="空气过滤系统：的直接链接" translate="no">​</a></h4>
+<p><em>「受体器官中被植入了一个先进的空气过滤系统。不管进入气管的是毒气还是空气传播的病菌,这个过滤器都会尝试过滤它们。」</em></p>
+<ul>
+<li class=""><strong>大幅提高嘴部的环境保护、免疫烟雾及催泪瓦斯的影响；</strong></li>
+<li class=""><strong>实验版可免疫毒气；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="合金装甲系列">合金装甲系列：<a href="#合金装甲系列" class="hash-link" aria-label="合金装甲系列：的直接链接" title="合金装甲系列：的直接链接" translate="no">​</a></h4>
+<p><em>「先进的防护网状合金，以少许累赘为代价换来了少许防护。」</em></p>
+<ul>
+<li class=""><strong>提高3点对应部位的钝、斩、射抗性，提高1点对应部位的累赘；</strong></li>
+</ul>
+<p>与所有改变体型类的变异冲突，安装后将无法触发体型类别变异；</p>
+<p>某个致敬机械战警的职业自带一套；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="皮下碳纤维层">皮下碳纤维层：<a href="#皮下碳纤维层" class="hash-link" aria-label="皮下碳纤维层：的直接链接" title="皮下碳纤维层：的直接链接" translate="no">​</a></h4>
+<p><em>「一层薄层碳纳米管植入到皮肤下方。」</em></p>
+<ul>
+<li class=""><strong>提高全部位2点钝抗，4点斩、射抗；</strong></li>
+</ul>
+<p>碳纳米管装甲，小子！</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="热能汲取--电击装置">热能汲取 / 电击装置：<a href="#热能汲取--电击装置" class="hash-link" aria-label="热能汲取 / 电击装置：的直接链接" title="热能汲取 / 电击装置：的直接链接" translate="no">​</a></h4>
+<p><em>「百般武术，此乃CBM格斗术」</em></p>
+<p><strong>热能汲取效果</strong>：</p>
+<p><strong>启用时近战造成额外1点伤害；</strong></p>
+<ul>
+<li class=""><strong>造成伤害时50%概率恢复约3kJ的生化能量；</strong></li>
+</ul>
+<p><strong>电击装置效果</strong>：</p>
+<ul>
+<li class=""><strong>启用并握持金属武器或徒手时，近战攻击额外造成2~15伤害；</strong></li>
+<li class=""><strong>造成伤害时有30%概率导致目标陷入「被电击」状态，随机损耗200~350的行动点，可视为其2~3回合内无法行动，此效应对电系敌人无效，效果触发时消耗2KJ；</strong></li>
+</ul>
+<p>这两个CBM造成的伤害属于寒冷伤害和电击伤害，基本可以认为是不吃抗性的额外伤害；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="强化类cbm">强化类CBM<a href="#强化类cbm" class="hash-link" aria-label="强化类CBM的直接链接" title="强化类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>此类CBM安装后即可强化你的身体机能，进而带来各种便利；</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="人工肌肉纤维力量2">人工肌肉纤维：力量+2；<a href="#人工肌肉纤维力量2" class="hash-link" aria-label="人工肌肉纤维：力量+2；的直接链接" title="人工肌肉纤维：力量+2；的直接链接" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="线性反射弧敏捷2">线性反射弧：敏捷+2；<a href="#线性反射弧敏捷2" class="hash-link" aria-label="线性反射弧：敏捷+2；的直接链接" title="线性反射弧：敏捷+2；的直接链接" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="生物处理芯片智力2">生物处理芯片：智力+2；<a href="#生物处理芯片智力2" class="hash-link" aria-label="生物处理芯片：智力+2；的直接链接" title="生物处理芯片：智力+2；的直接链接" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="钻石角膜感知2">钻石角膜：感知+2；<a href="#钻石角膜感知2" class="hash-link" aria-label="钻石角膜：感知+2；的直接链接" title="钻石角膜：感知+2；的直接链接" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="听力增强">听力增强：<a href="#听力增强" class="hash-link" aria-label="听力增强：的直接链接" title="听力增强：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>提高3.5倍的你所听到的声音强度；</strong></li>
+<li class=""><strong>不再因一些巨大噪音失聪；</strong></li>
+<li class=""><strong>可以让你用听诊器打开保险箱（耗时极长）；</strong></li>
+<li class=""><strong>额外附赠一个关闭听力的功能，效果如同耳塞；</strong></li>
+</ul>
+<p>基本就是让声音信息更加精确，并且附赠了一个射击护耳的功能；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="记忆增强">记忆增强：<a href="#记忆增强" class="hash-link" aria-label="记忆增强：的直接链接" title="记忆增强：的直接链接" translate="no">​</a></h4>
+<p><strong>主动开启</strong>：</p>
+<ul>
+<li class=""><strong>当技能经验增长时，专注视作当前值+10；</strong></li>
+<li class=""><strong>从书籍获取经验速率增加；</strong></li>
+<li class=""><strong>记忆地图能力更强；</strong></li>
+<li class=""><strong>增加在「近身格斗强化」CBM中学习武术的概率；</strong></li>
+<li class=""><strong>当开启技能遗忘时，降低技能下降速率；</strong></li>
+</ul>
+<p>基本可以视为「快速学习」+「出色记忆」特性，可以和「快速学习」、「出色记忆」特性叠加，开了技能遗忘机制时效果显著；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="多重消化系统">多重消化系统：<a href="#多重消化系统" class="hash-link" aria-label="多重消化系统：的直接链接" title="多重消化系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>降低食用腐烂食物的影响，大幅下降食物中毒概率；</strong></li>
+<li class=""><strong>过敏/厌恶食物还是没法吃</strong></li>
+<li class="">从食物中吸取1.5倍维生素</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="人工瞬膜">人工瞬膜：<a href="#人工瞬膜" class="hash-link" aria-label="人工瞬膜：的直接链接" title="人工瞬膜：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>为眼睛提供潮湿保护，消除水下视野惩罚；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="神经突触加速器">神经突触加速器：<a href="#神经突触加速器" class="hash-link" aria-label="神经突触加速器：的直接链接" title="神经突触加速器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>同「迅捷」特性且可与「迅捷」叠加，增加10%速度；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="瞄准系统">瞄准系统：<a href="#瞄准系统" class="hash-link" aria-label="瞄准系统：的直接链接" title="瞄准系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>减少25%武器散布；通常会使射击更精准；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="后坐力补偿">后坐力补偿：<a href="#后坐力补偿" class="hash-link" aria-label="后坐力补偿：的直接链接" title="后坐力补偿：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>减少0.35的武器后坐力；通常会使连续射击更精准；</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="功能类cbm">功能类CBM<a href="#功能类cbm" class="hash-link" aria-label="功能类CBM的直接链接" title="功能类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>此类CBM安装后即可提供颇为显著的辅助功能，绝大部分激活后也都可以作为某项工具使用；</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="指尖黑客仪">指尖黑客仪：<a href="#指尖黑客仪" class="hash-link" aria-label="指尖黑客仪：的直接链接" title="指尖黑客仪：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>等同于电子黑客仪器，但成功率要高一些；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="指端开锁器">指端开锁器：<a href="#指端开锁器" class="hash-link" aria-label="指端开锁器：的直接链接" title="指端开锁器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：50J；</strong></li>
+<li class=""><strong>等同于撬锁器，但是比撬锁器成功率高一些；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="变脸系统">变脸系统：<a href="#变脸系统" class="hash-link" aria-label="变脸系统：的直接链接" title="变脸系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>对NPC说谎成功率提高20%、恐吓成功率提高10%；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="防眩光补偿器">防眩光补偿器：<a href="#防眩光补偿器" class="hash-link" aria-label="防眩光补偿器：的直接链接" title="防眩光补偿器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>给予「遮挡刺眼阳光」能力，免疫大晴天的炫光影响；</strong></li>
+<li class=""><strong>给予1级「强光保护」以用于各类焊接工作；</strong></li>
+<li class=""><strong>较为显著的减少闪光弹带来的影响；</strong></li>
+<li class=""><strong>额外附赠一个关闭视野的功能，如同带上眼罩；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="全自动外科手术刀">全自动外科手术刀：<a href="#全自动外科手术刀" class="hash-link" aria-label="全自动外科手术刀：的直接链接" title="全自动外科手术刀：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>激活即可获得2级「切割」、5级「精细切割」、14级「屠宰」能力；</strong></li>
+<li class=""><strong>手术刀本身为+2命中、8刺的武器；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="指尖剃刀">指尖剃刀：<a href="#指尖剃刀" class="hash-link" aria-label="指尖剃刀：的直接链接" title="指尖剃刀：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>当你手指不受阻碍时（即为绝对徒手且不装备手套，无指手套例外）为徒手攻击额外增加2刺、2切伤害，可以和其他近战附伤CBM叠加；</strong></li>
+<li class=""><strong>8级「屠宰」能力；</strong></li>
+<li class=""><strong>装备视为徒手的武器也不能让它给你附伤；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="瑞士军手-">瑞士军手 ：<a href="#瑞士军手-" class="hash-link" aria-label="瑞士军手 ：的直接链接" title="瑞士军手 ：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>激活即可获得：-55级屠宰、2级切割、1级撬棍、1级撬钉、1级金属锯切、1级精工金属锯切、1级木材锯切、1级拧动螺丝、1级精工拧动螺丝、1级扳动螺栓、1级精工扳动螺栓；基本涵盖了大部分常用工具；</strong></li>
+<li class=""><strong>可通过消耗能量起到「电炉」、「电烙铁」、「焊炬」, 净水器, 轻便电炉, 烟熏等作用；</strong></li>
+</ul>
+<p>尽管被削弱了一些功能，但依然是那么的璀璨夺目；</p>
+<p>TODO: 仍然需要带钢锯, 锤子, 大型可调扳手...(?)</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="整合供能--外骨骼供能接口--外骨骼能源转换接口mkii">整合供能 / 外骨骼供能接口 / 外骨骼能源转换接口Mk.II：<a href="#整合供能--外骨骼供能接口--外骨骼能源转换接口mkii" class="hash-link" aria-label="整合供能 / 外骨骼供能接口 / 外骨骼能源转换接口Mk.II：的直接链接" title="整合供能 / 外骨骼供能接口 / 外骨骼能源转换接口Mk.II：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>让UPS电源供能物品可以使用你的能量；</strong></li>
+<li class=""><strong>外骨骼类的就是能用能量驱动外骨骼；</strong></li>
+</ul>
+<p>一般搭配UPS供电改装把各种物品改成UPS供电再使用，主要用于MP3、手机、手电筒等；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="静脉输液器">静脉输液器：<a href="#静脉输液器" class="hash-link" aria-label="静脉输液器：的直接链接" title="静脉输液器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>效果等同于「针筒」，可以直接使用注射类物品</strong>；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="防护镜片">防护镜片：<a href="#防护镜片" class="hash-link" aria-label="防护镜片：的直接链接" title="防护镜片：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>增加眼部5累赘，6钝防，11斩防，10射防，19酸防，4火防，10环境抗性</strong>；</li>
+<li class="">与部分眼部变异冲突</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="回收单元">回收单元：<a href="#回收单元" class="hash-link" aria-label="回收单元：的直接链接" title="回收单元：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>将原本5分钟降低一次的饥饿指数调整为30分钟降低一次</strong>；</li>
+<li class=""><strong>将原本5分钟降低一次的口渴指数调整为10分钟降低一次；</strong></li>
+<li class=""><strong>数据可能受其他特性、CBM影响而变化；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="睡眠模式">睡眠模式：<a href="#睡眠模式" class="hash-link" aria-label="睡眠模式：的直接链接" title="睡眠模式：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>入睡时自启，增加疲劳进程以加速入睡；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="味觉调节">味觉调节：<a href="#味觉调节" class="hash-link" aria-label="味觉调节：的直接链接" title="味觉调节：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>当启动时，所有食物的心情减益视为零；</strong></li>
+<li class=""><strong>过敏\厌恶食物导致的心情减益照常生效；</strong></li>
+</ul>
+<p>启动后就不用再管了.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="自动对焦眼球">自动对焦眼球：<a href="#自动对焦眼球" class="hash-link" aria-label="自动对焦眼球：的直接链接" title="自动对焦眼球：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>效果等同于携带了一个「双筒望远镜」，但不能与望远镜叠加；</strong></li>
+<li class=""><strong>安装后无法摘除；</strong></li>
+<li class=""><strong>安装后直接覆盖所有眼部、视力变异，包括初始特性的近视、远视、夜视等等，请确保你需要这个CBM再进行安装；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="钛合金骨架">钛合金骨架：<a href="#钛合金骨架" class="hash-link" aria-label="钛合金骨架：的直接链接" title="钛合金骨架：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>+20千克负重；</strong></li>
+</ul>
+<p>与所有改变体型类的变异冲突，安装后将无法触发体型类别变异；</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="主动进攻类cbm">主动进攻类CBM<a href="#主动进攻类cbm" class="hash-link" aria-label="主动进攻类CBM的直接链接" title="主动进攻类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>此类CBM安装后需要主动激活，激活后将显著提高你的进攻能力；</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="生化合金爪">生化合金爪：<a href="#生化合金爪" class="hash-link" aria-label="生化合金爪：的直接链接" title="生化合金爪：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：25J，</strong></li>
+<li class=""><strong>8钝16刺近战武器，攻击耗时颇低，有12级「屠宰」</strong>；</li>
+<li class="">该CBM与爪类变异冲突；</li>
+<li class="">金刚狼爪，好处就是随用随取吧；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="连锁闪电">连锁闪电：<a href="#连锁闪电" class="hash-link" aria-label="连锁闪电：的直接链接" title="连锁闪电：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：100J，</strong></li>
+<li class=""><strong>10格射程，伤害在20左右浮动，命中后产生三轮随机扩散的电火花</strong>；</li>
+<li class="">少有的AOE武器，耗能高，伤害不错，有可能造成控制效果；</li>
+<li class="">近距离用的时候可能会电到自己；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="近身格斗强化">近身格斗强化：<a href="#近身格斗强化" class="hash-link" aria-label="近身格斗强化：的直接链接" title="近身格斗强化：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：20J，每轮耗能：20J；</strong></li>
+<li class=""><strong>无论原本技能等级如何，直接将除闪避外所有近战技能设置为5，并让你自选一个武术使用</strong>；</li>
+<li class=""><strong>每次用此CBM提供的武术击中敌人时，有极低概率学会武术；</strong></li>
+<li class="">本质应该是CBM自动代打，所以技能等级高时会倒扣技能等级，主要的好处是能学武术；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="定向emp">定向EMP：<a href="#定向emp" class="hash-link" aria-label="定向EMP：的直接链接" title="定向EMP：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：50kJ；</strong></li>
+<li class=""><strong>射程仅有1格的「EMP发射器」，但是比发射器更快更准；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="emp发射器">EMP发射器：<a href="#emp发射器" class="hash-link" aria-label="EMP发射器：的直接链接" title="EMP发射器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：50kJ；</strong></li>
+<li class=""><strong>射程10格，对机械单位造成巨大伤害；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="指端激光枪">指端激光枪：<a href="#指端激光枪" class="hash-link" aria-label="指端激光枪：的直接链接" title="指端激光枪：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：30kJ；</strong></li>
+<li class=""><strong>射程30格，精准度极佳，命中敌人附加着火；</strong></li>
+<li class=""><strong>你也可以打地板点火，或者远程点燃炸药来引爆一些东西；</strong></li>
+<li class="">基本就是把激光手枪，便携易用精准的终极体现，确实伤害低了点；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="闪光弹生成器">闪光弹生成器：<a href="#闪光弹生成器" class="hash-link" aria-label="闪光弹生成器：的直接链接" title="闪光弹生成器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：10kJ；</strong></li>
+<li class=""><strong>基本就是枚闪光弹，造成范围失明、震聋；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="单分子刀刃">单分子刀刃：<a href="#单分子刀刃" class="hash-link" aria-label="单分子刀刃：的直接链接" title="单分子刀刃：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：50J；</strong></li>
+<li class=""><strong>28切 +2命中，22级屠宰，行动耗时极低，带有高级格挡；</strong></li>
+<li class="">相当优秀的近战武器，真的相当优秀；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="霰弹枪臂">霰弹枪臂：<a href="#霰弹枪臂" class="hash-link" aria-label="霰弹枪臂：的直接链接" title="霰弹枪臂：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：50J；</strong></li>
+<li class=""><strong>一把单发霰弹枪，安装后增加5点一条手臂的累赘；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="冲击波发生器">冲击波发生器：<a href="#冲击波发生器" class="hash-link" aria-label="冲击波发生器：的直接链接" title="冲击波发生器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：250kJ；</strong></li>
+<li class=""><strong>以自身为中心向周围2格发射冲击波，击退范围内所有生物，若撞到墙体则造成伤害与眩晕，若撞到其他生物则将其击退；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="音-爆-冲-击">音 爆 冲 击：<a href="#音-爆-冲-击" class="hash-link" aria-label="音 爆 冲 击：的直接链接" title="音 爆 冲 击：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：100kJ；</strong></li>
+<li class=""><strong>产生30的噪音，立刻尝试摧毁周围建筑，基本没多少墙体撑得住这个CBM的拆迁性，即便是军用载具装甲也抗不过几下冲击；</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="主动防御类cbm">主动防御类CBM<a href="#主动防御类cbm" class="hash-link" aria-label="主动防御类CBM的直接链接" title="主动防御类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>此类CBM安装后需要主动激活，激活后将显著提高你的防御能力；</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="主动防御系统">主动防御系统：<a href="#主动防御系统" class="hash-link" aria-label="主动防御系统：的直接链接" title="主动防御系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：10kJ，每轮耗能：10kJ，触发耗能：25kJ</strong></li>
+<li class=""><strong>它的主要作用是有效减少你所受到的伤害而非偏转子弹；</strong></li>
+<li class="">基本可以视为一个可开关的百分比减伤手段，能源消耗巨大；</li>
+<li class="">开启后，受到攻击有概率减免伤害；</li>
+<li class="">重击伤害：1/2概率 -&gt; 25%</li>
+<li class="">切割伤害：1/4概率 -&gt; 33%</li>
+<li class="">刺伤和子弹伤害：1/8概率 -&gt; 50%</li>
+<li class="">伤害减免最大值为50点；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="反击防御系统">反击防御系统：<a href="#反击防御系统" class="hash-link" aria-label="反击防御系统：的直接链接" title="反击防御系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：10kJ，每轮耗能：10kJ，触发耗能：1~4kJ</strong></li>
+<li class=""><strong>对所有攻击你的目标执行一次自动反击，造成5~20的伤害并概率附加「被电击」效果；</strong></li>
+<li class="">自动反击不消耗行动点，同一轮可多次触发，实际耗能高于纸面数据；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="警报系统">警报系统：<a href="#警报系统" class="hash-link" aria-label="警报系统：的直接链接" title="警报系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：25kJ，每轮耗能：1J，触发耗能：1J</strong></li>
+<li class=""><strong>自动探测一定范围内的移动目标，检测到则发出警报；</strong></li>
+<li class="">一般用于探测隐形单位，还有睡觉的时候防止敌袭；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="人工黑夜制造机">人工黑夜制造机：<a href="#人工黑夜制造机" class="hash-link" aria-label="人工黑夜制造机：的直接链接" title="人工黑夜制造机：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：9kJ，每轮耗能：9kJ</strong></li>
+<li class=""><strong>在你周围生成一圈黑暗, 让你和敌人贴身也不会被发现；</strong></li>
+<li class="">但是上下楼梯的那一回合黑暗还没有生成, 那一回合会被打</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="隐身系统">隐身系统：<a href="#隐身系统" class="hash-link" aria-label="隐身系统：的直接链接" title="隐身系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：30kJ，每轮耗能：30kJ</strong></li>
+<li class=""><strong>视觉上隐身；</strong></li>
+<li class="">尽管很少……但有些敌人确实不依赖视觉索敌；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="介电电容系统">介电电容系统：<a href="#介电电容系统" class="hash-link" aria-label="介电电容系统：的直接链接" title="介电电容系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：5kJ，每轮耗能：5kJ</strong></li>
+<li class=""><strong>免疫电击影响；</strong></li>
+<li class="">论如何使用近战武器突入变电所杀他个七进七出不触电；</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="医疗纳米机器人">医疗纳米机器人：<a href="#医疗纳米机器人" class="hash-link" aria-label="医疗纳米机器人：的直接链接" title="医疗纳米机器人：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：80J，每轮耗能：40J</strong></li>
+<li class=""><strong>以每分钟1HP的速度同时治疗至多四个部位的生命值，可止血；</strong></li>
+<li class="">颇高的治疗效率加上随用随开导致包扎失去了一点点存在意义，但这玩意不能止痛，所以还是得带点止痛药；</li>
+<li class="">用的时候可以对丧尸大喊：「纳米机器！小子！」</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="热能防护">热能防护：<a href="#热能防护" class="hash-link" aria-label="热能防护：的直接链接" title="热能防护：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：1kJ ，每轮耗能：1kJ；</strong></li>
+<li class=""><strong>基本免疫火焰带来的负面效果；</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="主动功能类cbm">主动功能类CBM<a href="#主动功能类cbm" class="hash-link" aria-label="主动功能类CBM的直接链接" title="主动功能类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>此类CBM安装后需要手动激活，激活后可提供显著的辅助作用；</strong></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="湿气凝水器">湿气凝水器：<a href="#湿气凝水器" class="hash-link" aria-label="湿气凝水器：的直接链接" title="湿气凝水器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class="">
+<p><strong>每轮耗能：60J；</strong></p>
+</li>
+<li class="">
+<p><strong>慢慢恢复口渴值，效率足以对抗自然衰减；</strong></p>
+<p>但还是不如一口水；</p>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="肾上腺素泵">肾上腺素泵：<a href="#肾上腺素泵" class="hash-link" aria-label="肾上腺素泵：的直接链接" title="肾上腺素泵：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class="">
+<p><strong>启动耗能：5J；</strong></p>
+</li>
+<li class="">
+<p><strong>持续二十分钟，-3智力，增加10速度，增加体力恢复速度，疼痛免疫；</strong></p>
+</li>
+<li class="">
+<p><strong>效果结束后，-2力量、-2敏捷、-1感知、-1智力、-10速度；</strong></p>
+<p>超人模式的时代已经结束了！但它疼痛免疫二十分钟！</p>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="血液分析">血液分析：<a href="#血液分析" class="hash-link" aria-label="血液分析：的直接链接" title="血液分析：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class="">
+<p><strong>启动耗能：100J；</strong></p>
+</li>
+<li class="">
+<p><strong>立刻分析自己的血液；通常可以探测出血源性疾病、已经服用的药物等；通常血液分析能分析出来的东西都可以被血液过滤清除；</strong></p>
+<p>搭配血液过滤用，单独使用只能看出来自己有啥问题；</p>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="血液过滤">血液过滤：<a href="#血液过滤" class="hash-link" aria-label="血液过滤：的直接链接" title="血液过滤：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：600J；</strong></li>
+<li class=""><strong>立刻清洁自己的血液；清除血液内的一切药物影响，可治愈大部分血源性疾病；</strong></li>
+</ul>
+<p>搭配血液分析用，也可以用来解除各种药物影响、药物过量；</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="脑壳手电">脑壳手电：<a href="#脑壳手电" class="hash-link" aria-label="脑壳手电：的直接链接" title="脑壳手电：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：3J；每轮耗能：3J；</strong></li>
+<li class=""><strong>半径4格的小型手电筒，比手机手电筒好用一点；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="掌心电磁铁">掌心电磁铁：<a href="#掌心电磁铁" class="hash-link" aria-label="掌心电磁铁：的直接链接" title="掌心电磁铁：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class="">
+<p><strong>启动耗能：15kJ；</strong></p>
+</li>
+<li class="">
+<p><strong>制造半径10格的强磁场，将所有铁钢制品吸到你的相邻位置，击伤飞行轨迹上的一切单位，伤害很低，主要用途是方便收集金属物品；</strong></p>
+<p><em>五金店战神，但是，在五金店也没啥大用</em></p>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="指尖打火机">指尖打火机：<a href="#指尖打火机" class="hash-link" aria-label="指尖打火机：的直接链接" title="指尖打火机：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：1.5kJ；</strong></li>
+<li class=""><strong>一个打火机；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="液压肌肉">液压肌肉：<a href="#液压肌肉" class="hash-link" aria-label="液压肌肉：的直接链接" title="液压肌肉：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：10kJ；每轮耗能：10kJ；</strong></li>
+<li class=""><strong>增加20点力量；</strong></li>
+<li class=""><strong>会显著增加你的近战能力、拆墙能力、负载能力等；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="白细胞培育系统">白细胞培育系统：<a href="#白细胞培育系统" class="hash-link" aria-label="白细胞培育系统：的直接链接" title="白细胞培育系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：5J；每轮耗能：5J；</strong></li>
+<li class=""><strong>迅速增加健康值至100点；迅速降低健康修正值至-200点；</strong></li>
+<li class=""><strong>100点健康值将加速睡眠时伤口痊愈的速度；</strong></li>
+<li class=""><strong>-200健康修正值将导致健康值急剧恶化，通常发生于关闭白细胞系统；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="植入性夜视仪">植入性夜视仪：<a href="#植入性夜视仪" class="hash-link" aria-label="植入性夜视仪：的直接链接" title="植入性夜视仪：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：10J；每轮耗能：10J；</strong></li>
+<li class=""><strong>效果等同于夜视仪；</strong></li>
+<li class=""><strong>跟夜视仪一样，无法让你在黑暗中阅读、制作等；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="红外视觉">红外视觉：<a href="#红外视觉" class="hash-link" aria-label="红外视觉：的直接链接" title="红外视觉：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：5J；每轮耗能：5J；</strong></li>
+<li class=""><strong>效果等同于红外护目镜；</strong></li>
+<li class=""><strong>探测整片现实气泡内的「可视」热源，只对温血生物生效；</strong></li>
+<li class=""><strong>所有探测到的生物都将显示为「热源」，你仅能判断其体格大小；</strong></li>
+<li class=""><strong>虽然有着理论上最远的探测范围（60格，即为现实气泡极限），但探测本身基于视线，因而依然会受到一些物体的阻隔；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="内置辐射计">内置辐射计：<a href="#内置辐射计" class="hash-link" aria-label="内置辐射计：的直接链接" title="内置辐射计：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：100J；</strong></li>
+<li class=""><strong>检测体内的辐射水平；当处于辐射环境时也会发出警告；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="辐射清洗系统">辐射清洗系统：<a href="#辐射清洗系统" class="hash-link" aria-label="辐射清洗系统：的直接链接" title="辐射清洗系统：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：4.5kJ；</strong></li>
+<li class=""><strong>减少5点辐射，不消耗任何行动点；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="恒温机构">恒温机构：<a href="#恒温机构" class="hash-link" aria-label="恒温机构：的直接链接" title="恒温机构：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：100J；每轮耗能：100J；</strong></li>
+<li class=""><strong>将体温调整至舒适水平，正负50点保暖；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="体味屏蔽">体味屏蔽：<a href="#体味屏蔽" class="hash-link" aria-label="体味屏蔽：的直接链接" title="体味屏蔽：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：1kJ；每60轮耗能：1kJ；</strong></li>
+<li class=""><strong>描述上是减少自身气味，实际上是消除自身气味；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="量子移动">量子移动：<a href="#量子移动" class="hash-link" aria-label="量子移动：的直接链接" title="量子移动：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class="">穿墙术</li>
+<li class=""><strong>启动耗能：3J；每轮耗能：3J；每格墙壁耗能：250kJ；</strong></li>
+<li class=""><strong>触碰墙壁，如果能量足够，则穿梭墙壁；</strong></li>
+<li class=""><strong>稀有度还挺高的；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="远程遥控">远程遥控：<a href="#远程遥控" class="hash-link" aria-label="远程遥控：的直接链接" title="远程遥控：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>每24轮耗能：1kJ；</strong></li>
+<li class=""><strong>远程控制玩具车或拥有「电传线控控制器」模块的载具；</strong></li>
+<li class=""><strong>还是别C4小车了吧；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="痛感抑制">痛感抑制：<a href="#痛感抑制" class="hash-link" aria-label="痛感抑制：的直接链接" title="痛感抑制：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>触发耗能：2kJ；</strong></li>
+<li class=""><strong>通过迅速消除疼痛以达成近乎于疼痛免疫的效果；</strong></li>
+<li class=""><strong>本质是在你疼痛的时候直接注射镇痛剂和镇静剂，其副作用是积累大量镇静剂及镇痛剂，会使角色困倦，若短时间内积累大量疼痛则有可能镇痛剂或镇静剂过量致死，通常不太会有这种可能；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="声呐之足">声呐之足：<a href="#声呐之足" class="hash-link" aria-label="声呐之足：的直接链接" title="声呐之足：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：200J；每轮耗能：200J；</strong></li>
+<li class=""><strong>探测周围的陷阱与地下生物，地下生物以类似热源的形式显示于屏幕之上，虽然可以确定位置，但钻出来之前还是打不到；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="时间膨胀">时间膨胀：<a href="#时间膨胀" class="hash-link" aria-label="时间膨胀：的直接链接" title="时间膨胀：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：50kJ，一次消耗全部能量；</strong></li>
+<li class=""><strong>去除启用时间膨胀所需的50kJ，余下每kJ=1行动点；</strong></li>
+<li class=""><strong>启用时有概率因物理学原因损伤随机部位；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="神奇闪避">神奇闪避：<a href="#神奇闪避" class="hash-link" aria-label="神奇闪避：的直接链接" title="神奇闪避：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能6J；触发耗能75kJ；每轮耗能6J；</strong></li>
+<li class=""><strong>若同时有镜像换位变异则触发仅消耗37.5kJ能量，同时消耗150耐力；</strong></li>
+<li class=""><strong>仅能闪避如抓取、啃咬等特殊攻击，子弹姑且还是躲不开的；</strong></li>
+<li class=""><strong>若触发时在载具上且系安全带则无法闪避……但是耗能照耗；</strong></li>
+<li class=""><strong>被警用机器人逮捕时有2/3概率滑脱手铐；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="体液萃取器">体液萃取器：<a href="#体液萃取器" class="hash-link" aria-label="体液萃取器：的直接链接" title="体液萃取器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：20kJ；</strong></li>
+<li class=""><strong>从尸体中汲取水分，一具丧尸尸体125单位左右；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="气象识别">气象识别：<a href="#气象识别" class="hash-link" aria-label="气象识别：的直接链接" title="气象识别：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：10J；</strong></li>
+<li class=""><strong>立刻获得当前天气信息（温度、湿度、气压、风速、风向等）；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="led纹身">LED纹身：<a href="#led纹身" class="hash-link" aria-label="LED纹身：的直接链接" title="LED纹身：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：1J；每轮耗能1J</strong></li>
+<li class=""><strong>单格照明，效果等同于阅读灯；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="短距离传送器">短距离传送器：<a href="#短距离传送器" class="hash-link" aria-label="短距离传送器：的直接链接" title="短距离传送器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：250kJ；</strong></li>
+<li class=""><strong>短距离随机传送，高传送病风险；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="关节伺服器电机">关节伺服器电机：<a href="#关节伺服器电机" class="hash-link" aria-label="关节伺服器电机：的直接链接" title="关节伺服器电机：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>触发耗能：35J；</strong></li>
+<li class=""><strong>未激活时，增加10%移动耗时；</strong></li>
+<li class=""><strong>激活时，减少10%移动耗时，每次移动消耗能量；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="神经突触再生器">神经突触再生器：<a href="#神经突触再生器" class="hash-link" aria-label="神经突触再生器：的直接链接" title="神经突触再生器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>每100轮耗能1kJ；</strong></li>
+<li class=""><strong>激活时逐渐消除睡眠不足的惩罚，但并不代表你的睡眠不足不存在；</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="呼吸增强器">呼吸增强器：<a href="#呼吸增强器" class="hash-link" aria-label="呼吸增强器：的直接链接" title="呼吸增强器：的直接链接" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>启动耗能：25kJ</strong></li>
+<li class=""><strong>提供水下呼吸能力：虽然介绍说溺水会自动开启实际上并不会，是被动效果。当你在水下的氧气水平小于5时会自动消耗25kJ能量将氧气水平+5，直到能量低于25kJ；（无鱼鳃变异时在水下每回合消耗1氧气；作为对比，呼吸器面罩效果是小于12时+12）</strong></li>
+<li class=""><strong>加快耐力恢复：当开启且能量&gt;=3kJ时，每回合消耗至多1kJ能量加快耐力恢复速度到至多5倍；</strong></li>
+<li class=""><strong>治疗哮喘：若发生哮喘且呼吸增强器开启，自动移除哮喘状态；特别地，若发生哮喘时处于睡眠状态，无论是否开启呼吸增强器都会自动消耗3125J能量免除本次发作；</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障类cbm">故障类CBM<a href="#故障类cbm" class="hash-link" aria-label="故障类CBM的直接链接" title="故障类CBM的直接链接" translate="no">​</a></h3>
+<p><strong>姑且正常游戏流程不太会碰到，只有在一些特殊职业开局、安装CBM特大失败时才会遭遇，就不再赘述了；</strong></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rubik会卖的cbm">rubik会卖的cbm<a href="#rubik会卖的cbm" class="hash-link" aria-label="rubik会卖的cbm的直接链接" title="rubik会卖的cbm的直接链接" translate="no">​</a></h3>
+<p><strong>如果还没遇到rubik, 请无视</strong></p>
+<p>需要多找rubik聊天或买东西得到一定信任.</p>
+<p>从游戏开始时计时.</p>
+<p>目前0.G实验版正在加入rubik相关的其他任务, 以后也会出售cbm武器.</p>
+<ul>
+<li class="">
+<p>一开始就有:</p>
+<ul>
+<li class="">体内计时器</li>
+<li class="">警报系统</li>
+<li class="">防眩光补偿器</li>
+<li class="">气象识别</li>
+<li class="">投掷辅助</li>
+<li class="">储能模块</li>
+<li class="">电池供能</li>
+<li class="">电缆充电器</li>
+<li class="">涓流充能</li>
+<li class="">静脉输液器</li>
+<li class="">脑壳手电</li>
+<li class="">指尖打火机</li>
+<li class="">掌心电磁铁</li>
+<li class="">指端黑客仪</li>
+<li class="">内置辐射计</li>
+<li class="">LED纹身</li>
+<li class="">睡眠模式</li>
+</ul>
+</li>
+<li class="">
+<p>两周后:</p>
+<ul>
+<li class="">瑞士军手</li>
+<li class="">酒精锅炉</li>
+<li class="">自动对焦眼球</li>
+<li class="">远程控制</li>
+<li class="">动力齿轮</li>
+<li class="">听力增强</li>
+<li class="">汽油燃料电池</li>
+<li class="">燃油发电机</li>
+<li class="">合金装甲</li>
+<li class="">防护镜片</li>
+<li class="">多重消化系统</li>
+<li class="">红外视觉</li>
+<li class="">指端开锁器</li>
+<li class="">植入式夜视仪</li>
+<li class="">储能模块Mk.II型</li>
+<li class="">体味屏蔽</li>
+<li class="">关节伺服电机</li>
+<li class="">味觉调节</li>
+<li class="">涓流充能</li>
+</ul>
+</li>
+<li class="">
+<p>4周后:</p>
+<ul>
+<li class="">血液过滤</li>
+<li class="">空气过滤系统</li>
+<li class="">热能防护</li>
+<li class="">恒温机构</li>
+<li class="">白细胞培育系统</li>
+<li class="">肾上腺素泵</li>
+<li class="">血液分析</li>
+<li class="">皮下碳纤维层</li>
+<li class="">湿气凝水器</li>
+<li class="">变脸系统</li>
+<li class="">呼吸增强器</li>
+<li class="">液压肌肉</li>
+<li class="">人工瞬膜</li>
+<li class="">痛感抑制</li>
+<li class="">辐射清洗系统</li>
+<li class="">钛合金骨架</li>
+</ul>
+</li>
+<li class="">
+<p>8周后:</p>
+<ul>
+<li class="">全自动外科手术刀</li>
+<li class="">介电电容系统</li>
+<li class="">代谢供能</li>
+<li class="">声纳之足</li>
+<li class="">回收单元</li>
+<li class="">神奇闪避</li>
+<li class="">钻石角膜</li>
+<li class="">线性反射弧</li>
+<li class="">热能吸取</li>
+<li class="">生物处理芯片</li>
+<li class="">记忆增强</li>
+<li class="">神经突触加速器</li>
+<li class="">人工肌肉纤维</li>
+<li class="">体液萃取器</li>
+<li class="">神经突触再生器</li>
+</ul>
+</li>
+<li class="">
+<p>rubik没有的cbm:</p>
+<ul>
+<li class="">以后可能会卖的
+<ul>
+<li class="">单分子刀刃</li>
+<li class="">生化合金爪</li>
+<li class="">近身格斗强化</li>
+<li class="">闪光弹生成器</li>
+<li class="">指尖剃刀</li>
+<li class="">音爆冲击</li>
+<li class="">瞄准系统</li>
+<li class="">霰弹枪臂</li>
+<li class="">指端激光枪</li>
+<li class="">电击装置</li>
+<li class="">后坐力补偿器</li>
+<li class="">连锁闪电</li>
+<li class="">定向EMP</li>
+<li class="">EMP发射器</li>
+<li class="">冲击波发生器</li>
+</ul>
+</li>
+<li class="">以后可能也不会卖的
+<ul>
+<li class="">主动防御系统</li>
+<li class="">反击防御系统</li>
+<li class="">人工黑夜制造机</li>
+<li class="">整合供能</li>
+<li class="">外骨骼供能接口</li>
+<li class="">外骨骼能源转换接口Mk.II</li>
+<li class="">隐身系统</li>
+<li class="">医疗纳米机器人</li>
+<li class="">时间膨胀</li>
+<li class="">短距离传送器</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/CBM体系与功能详解.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/基础战术准则"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">基础战术准则</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/变异体系与路线详解"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">变异体系与路线详解</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#体系解释" class="table-of-contents__link toc-highlight">体系解释</a><ul><li><a href="#如何获取cbm" class="table-of-contents__link toc-highlight">如何获取CBM</a></li><li><a href="#如何处理故障的cbm肮脏" class="table-of-contents__link toc-highlight">如何处理故障的CBM(肮脏)</a></li><li><a href="#如何安装cbm" class="table-of-contents__link toc-highlight">如何安装CBM</a></li><li><a href="#安装失败" class="table-of-contents__link toc-highlight">安装失败</a></li><li><a href="#移除cbm" class="table-of-contents__link toc-highlight">移除CBM</a></li></ul></li><li><a href="#功能详解" class="table-of-contents__link toc-highlight">功能详解</a><ul><li><a href="#储能类cbm" class="table-of-contents__link toc-highlight">储能类CBM</a></li><li><a href="#供能类cbm" class="table-of-contents__link toc-highlight">供能类CBM</a></li><li><a href="#被动类cbm" class="table-of-contents__link toc-highlight">被动类CBM</a></li><li><a href="#强化类cbm" class="table-of-contents__link toc-highlight">强化类CBM</a></li><li><a href="#功能类cbm" class="table-of-contents__link toc-highlight">功能类CBM</a></li><li><a href="#主动进攻类cbm" class="table-of-contents__link toc-highlight">主动进攻类CBM</a></li><li><a href="#主动防御类cbm" class="table-of-contents__link toc-highlight">主动防御类CBM</a></li><li><a href="#主动功能类cbm" class="table-of-contents__link toc-highlight">主动功能类CBM</a></li><li><a href="#故障类cbm" class="table-of-contents__link toc-highlight">故障类CBM</a></li><li><a href="#rubik会卖的cbm" class="table-of-contents__link toc-highlight">rubik会卖的cbm</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

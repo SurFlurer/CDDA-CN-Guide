@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-content/模组系统/数据系统" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">数据系统 | CDDA中文攻略手册</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://surflurer.github.io/CDDA-CN-Guide/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://surflurer.github.io/CDDA-CN-Guide/docs/content/模组系统/数据系统"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="数据系统 | CDDA中文攻略手册"><meta data-rh="true" name="description" content="本文引用的文件"><meta data-rh="true" property="og:description" content="本文引用的文件"><link data-rh="true" rel="icon" href="/CDDA-CN-Guide/img/cataicon.ico"><link data-rh="true" rel="canonical" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/模组系统/数据系统"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/模组系统/数据系统" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://surflurer.github.io/CDDA-CN-Guide/docs/content/模组系统/数据系统" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"模组系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/模组系统/"},{"@type":"ListItem","position":2,"name":"数据系统","item":"https://surflurer.github.io/CDDA-CN-Guide/docs/content/模组系统/数据系统"}]}</script><link rel="stylesheet" href="/CDDA-CN-Guide/assets/css/styles.c3de5195.css">
+<script src="/CDDA-CN-Guide/assets/js/runtime~main.0ee1e93b.js" defer="defer"></script>
+<script src="/CDDA-CN-Guide/assets/js/main.4d48cbd5.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CDDA-CN-Guide/img/cataicon.ico"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CDDA-CN-Guide/"><div class="navbar__logo"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CDDA-CN-Guide/img/cataicon.ico" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">CDDA中文攻略手册</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CDDA-CN-Guide/docs/总目录">目录</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/SurFlurer/CDDA-CN-Guide" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/总目录"><span title="CataclysmDDA综合攻略手册" class="linkLabel_WmDU">CataclysmDDA综合攻略手册</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/CDDA-CN-Guide/docs/基础教程"><span title="玩家手册" class="categoryLinkLabel_W154">玩家手册</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="开发者手册" class="categoryLinkLabel_W154">开发者手册</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/世界生成系统/"><span title="世界生成系统" class="categoryLinkLabel_W154">世界生成系统</span></a><button aria-label="展开侧边栏分类 &#x27;世界生成系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/国际化系统/"><span title="国际化系统" class="categoryLinkLabel_W154">国际化系统</span></a><button aria-label="展开侧边栏分类 &#x27;国际化系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/平台适配/"><span title="平台适配" class="categoryLinkLabel_W154">平台适配</span></a><button aria-label="展开侧边栏分类 &#x27;平台适配&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/开发工具与测试/"><span title="开发工具与测试" class="categoryLinkLabel_W154">开发工具与测试</span></a><button aria-label="展开侧边栏分类 &#x27;开发工具与测试&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/快速开始"><span title="快速开始" class="linkLabel_WmDU">快速开始</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/战斗与AI系统/"><span title="战斗与AI系统" class="categoryLinkLabel_W154">战斗与AI系统</span></a><button aria-label="展开侧边栏分类 &#x27;战斗与AI系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/数据持久化/"><span title="数据持久化" class="categoryLinkLabel_W154">数据持久化</span></a><button aria-label="展开侧边栏分类 &#x27;数据持久化&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/核心架构设计/"><span title="核心架构设计" class="categoryLinkLabel_W154">核心架构设计</span></a><button aria-label="展开侧边栏分类 &#x27;核心架构设计&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/"><span title="模组系统" class="categoryLinkLabel_W154">模组系统</span></a><button aria-label="折叠侧边栏分类 &#x27;模组系统&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/数据系统"><span title="数据系统" class="linkLabel_WmDU">数据系统</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/模组开发"><span title="模组开发" class="linkLabel_WmDU">模组开发</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/模组系统/模组管理器"><span title="模组管理器" class="linkLabel_WmDU">模组管理器</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/游戏核心系统/"><span title="游戏核心系统" class="categoryLinkLabel_W154">游戏核心系统</span></a><button aria-label="展开侧边栏分类 &#x27;游戏核心系统&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/用户界面与渲染/"><span title="用户界面与渲染" class="categoryLinkLabel_W154">用户界面与渲染</span></a><button aria-label="展开侧边栏分类 &#x27;用户界面与渲染&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/CDDA-CN-Guide/docs/content/部署与发布/"><span title="部署与发布" class="categoryLinkLabel_W154">部署与发布</span></a><button aria-label="展开侧边栏分类 &#x27;部署与发布&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/CDDA-CN-Guide/docs/content/项目概述"><span title="项目概述" class="linkLabel_WmDU">项目概述</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CDDA-CN-Guide/docs/往期更新记录"><span title="往期更新记录" class="linkLabel_WmDU">往期更新记录</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/CDDA-CN-Guide/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">开发者手册</span></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/CDDA-CN-Guide/docs/content/模组系统/"><span>模组系统</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">数据系统</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>数据系统</h1></header><cite>
+**本文引用的文件**
+- generic_factory.h
+- generic_factory.cpp
+- type_id.h
+- string_id.h
+- int_id.h
+- json.h
+- json_loader.h
+- json_loader.cpp
+- init.h
+- veh_type.cpp
+- savegame_json.cpp
+</cite>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="目录">目录<a href="#目录" class="hash-link" aria-label="目录的直接链接" title="目录的直接链接" translate="no">​</a></h2>
+<ol>
+<li class=""><a href="#%E7%AE%80%E4%BB%8B" class="">简介</a></li>
+<li class=""><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84" class="">项目结构</a></li>
+<li class=""><a href="#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6" class="">核心组件</a></li>
+<li class=""><a href="#%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" class="">架构总览</a></li>
+<li class=""><a href="#%E8%AF%A6%E7%BB%86%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90" class="">详细组件分析</a></li>
+<li class=""><a href="#%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90" class="">依赖关系分析</a></li>
+<li class=""><a href="#%E6%80%A7%E8%83%BD%E8%80%83%E9%87%8F" class="">性能考量</a></li>
+<li class=""><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97" class="">故障排查指南</a></li>
+<li class=""><a href="#%E7%BB%93%E8%AE%BA" class="">结论</a></li>
+<li class=""><a href="#%E9%99%84%E5%BD%95" class="">附录</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="简介">简介<a href="#简介" class="hash-link" aria-label="简介的直接链接" title="简介的直接链接" translate="no">​</a></h2>
+<p>本文件面向Cataclysm-DDA的数据系统，系统性阐述以下主题：</p>
+<ul>
+<li class="">JSON配置文件格式与加载流程</li>
+<li class="">通用工厂模式（generic_factory）的设计与实现</li>
+<li class="">类型系统（string_id/int_id/type_id）的协作机制</li>
+<li class="">数据解析、类型安全与验证规则</li>
+<li class="">类型注册、数据继承与合并策略</li>
+<li class="">冲突解决与版本控制</li>
+<li class="">最佳实践与性能优化建议</li>
+</ul>
+<p>目标是帮助开发者在不深入源码细节的前提下，理解并正确使用数据系统；同时为高级用户提供可操作的优化与扩展指导。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="项目结构">项目结构<a href="#项目结构" class="hash-link" aria-label="项目结构的直接链接" title="项目结构的直接链接" translate="no">​</a></h2>
+<p>数据系统由“类型标识体系 + 通用工厂 + JSON解析器 + 动态加载器”构成，核心文件分布如下：</p>
+<ul>
+<li class="">类型标识：string_id.h、int_id.h、type_id.h</li>
+<li class="">通用工厂：generic_factory.h/.cpp</li>
+<li class="">JSON工具：json.h、json_loader.h/.cpp</li>
+<li class="">动态加载：init.h</li>
+<li class="">使用示例：veh_type.cpp（车辆类型/部件）、savegame_json.cpp（存档序列化）</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">string_id.h</li>
+<li class="">int_id.h</li>
+<li class="">type_id.h</li>
+<li class="">generic_factory.h</li>
+<li class="">generic_factory.cpp</li>
+<li class="">json.h</li>
+<li class="">json_loader.h</li>
+<li class="">json_loader.cpp</li>
+<li class="">init.h</li>
+<li class="">veh_type.cpp</li>
+<li class="">savegame_json.cpp</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">generic_factory.h</li>
+<li class="">json.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="核心组件">核心组件<a href="#核心组件" class="hash-link" aria-label="核心组件的直接链接" title="核心组件的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">类型标识体系
+<ul>
+<li class="">string_id<t>：强类型字符串标识，支持静态/动态两种内部实现，具备缓存与版本控制，便于跨模组安全复用。</t></li>
+<li class="">int_id<t>：强类型整数标识，适合运行时快速访问；不保证跨游戏重启一致性。</t></li>
+<li class="">type_id.h：集中声明各类别标识类型，避免重复定义。</li>
+</ul>
+</li>
+<li class="">通用工厂 generic_factory<t>
+<ul>
+<li class="">统一管理对象生命周期：加载、覆盖、查询、版本失效、最终化。</li>
+<li class="">支持“抽象体/具体体/继承”三态模型与延迟加载。</li>
+<li class="">提供mandatory/optional辅助读取函数，统一错误处理。</li>
+</ul>
+</t></li>
+<li class="">JSON解析与加载
+<ul>
+<li class="">json.h：TextJsonIn/TextJsonObject等，提供流式与对象式读取，支持自定义反序列化。</li>
+<li class="">json_loader.*：基于FlexBuffer缓存的高性能JSON加载器，支持路径/字符串两种输入。</li>
+</ul>
+</li>
+<li class="">动态加载器 DynamicDataLoader
+<ul>
+<li class="">负责扫描资源、建立类型到加载函数的映射、分发加载、最终化与一致性检查。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">string_id.h</li>
+<li class="">int_id.h</li>
+<li class="">type_id.h</li>
+<li class="">generic_factory.h</li>
+<li class="">json.h</li>
+<li class="">json_loader.h</li>
+<li class="">json_loader.cpp</li>
+<li class="">init.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="架构总览">架构总览<a href="#架构总览" class="hash-link" aria-label="架构总览的直接链接" title="架构总览的直接链接" translate="no">​</a></h2>
+<p>数据系统采用“类型标识 + 工厂 + JSON解析 + 动态加载”的分层架构：</p>
+<ul>
+<li class="">类型标识层：确保不同类别ID互斥且可比较，提供稳定跨重启的字符串ID。</li>
+<li class="">工厂层：封装对象集合、索引、版本、继承与合并逻辑。</li>
+<li class="">解析层：提供灵活的JSON读取能力与错误定位。</li>
+<li class="">加载层：按类型注册加载器，统一调度加载、最终化与校验。</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">init.h</li>
+<li class="">generic_factory.h</li>
+<li class="">json.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="详细组件分析">详细组件分析<a href="#详细组件分析" class="hash-link" aria-label="详细组件分析的直接链接" title="详细组件分析的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="通用工厂模式-generic_factory">通用工厂模式 generic_factory<t></t><a href="#通用工厂模式-generic_factory" class="hash-link" aria-label="通用工厂模式-generic_factory的直接链接" title="通用工厂模式-generic_factory的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">设计要点
+<ul>
+<li class="">统一容器：vector<t>存储对象，unordered_map&lt;string_id<t>, int_id<t>&gt;提供索引。</t></t></t></li>
+<li class="">版本控制：version字段与string_id中的_version配合，实现缓存失效与一致性。</li>
+<li class="">继承与抽象：支持“copy-from”继承与“abstract”抽象体，抽象体仅用于被继承。</li>
+<li class="">延迟加载：当依赖未就绪时，将JSON加入deferred列表，最终化阶段重试。</li>
+<li class="">辅助读取：mandatory/optional统一处理缺失与类型错误，并尊重was_loaded标志。</li>
+</ul>
+</li>
+<li class="">关键流程
+<ul>
+<li class="">handle_inheritance：解析copy-from与abstract，必要时延迟加载。</li>
+<li class="">load：根据id或id数组批量加载，调用T::load并插入容器。</li>
+<li class="">insert：覆盖同名ID，触发版本递增以失效旧缓存。</li>
+<li class="">finalize：加载延迟项、清理抽象体、刷新缓存版本。</li>
+<li class="">check：遍历调用T::check进行一致性校验。</li>
+</ul>
+</li>
+<li class="">错误处理
+<ul>
+<li class="">必填字段缺失、类型不匹配、非法比例因子等均通过JsonError抛出，包含精确位置信息。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">generic_factory.h</li>
+<li class="">generic_factory.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">generic_factory.h</li>
+<li class="">generic_factory.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="类型系统string_idint_idtype_id">类型系统：string_id/int_id/type_id<a href="#类型系统string_idint_idtype_id" class="hash-link" aria-label="类型系统：string_id/int_id/type_id的直接链接" title="类型系统：string_id/int_id/type_id的直接链接" translate="no">​</a></h3>
+<ul>
+<li class=""><code>string_id&lt;T&gt;</code>
+<ul>
+<li class="">强类型字符串ID，支持静态（interned）与动态两种实现，内部以Identity承载。</li>
+<li class="">提供缓存：_cid/_version，首次查找后缓存至string_id实例，后续O(1)命中。</li>
+<li class="">与generic_factory协作：find_id通过map查找并写回缓存，版本不一致则重新解析。</li>
+</ul>
+</li>
+<li class=""><code>int_id&lt;T&gt;</code>
+<ul>
+<li class="">强类型整数ID，适合运行时快速访问；不保证跨重启一致性。</li>
+<li class="">提供集合优化：int_id_set，小范围用bitset，大范围用哈希集。</li>
+</ul>
+</li>
+<li class="">type_id.h
+<ul>
+<li class="">集中声明各领域ID类型（如mtype_id、itype_id、vpart_id等），避免重复定义。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">string_id.h</li>
+<li class="">int_id.h</li>
+<li class="">generic_factory.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">string_id.h</li>
+<li class="">int_id.h</li>
+<li class="">type_id.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="json解析与加载">JSON解析与加载<a href="#json解析与加载" class="hash-link" aria-label="JSON解析与加载的直接链接" title="JSON解析与加载的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">json.h
+<ul>
+<li class="">TextJsonIn/TextJsonObject：提供流式与对象式读取，支持枚举、容器、自定义类型反序列化。</li>
+<li class="">read重载丰富，自动处理数组/对象/位集/对等编码，异常包含行号与偏移。</li>
+</ul>
+</li>
+<li class="">json_loader.*
+<ul>
+<li class="">基于FlexBuffer缓存，加速重复读取；按路径根类型选择不同缓存目录。</li>
+<li class="">支持从文件路径与内存字符串加载，返回JsonValue包装的flexbuffers引用。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">json_loader.cpp</li>
+<li class="">json_loader.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">json.h</li>
+<li class="">json_loader.h</li>
+<li class="">json_loader.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="动态加载器-dynamicdataloader">动态加载器 DynamicDataLoader<a href="#动态加载器-dynamicdataloader" class="hash-link" aria-label="动态加载器 DynamicDataLoader的直接链接" title="动态加载器 DynamicDataLoader的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">职责
+<ul>
+<li class="">初始化类型到加载函数的映射。</li>
+<li class="">扫描资源、分发加载、执行最终化与一致性检查。</li>
+<li class="">协调generic_factory::finalize与deferred重试。</li>
+</ul>
+</li>
+<li class="">与工厂协作
+<ul>
+<li class="">每个类型注册其string_id<t>::load函数，由DynamicDataLoader统一调度。</t></li>
+<li class="">加载完成后调用各工厂finalize，触发延迟加载与缓存刷新。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">init.h</li>
+<li class="">generic_factory.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="使用示例车辆类型与部件">使用示例：车辆类型与部件<a href="#使用示例车辆类型与部件" class="hash-link" aria-label="使用示例：车辆类型与部件的直接链接" title="使用示例：车辆类型与部件的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">车辆原型与部件使用generic_factory进行管理，支持继承与变体。</li>
+<li class="">在veh_type.cpp中可见工厂实例与类型注册，以及JSON中id/variant等字段的处理。</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">veh_type.cpp</li>
+<li class="">veh_type.cpp</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="存档序列化json写入">存档序列化：JSON写入<a href="#存档序列化json写入" class="hash-link" aria-label="存档序列化：JSON写入的直接链接" title="存档序列化：JSON写入的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">savegame_json.cpp展示如何将复杂对象（如vehicle_part）序列化为JSON，包括迁移、变体与嵌套结构。</li>
+<li class="">体现了JSON读写的对称性与一致性要求。</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">savegame_json.cpp</li>
+<li class="">savegame_json.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依赖关系分析">依赖关系分析<a href="#依赖关系分析" class="hash-link" aria-label="依赖关系分析的直接链接" title="依赖关系分析的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">组件耦合
+<ul>
+<li class="">string_id/int_id与generic_factory双向协作：前者提供缓存与版本，后者提供索引与版本递增。</li>
+<li class="">generic_factory依赖json.h进行数据读取与错误报告。</li>
+<li class="">DynamicDataLoader负责编排加载顺序与最终化。</li>
+</ul>
+</li>
+<li class="">外部依赖
+<ul>
+<li class="">FlexBuffer缓存提升JSON加载性能。</li>
+<li class="">各类型通过type_id.h集中声明，降低头文件污染。</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>图表来源</p>
+<ul>
+<li class="">string_id.h</li>
+<li class="">int_id.h</li>
+<li class="">type_id.h</li>
+<li class="">generic_factory.h</li>
+<li class="">json.h</li>
+<li class="">json_loader.h</li>
+<li class="">json_loader.cpp</li>
+<li class="">init.h</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">generic_factory.h</li>
+<li class="">json.h</li>
+<li class="">json_loader.cpp</li>
+<li class="">init.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="性能考量">性能考量<a href="#性能考量" class="hash-link" aria-label="性能考量的直接链接" title="性能考量的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">string_id缓存
+<ul>
+<li class="">首次查找会进行哈希表与数组访问，后续通过缓存直接O(1)命中。</li>
+<li class="">版本递增会失效所有string_id缓存，避免脏读，但可能带来短暂抖动。</li>
+</ul>
+</li>
+<li class="">int_id_set优化
+<ul>
+<li class="">小范围使用bitset，大范围回退哈希集，兼顾空间与时间。</li>
+</ul>
+</li>
+<li class="">JSON加载
+<ul>
+<li class="">FlexBuffer缓存显著减少重复解析成本；按根路径选择缓存目录，避免IO争用。</li>
+</ul>
+</li>
+<li class="">工厂插入
+<ul>
+<li class="">insert触发版本递增与map重算，应尽量批量化插入以减少版本变更次数。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">string_id.h</li>
+<li class="">int_id.h</li>
+<li class="">generic_factory.h</li>
+<li class="">json_loader.cpp</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="故障排查指南">故障排查指南<a href="#故障排查指南" class="hash-link" aria-label="故障排查指南的直接链接" title="故障排查指南的直接链接" translate="no">​</a></h2>
+<ul>
+<li class="">常见错误与定位
+<ul>
+<li class="">必填字段缺失：mandatory/optional会在缺失时抛错，包含成员名与上下文。</li>
+<li class="">类型不匹配：read系列函数在类型不符时抛错，定位到具体成员。</li>
+<li class="">继承依赖未就绪：copy-from引用不存在时，对象被延迟加载，最终化阶段重试。</li>
+</ul>
+</li>
+<li class="">排查步骤
+<ul>
+<li class="">检查JSON中id/abstract/copy-from字段是否符合规范。</li>
+<li class="">确认类型注册是否正确，DynamicDataLoader是否已初始化。</li>
+<li class="">观察版本变化与缓存失效时机，避免在版本切换期间做假设性断言。</li>
+</ul>
+</li>
+<li class="">相关实现参考
+<ul>
+<li class="">JSON错误抛出与定位：json.h中的throw_error与line_number。</li>
+<li class="">延迟加载与重试：generic_factory.h中的deferred与finalize。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">json.h</li>
+<li class="">generic_factory.h</li>
+<li class="">generic_factory.h</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="结论">结论<a href="#结论" class="hash-link" aria-label="结论的直接链接" title="结论的直接链接" translate="no">​</a></h2>
+<p>Cataclysm-DDA的数据系统通过“强类型标识 + 通用工厂 + JSON解析 + 动态加载”的组合，实现了高可维护性与高性能的数据管理：</p>
+<ul>
+<li class="">类型安全：string_id/int_id严格区分，避免跨类别误用。</li>
+<li class="">可扩展：generic_factory统一了加载、继承、合并与最终化流程。</li>
+<li class="">可靠性：完善的错误报告与延迟加载机制，保障数据完整性。</li>
+<li class="">可优化：缓存、版本控制与FlexBuffer缓存共同提升性能。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="附录">附录<a href="#附录" class="hash-link" aria-label="附录的直接链接" title="附录的直接链接" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="json配置文件格式与最佳实践">JSON配置文件格式与最佳实践<a href="#json配置文件格式与最佳实践" class="hash-link" aria-label="JSON配置文件格式与最佳实践的直接链接" title="JSON配置文件格式与最佳实践的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">字段规范
+<ul>
+<li class="">必须字段：id或abstract二选一；若为数组id，表示批量定义。</li>
+<li class="">继承字段：copy-from引用另一个具体体或抽象体，支持链式继承。</li>
+<li class="">抽象体：仅作为模板，不可直接出现id。</li>
+</ul>
+</li>
+<li class="">建议
+<ul>
+<li class="">优先使用抽象体组织共性属性，再以具体体覆盖差异。</li>
+<li class="">对于可变参数，使用proportional/relative辅助读取，保持一致性。</li>
+<li class="">将大型数据拆分为多个文件，按功能域组织，便于维护与增量加载。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">generic_factory.h</li>
+<li class="">generic_factory.h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="数据继承与合并策略">数据继承与合并策略<a href="#数据继承与合并策略" class="hash-link" aria-label="数据继承与合并策略的直接链接" title="数据继承与合并策略的直接链接" translate="no">​</a></h3>
+<ul>
+<li class="">继承链
+<ul>
+<li class="">copy-from → 抽象体/具体体 → 具体体</li>
+<li class="">若引用不存在，对象被延迟，最终化阶段重试。</li>
+</ul>
+</li>
+<li class="">合并规则
+<ul>
+<li class="">字段覆盖：具体体字段覆盖抽象体字段。</li>
+<li class="">数值类：支持proportional（缩放）与relative（叠加）两类修饰，按支持类型生效。</li>
+</ul>
+</li>
+<li class="">冲突解决
+<ul>
+<li class="">同名字段：具体体优先。</li>
+<li class="">未就绪依赖：延迟加载，最终化阶段统一处理。</li>
+</ul>
+</li>
+</ul>
+<p>章节来源</p>
+<ul>
+<li class="">generic_factory.h</li>
+<li class="">generic_factory.h</li>
+<li class="">generic_factory.cpp</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/docs/content/模组系统/数据系统.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/CDDA-CN-Guide/docs/content/模组系统/"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">模组系统</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CDDA-CN-Guide/docs/content/模组系统/模组开发"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">模组开发</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#简介" class="table-of-contents__link toc-highlight">简介</a></li><li><a href="#项目结构" class="table-of-contents__link toc-highlight">项目结构</a></li><li><a href="#核心组件" class="table-of-contents__link toc-highlight">核心组件</a></li><li><a href="#架构总览" class="table-of-contents__link toc-highlight">架构总览</a></li><li><a href="#详细组件分析" class="table-of-contents__link toc-highlight">详细组件分析</a><ul><li><a href="#通用工厂模式-generic_factory" class="table-of-contents__link toc-highlight">通用工厂模式 generic_factory<t></t></a></li><li><a href="#类型系统string_idint_idtype_id" class="table-of-contents__link toc-highlight">类型系统：string_id/int_id/type_id</a></li><li><a href="#json解析与加载" class="table-of-contents__link toc-highlight">JSON解析与加载</a></li><li><a href="#动态加载器-dynamicdataloader" class="table-of-contents__link toc-highlight">动态加载器 DynamicDataLoader</a></li><li><a href="#使用示例车辆类型与部件" class="table-of-contents__link toc-highlight">使用示例：车辆类型与部件</a></li><li><a href="#存档序列化json写入" class="table-of-contents__link toc-highlight">存档序列化：JSON写入</a></li></ul></li><li><a href="#依赖关系分析" class="table-of-contents__link toc-highlight">依赖关系分析</a></li><li><a href="#性能考量" class="table-of-contents__link toc-highlight">性能考量</a></li><li><a href="#故障排查指南" class="table-of-contents__link toc-highlight">故障排查指南</a></li><li><a href="#结论" class="table-of-contents__link toc-highlight">结论</a></li><li><a href="#附录" class="table-of-contents__link toc-highlight">附录</a><ul><li><a href="#json配置文件格式与最佳实践" class="table-of-contents__link toc-highlight">JSON配置文件格式与最佳实践</a></li><li><a href="#数据继承与合并策略" class="table-of-contents__link toc-highlight">数据继承与合并策略</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/CDDA-CN-Guide/docs/总目录">目录</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://tieba.baidu.com/f?kw=cataclysmdda" target="_blank" rel="noopener noreferrer" class="footer__link-item">百度贴吧<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://pd.qq.com/s/4q2t1dqub" target="_blank" rel="noopener noreferrer" class="footer__link-item">QQ频道<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="http://cdda.fun" target="_blank" rel="noopener noreferrer" class="footer__link-item">幸存者基地<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/CleverRaven/Cataclysm-DDA" target="_blank" rel="noopener noreferrer" class="footer__link-item">游戏GitHub项目地址<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Surflurer, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
