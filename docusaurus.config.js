@@ -1,8 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
+
+//const lightCodeTheme = require('prism-react-renderer/themes/github');
+//const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -30,7 +34,10 @@ const config = {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
-
+  markdown: {
+    format: 'md', // 强制所有 .md 文件使用 CommonMark 解析，解决 <item> 报错
+    mermaid: true,
+  },
   presets: [
     [
       'classic',
@@ -40,6 +47,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          
           editUrl:
             'https://github.com/SurFlurer/CDDA-CN-Guide/edit/master/CataclysmDDA综合攻略手册/',
         },
@@ -129,7 +137,10 @@ const config = {
       },
     }),
     themes: [
+      '@docusaurus/theme-mermaid',
       [
+        
+        
         require.resolve('@easyops-cn/docusaurus-search-local'),
         {
           // ... Your options.
